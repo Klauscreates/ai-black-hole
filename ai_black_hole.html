@@ -474,6 +474,8 @@ const SRC = {
   nike10k: { name: 'Nike 10-K, fiscal 2026: where Nike footwear is made', url: 'https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000088/nke-20260531.htm' },
   toyota: { name: 'Transport Topics: Toyota keeps title as top carmaker in 2025', url: 'https://www.ttnews.com/articles/toyota-top-carmaker-2025' },
   lvmh: { name: 'Wikipedia: LVMH', url: 'https://en.wikipedia.org/wiki/LVMH' },
+  srpDc: { name: 'SRP: data center facts and load forecast', url: 'https://www.srpnet.com/about/data-center-facts' },
+  srpE67: { name: 'Arizona Capitol Times: the facts about SRP and data centers', url: 'https://azcapitoltimes.com/news/2026/03/31/the-facts-about-srp-and-data-centers/' },
 };
 const SRC_KEYS = Object.keys(SRC);
 const srcLink = k => SRC[k] ? `<a class="src-ref" href="${SRC[k].url}" target="_blank" rel="noopener" title="${esc(SRC[k].name)}">[${SRC_KEYS.indexOf(k) + 1}]</a>` : '';
@@ -595,6 +597,9 @@ const MOONS = [
   { id: 'starlink', parent: 'spacex', name: 'Starlink', color: '#93c5fd', facts: [['Connectivity is one of SpaceX’s three reported segments', 'spxRev'], ['SpaceX revenue was about $16B in 2025', 'spxRev']] },
   { id: 'pjmg', parent: 'citizens', name: 'PJM grid', grid: 'PJM', color: '#fca5a5', facts: [['Capacity price up 11.4x over two auctions', 'pjm'], ['About 63% of the 2025/26 increase tied to data centers', 'pjm']] },
   { id: 'ercotg', parent: 'citizens', name: 'ERCOT grid', grid: 'ERCO', color: '#fda4af', facts: [['Texas grid; hosts the Abilene Stargate campus', 'eia930']] },
+  { id: 'srpg', parent: 'citizens', name: 'SRP grid', grid: 'SRP', color: '#fdba74',
+    val: () => { const ei = energyInputs(), x = ei && ei.g.SRP; return x && num(x.avg28) !== null ? `${x.avg28.toFixed(1)} GW, 28-day average${num(x.yoy) !== null ? ` (${signPct(x.yoy)} y/y)` : ''}` : ''; },
+    facts: [['Public power for the Phoenix area; demand forecast to grow ~6% a year to 2035, mostly from data centers', 'srpDc'], ['Plans to roughly double its power plants within 10 years', 'srpDc'], ['New 20 MW+ customers pay minimum bills upfront (E-67), so households don’t carry their build-out costs', 'srpE67']] },
   { id: 'apple', parent: 'consumer', name: 'Apple', ticker: 'AAPL', color: '#e5e7eb', facts: [['Google paid ~$20B in 2022 to be Safari’s default search', 'googApple']] },
   { id: 'amzn_r', parent: 'retail', name: 'Amazon retail', ticker: 'AMZN', color: '#ff9900', facts: [['Picked up shoppers who left Temu and Shein after tariffs', 'temuShift']] },
   { id: 'wmt', parent: 'retail', name: 'Walmart', ticker: 'WMT', color: '#60a5fa', facts: [['Picked up shoppers who left Temu and Shein after tariffs', 'temuShift']] },
@@ -857,6 +862,8 @@ const TIES = [
   ['cvx', 'energybill', 'Gasoline and fuel prices', 'goods'],
   ['nee', 'energybill', 'Electricity bills for Florida households', 'goods'],
   ['pjmg', 'energybill', 'Grid capacity costs land on household power bills', 'money'],
+  ['srpg', 'energybill', 'Phoenix-area power bills', 'money'],
+  ['cloud', 'srpg', 'Data centers drive most of SRP’s forecast load growth'],
   // Healthcare, industry, payments
   ['healthcost', 'unh', 'Insurance premiums', 'money'],
   ['healthcost', 'lly', 'Prescription drugs', 'money'],
@@ -1492,7 +1499,7 @@ function renderEnergy() {
     kwh && num(kwh.value) !== null ? `<li class="lv"><div><b>Average residential rate</b><small>US city average, ${fmtDate(kwh.date)}</small></div><canvas data-ehist="p:kwh" width="128" height="44" aria-hidden="true"></canvas><div class="lv-v"><b>${(kwh.value * 100).toFixed(1)}¢/kWh</b><small>${num(kwh.yoy) !== null ? signPct(kwh.yoy) + ' y/y' : ''}</small></div></li>` : ''].join('');
   const dry = ei.counties.map(c => { const prev = num(c.dsci4wAgo), d = prev !== null ? c.dsci - prev : null;
     return `<li><div><b>${esc(c.name)}</b><small>${esc(c.why || '')}</small></div><span class="num ${c.droughtPct >= 50 ? 'bad' : ''}">${num(c.droughtPct) !== null ? Math.round(c.droughtPct) + '%' : '–'}</span><span class="num ${d !== null && d > 20 ? 'bad' : d !== null && d < -20 ? 'good' : ''}">${c.dsci}${d === null || d === 0 ? '' : ` (${d > 0 ? '+' : ''}${d})`}</span></li>`; }).join('');
-  body.innerHTML = `<ul class="lvs">${gridRow('PJM')}${gridRow('ERCO')}${gridRow('US48')}${prices}</ul>
+  body.innerHTML = `<ul class="lvs">${gridRow('PJM')}${gridRow('ERCO')}${gridRow('SRP')}${gridRow('US48')}${prices}</ul>
     <div><p class="sub-title">Drought at data-center hubs</p><ul class="dry"><li class="head"><span>County · why it matters</span><span class="num">In drought</span><span class="num">Severity (4-wk Δ)</span></li>${dry}</ul>
     <p class="note" style="margin-top:6px">Severity is the Drought Severity and Coverage Index (0–500). ${srcLink('usdm')} ${srcLink('eia930')}</p></div>${fpHtml}`;
   body.querySelectorAll('canvas[data-ehist]').forEach(cv => { const [kind, key] = cv.dataset.ehist.split(':'); const s = kind === 'g' ? ei.g[key] : ei.pr[key]; drawSeries(cv, s && s.hist); });
@@ -1553,7 +1560,7 @@ function renderFeed() {
   if (num(er.demand) !== null) rows.push(['ERCOT demand', `Texas, 5-minute · ${num(er.reserve) !== null ? pct(er.reserve) + ' spare capacity' : ''}`, 'ercotD', `${(er.demand / 1000).toFixed(1)} GW`, '', num(er.reserve) !== null && er.reserve < 0.15 ? 'bad' : '']);
   if (num(er.price) !== null) rows.push(['ERCOT power price', 'Hub average, real-time', 'ercotP', `$${er.price.toFixed(0)}`, 'per MWh', er.price >= 100 ? 'bad' : '']);
   if (num(ca.demand) !== null) rows.push(['CAISO demand', 'California, 5-minute', 'caisoD', `${(ca.demand / 1000).toFixed(1)} GW`, '', '']);
-  ['PJM', 'US48'].forEach(k => { const r = eh[k]; if (r && num(r.latest) !== null) rows.push([k === 'PJM' ? 'PJM demand' : 'Lower 48 demand', `Hourly (EIA), hour ending ${esc(String(r.time).slice(11))}:00 UTC`, 'eia:' + k, `${r.latest.toFixed(1)} GW`, '', '']); });
+  ['PJM', 'SRP', 'US48'].forEach(k => { const r = eh[k]; if (r && num(r.latest) !== null) rows.push([{ PJM: 'PJM demand', SRP: 'SRP demand (Phoenix)', US48: 'Lower 48 demand' }[k], `Hourly (EIA), hour ending ${esc(String(r.time).slice(11))}:00 UTC`, 'eia:' + k, `${r.latest.toFixed(1)} GW`, '', '']); });
   $('#feedGrid').innerHTML = rows.length ? rows.map(([n, s, key, v, sub, cls]) => `<li class="lv"><div><b>${n}</b><small>${s}</small></div><canvas data-gridh="${key}" width="128" height="44" aria-hidden="true"></canvas><div class="lv-v"><b class="${cls}">${v}</b><small>${sub}</small></div></li>`).join('') : `<p class="note">Grid feeds ${esc(stamp('ercot'))}.</p>`;
   $('#feedGrid').querySelectorAll('canvas[data-gridh]').forEach(cv => { const k = cv.dataset.gridh; drawSeries(cv, k === 'ercotD' ? er.demandHist : k === 'ercotP' ? er.priceHist : k === 'caisoD' ? ca.demandHist : (eh[k.slice(4)] || {}).hist); });
   $('#feedNote').textContent = `Stocks ${stamp('quotes')} · ERCOT ${stamp('ercot')} · CAISO ${stamp('caiso')} · EIA hourly ${stamp('eiaHourly')} · daily snapshot ${stamp('snapshot')}. Quotes come from an unofficial Yahoo Finance feed and run about 15 minutes behind.`;
@@ -1570,6 +1577,7 @@ function renderTape() {
   const er = feed && feed.ercot, eh = feed && feed.eiaHourly, ei = energyInputs();
   if (er && num(er.demand) !== null) items.push(`<span class="tape-item"><b>ERCOT</b>${(er.demand / 1000).toFixed(1)} GW · $${num(er.price) !== null ? er.price.toFixed(0) : '–'}/MWh</span>`);
   if (eh && eh.PJM) items.push(`<span class="tape-item"><b>PJM</b>${eh.PJM.latest.toFixed(1)} GW</span>`);
+  if (eh && eh.SRP) items.push(`<span class="tape-item"><b>SRP Phoenix</b>${eh.SRP.latest.toFixed(1)} GW</span>`);
   if (ei && ei.pr.gas && num(ei.pr.gas.value) !== null) items.push(`<span class="tape-item"><b>Gas</b>$${ei.pr.gas.value.toFixed(2)}</span>`);
   if (ei && ei.elecYoy !== null) items.push(`<span class="tape-item"><b>Power prices</b>${signPct(ei.elecYoy)} y/y</span>`);
   if (socFmt('sentiment')) items.push(`<span class="tape-item"><b>Sentiment</b>${socFmt('sentiment')}</span>`);
@@ -1665,43 +1673,71 @@ function setSnapshot(s) {
     .forEach(ev => emit('real', realText(ev), { id: 'news:' + ev.url, date: ev.date, nodes: NODE_IDS.includes(ev.node) ? [ev.node] : [] }));
   refreshAll();
 }
+// One state update ({snapshot, live}) from the local server's stream or the hosted data.json
+function applyState(p) {
+  feed = p.live && typeof p.live === 'object' ? p.live : null;
+  if (p.snapshot) setSnapshot(p.snapshot); else liveMessage('No daily snapshot on this computer yet. The morning refresh task saves one to tools/ai_black_hole/live/latest_snapshot.json.');
+  renderFeed();
+  (Array.isArray(feed && feed.events) ? feed.events : []).forEach(e => { if (e && typeof e.id === 'string') emit('live', `Live: ${esc(e.title)}`, { id: 'live:' + e.id, nodes: NODE_IDS.includes(e.node) ? [e.node] : [] }); });
+  refreshAll(); setFeedStatus(true);
+}
 function startLocalFeed(url) {
   $('#feedSec').hidden = false;
   liveMessage('Waiting for the local live server…');
   const es = new EventSource(url);
-  es.addEventListener('state', ev => {
-    let p; try { p = JSON.parse(ev.data); } catch (e) { return; }
-    feed = p.live && typeof p.live === 'object' ? p.live : null;
-    if (p.snapshot) setSnapshot(p.snapshot); else liveMessage('No daily snapshot on this computer yet. The morning refresh task saves one to tools/ai_black_hole/live/latest_snapshot.json.');
-    renderFeed();
-    (Array.isArray(feed && feed.events) ? feed.events : []).forEach(e => { if (e && typeof e.id === 'string') emit('live', `Live: ${esc(e.title)}`, { id: 'live:' + e.id, nodes: NODE_IDS.includes(e.node) ? [e.node] : [] }); });
-    refreshAll(); setFeedStatus(true);
-  });
+  es.addEventListener('state', ev => { let p; try { p = JSON.parse(ev.data); } catch (e) { return; } applyState(p); });
   es.onopen = () => setFeedStatus(true);
   es.onerror = () => setFeedStatus(false);
+}
+// Hosted copy: a scheduled job rebuilds data.json about every 30 minutes; check it every 5
+const POLL_MS = 5 * 60 * 1000;
+function startPolledFeed(url) {
+  $('#feedSec').hidden = false;
+  let lastStamp = null;
+  const poll = async () => {
+    try {
+      const r = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
+      if (!r.ok) throw new Error(r.status);
+      const p = await r.json();
+      const stamp = p.live && p.live.serverTime;
+      if (stamp !== lastStamp) { lastStamp = stamp; applyState(p); }
+    } catch (e) {
+      if (!snap) loadEmbedded();
+      setFeedStatus(false);
+    }
+  };
+  poll();
+  setInterval(poll, POLL_MS);
+}
+function loadEmbedded() {
+  const el = document.getElementById('embedded-snapshot');
+  let saved = null;
+  try { saved = el ? JSON.parse(el.textContent) : null; } catch (e) { saved = null; }
+  if (!saved) return false;
+  setSnapshot(saved);
+  const hud = $('#hudLive'); hud.hidden = false;
+  hud.innerHTML = `<span style="color:var(--warn)">●</span> Saved copy · data as of ${fmtDate(saved.date)}, not live`;
+  $('.eyebrow').textContent = `Saved copy · real data from ${fmtDate(saved.date)}`;
+  return true;
 }
 function setFeedStatus(ok) {
   const hud = $('#hudLive'); hud.hidden = false;
   const t = feed && feed.serverTime ? clockTime(feed.serverTime) : '';
+  if (window.LIVE_POLL) {
+    hud.innerHTML = ok ? `<span style="color:var(--ok)">●</span> Live · data from ${esc(t)} · refreshes about every 30 min` : `<span style="color:var(--warn)">●</span> Couldn’t fetch new data · showing the last update`;
+    $('#feedStatus').textContent = ok ? `updated ${t}` : 'retrying in 5 min';
+    return;
+  }
   hud.innerHTML = ok ? `<span style="color:var(--ok)">●</span> Live · updated ${esc(t)}` : `<span style="color:var(--crit)">●</span> Live server not reachable · retrying`;
   $('#feedStatus').textContent = ok ? `connected · ${t}` : 'reconnecting…';
 }
 (async () => {
   if (window.LIVE_SOURCE) { startLocalFeed(window.LIVE_SOURCE); return; }
   await null; // let the rest of the page set up before any data arrives
+  if (window.LIVE_POLL) { startPolledFeed(window.LIVE_POLL); return; }
   let db = null;
   try { db = window.claude && await window.claude.use('db'); } catch (e) { db = null; }
-  if (!db) {
-    const el = document.getElementById('embedded-snapshot');
-    let saved = null;
-    try { saved = el ? JSON.parse(el.textContent) : null; } catch (e) { saved = null; }
-    if (!saved) { liveMessage('Live market data isn’t available in this view.'); return; }
-    setSnapshot(saved);
-    const hud = $('#hudLive'); hud.hidden = false;
-    hud.innerHTML = `<span style="color:var(--warn)">●</span> Saved copy · data as of ${fmtDate(saved.date)}, not live`;
-    $('.eyebrow').textContent = `Saved copy · real data from ${fmtDate(saved.date)}`;
-    return;
-  }
+  if (!db) { if (!loadEmbedded()) liveMessage('Live market data isn’t available in this view.'); return; }
   db.collection('market').orderBy('date', 'desc').limit(30).onSnapshot(s => {
     const docs = s.docs.map(d => d.data()).filter(Boolean);
     if (!docs.length) { liveMessage('No market snapshot yet. A daily refresh by Claude adds one each morning.'); return; }
@@ -1717,6 +1753,7 @@ const sameTarget = (a, b) => a && b && a.kind === b.kind && a.id === b.id && a.i
 function energyLine() {
   const ei = energyInputs(), er = feed && feed.ercot, parts = [];
   if (ei && ei.pjm !== null) parts.push(`PJM demand ${signPct(ei.pjm)} vs last year`);
+  if (ei && ei.g.SRP && num(ei.g.SRP.yoy) !== null) parts.push(`SRP (Phoenix) demand ${signPct(ei.g.SRP.yoy)} vs last year`);
   if (ei && ei.elecYoy !== null) parts.push(`household power prices ${signPct(ei.elecYoy)} y/y`);
   if (er && num(er.reserve) !== null) parts.push(`ERCOT ${pct(er.reserve)} spare capacity now`);
   if (ei && ei.worst && ei.worst.droughtPct >= 50) parts.push(`worst drought hub: ${esc(ei.worst.name)} (${esc(ei.worst.why || '')}), ${Math.round(ei.worst.droughtPct)}%`);
@@ -1727,7 +1764,7 @@ function cardHtml(t) {
   if (t.kind === 'moon') {
     const m = moonById[t.id], parent = byId[m.parent];
     const tiesHere = TIES.filter(([a, b]) => a === m.id || b === m.id).map(([a, b, l]) => `<li>${a === m.id ? '→ ' + esc(nameOf(b)) : '← ' + esc(nameOf(a))}: ${esc(l)}</li>`);
-    const grid = m.grid && feed ? (m.grid === 'ERCO' && feed.ercot ? `ERCOT now: ${(feed.ercot.demand / 1000).toFixed(1)} GW, $${num(feed.ercot.price) !== null ? feed.ercot.price.toFixed(0) : '–'}/MWh, ${pct(feed.ercot.reserve || 0)} spare` : m.grid === 'PJM' && feed.eiaHourly && feed.eiaHourly.PJM ? `PJM now: ${feed.eiaHourly.PJM.latest.toFixed(1)} GW (hourly)` : '') : '';
+    const grid = m.grid && feed ? (m.grid === 'ERCO' && feed.ercot ? `ERCOT now: ${(feed.ercot.demand / 1000).toFixed(1)} GW, $${num(feed.ercot.price) !== null ? feed.ercot.price.toFixed(0) : '–'}/MWh, ${pct(feed.ercot.reserve || 0)} spare` : feed.eiaHourly && feed.eiaHourly[m.grid] ? `${m.grid} now: ${feed.eiaHourly[m.grid].latest.toFixed(1)} GW (hourly)` : '') : '';
     const v = m.val ? m.val() : '', cp = Math.round((CP[m.id] || 0) * 100);
     return `<div><span class="lab">${esc(parent.short)} · ${m.p || m.val ? 'in orbit' : 'company'} · pressure ${cp}</span><h4>${esc(m.name)}</h4></div>
       ${m.ticker ? quoteHtml(m.ticker) : ''}${grid ? `<div class="quote">${esc(grid)}</div>` : ''}${m.soc && socFmt(m.soc) ? `<div class="quote">${esc(socFmt(m.soc))}</div>` : ''}${v ? `<div class="quote">${esc(v)}</div>` : ''}
@@ -1779,7 +1816,7 @@ function dataSummary() {
   if (ff) lines.push(`Federal Reserve: effective fed funds ${ff.value}%${tu && tl ? ` (target ${tl.value}-${tu.value}%)` : ''}; ${['corePce', 'unemployment', 'mortgage', 'balance'].map(k => socFmt(k) ? `${k} ${socFmt(k)}` : '').filter(Boolean).join('; ')}.`);
   if (snap) lines.push(`Credit (as of ${sr.bbb && sr.bbb.date}): high-yield spread ${sr.hy && sr.hy.value}% (1-yr avg ${sr.hy && sr.hy.avg1y}%), BBB ${sr.bbb && sr.bbb.value}% (avg ${sr.bbb && sr.bbb.avg1y}%), 10-year ${sr.t10 && sr.t10.value}%.`);
   if (snap && snap.society) lines.push('Economy (FRED, latest month or quarter): ' + ['sentiment', 'retail', 'ecom', 'vehicles', 'chinaImports', 'apparel', 'studentLoans', 'cardDelinq'].map(k => socFmt(k) ? `${k} ${socFmt(k)}` : '').filter(Boolean).join('; ') + '.');
-  if (ei) lines.push(`Grid: PJM demand ${ei.pjm !== null ? signPct(ei.pjm) : '?'} y/y, household power prices ${ei.elecYoy !== null ? signPct(ei.elecYoy) : '?'} y/y, ${ei.inDrought} of ${ei.counties.length} data-center hubs mostly in drought${ei.worst ? ` (worst ${ei.worst.name})` : ''}.`);
+  if (ei) lines.push(`Grid: PJM demand ${ei.pjm !== null ? signPct(ei.pjm) : '?'} y/y, SRP (Phoenix) demand ${ei.g.SRP && num(ei.g.SRP.yoy) !== null ? signPct(ei.g.SRP.yoy) : '?'} y/y, household power prices ${ei.elecYoy !== null ? signPct(ei.elecYoy) : '?'} y/y, ${ei.inDrought} of ${ei.counties.length} data-center hubs mostly in drought${ei.worst ? ` (worst ${ei.worst.name})` : ''}.`);
   if (feed && feed.ercot && num(feed.ercot.demand) !== null) lines.push(`ERCOT now: ${(feed.ercot.demand / 1000).toFixed(1)} GW demand, ${pct(feed.ercot.reserve || 0)} spare capacity, $${num(feed.ercot.price) !== null ? feed.ercot.price.toFixed(0) : '?'}/MWh.`);
   return lines.join('\n');
 }
@@ -1862,6 +1899,7 @@ const quoteLine = t => { const x = quotesMap()[t]; return x && num(x.price) !== 
 const ENTITIES = [...NODES.map(n => ({ kind: 'node', id: n.id, keys: [n.short, n.id, ...n.tickers] })), ...MOONS.map(m => ({ kind: 'moon', id: m.id, keys: [m.name, m.id, m.ticker].filter(Boolean) }))];
 ENTITIES.find(e => e.id === 'fed').keys.push('Fed', 'Federal Reserve', 'interest rate', 'rate hike', 'rate cut', 'FOMC');
 ENTITIES.find(e => e.id === 'citizens').keys.push('households', 'consumers');
+ENTITIES.find(e => e.id === 'srpg').keys.push('SRP', 'Salt River', 'Arizona', 'Phoenix');
 function mentioned(text) {
   const low = text.toLowerCase(), words = new Set(low.split(/[^a-z0-9&]+/)), raw = new Set(text.split(/[^A-Za-z0-9&]+/));
   return ENTITIES.filter(e => e.keys.some(k => {

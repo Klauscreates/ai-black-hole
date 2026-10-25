@@ -3,3 +3,4 @@ __pycache__/
 live/
 share/
 .env
+_site/

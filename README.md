@@ -17,8 +17,8 @@ where.
 
 ## Try it
 
-- **Live demo:** [klauscreates.github.io/ai-black-hole](https://klauscreates.github.io/ai-black-hole/),
-  no install, works on phones. It shows one day of real data, marked "Saved copy".
+- **Live site:** [klauscreates.github.io/ai-black-hole](https://klauscreates.github.io/ai-black-hole/),
+  no install, works on phones. It updates itself (see [Hosting it live](#hosting-it-live)).
 - **Offline:** open [`docs/index.html`](docs/index.html) in a browser. It is a single file with
   one day's data built in (marked "Saved copy"), and it works offline apart from the 3D engine,
   which loads from jsDelivr.
@@ -70,6 +70,31 @@ Yahoo quotes, ERCOT, CAISO, EIA hourly ──► live_server.py (live, local) �
   it to the page over server-sent events.
 - `make_share.py` bakes a snapshot into a single HTML file (`--pages` also refreshes `docs/`).
 - `sample/snapshot.json` is one real day of data (Oct 24, 2026) so everything works out of the box.
+
+## Hosting it live
+
+The public site keeps itself current with no server, using GitHub Actions
+([`.github/workflows/live.yml`](.github/workflows/live.yml)) and `build_site.py`:
+
+| When | What updates |
+|---|---|
+| Every 30 minutes, weekdays during US market hours | Stock quotes, ERCOT, CAISO and EIA hourly grid demand |
+| Every morning (and the "Run workflow" button) | Everything above plus FRED, the Fed, daily grid demand, drought and economy data |
+| Every push to `main` | Redeploys the code with the latest data |
+
+Each run starts from the data the site is already serving, adds fresh data, and deploys the page
+plus a `data.json` that open pages check every 5 minutes. Nothing is committed, so the history
+stays clean. GitHub's scheduler is approximate, so runs can be a few minutes late, and GitHub
+pauses schedules in repos with no activity for 60 days.
+
+To run your own copy: in the repo's **Settings → Pages**, set the source to **GitHub Actions**;
+in **Settings → Secrets and variables → Actions**, add a secret named `EIA_API_KEY` with a free
+key from [eia.gov/opendata](https://www.eia.gov/opendata/) (without it, EIA's shared public key
+is often rate-limited).
+
+The news summaries and tone are the one part that doesn't update itself. Write a fresh
+`data/analysis.json` with the [daily refresh prompt](DAILY_REFRESH.md) and push it; the next run
+picks it up.
 
 There is also an "Ask about this map" chat that sends the page's data to Claude. It only works
 when the page runs as a published Claude artifact, where it uses the viewer's own Claude account.

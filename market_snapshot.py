@@ -65,9 +65,9 @@ def summarize(rows, label, series_id):
 
 EIA_KEY_ENV = "EIA_API_KEY"
 EIA_DAILY = ("https://api.eia.gov/v2/electricity/rto/daily-region-data/data/?api_key={key}&frequency=daily&data[0]=value"
-             "&facets[respondent][]=PJM&facets[respondent][]=ERCO&facets[respondent][]=US48&facets[type][]=D"
+             "&facets[respondent][]=PJM&facets[respondent][]=ERCO&facets[respondent][]=SRP&facets[respondent][]=US48&facets[type][]=D"
              "&facets[timezone][]=Eastern&start={start}&sort[0][column]=period&sort[0][direction]=desc&length=5000")
-GRID_NAMES = {"PJM": "PJM (Mid-Atlantic, incl. Northern Virginia)", "ERCO": "ERCOT (Texas)", "US48": "Lower 48 states"}
+GRID_NAMES = {"PJM": "PJM (Mid-Atlantic, incl. Northern Virginia)", "ERCO": "ERCOT (Texas)", "SRP": "SRP (Phoenix area, Arizona)", "US48": "Lower 48 states"}
 USDM_URL = ("https://usdmdataservices.unl.edu/api/CountyStatistics/GetDroughtSeverityStatisticsByAreaPercent"
             "?aoi={fips}&startdate={start}&enddate={end}&statisticsType=1")
 DC_COUNTIES = [

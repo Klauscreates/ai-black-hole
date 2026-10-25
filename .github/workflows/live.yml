@@ -1,0 +1,44 @@
+# Keeps the hosted map live with no server: rebuilds the data on GitHub's computers and
+# redeploys the Pages site. Data is deployed, never committed, so history stays clean.
+name: Live data
+
+on:
+  schedule:
+    - cron: "11 11 * * *"              # daily full refresh: FRED, Fed, grid, drought, economy (~7 am ET)
+    - cron: "*/30 13-21 * * 1-5"       # every 30 min on weekdays, US market hours: quotes and grid
+  workflow_dispatch:                   # "Run workflow" button: full refresh
+  push:
+    branches: [main]                   # redeploy when the code changes
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build site
+        env:
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+          FULL_REFRESH: ${{ github.event.schedule == '11 11 * * *' || github.event_name == 'workflow_dispatch' }}
+        run: python build_site.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

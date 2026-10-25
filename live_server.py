@@ -38,7 +38,7 @@ TICKERS = {"NVDA": "nvidia", "ORCL": "cloud", "CRWV": "cloud", "MSFT": "bigtech"
            "V": "payments", "MA": "payments", "PYPL": "payments"}
 UA = {"User-Agent": "Mozilla/5.0 (ai-black-hole-local)"}
 EIA_HOURLY = ("https://api.eia.gov/v2/electricity/rto/region-data/data/?api_key={key}&frequency=hourly&data[0]=value"
-              "&facets[respondent][]=PJM&facets[respondent][]=ERCO&facets[respondent][]=US48&facets[type][]=D"
+              "&facets[respondent][]=PJM&facets[respondent][]=ERCO&facets[respondent][]=SRP&facets[respondent][]=US48&facets[type][]=D"
               "&start={start}&sort[0][column]=period&sort[0][direction]=desc&length=500")
 
 
@@ -172,7 +172,9 @@ def poll_eia(hub):
         except (TypeError, ValueError):
             continue
     hub.update("eiaHourly", {k: {"latest": v[-1][1], "time": v[-1][0], "hist": v[-48:]} for k, v in out.items()})
-    return 900
+    # EIA's public DEMO_KEY allows about 50 calls a day per computer, shared with the daily snapshot;
+    # with your own free key (EIA_API_KEY) poll every 15 minutes
+    return 900 if os.environ.get("EIA_API_KEY") else 3600
 
 
 def poll_snapshot(hub, _seen={"key": None}):
@@ -191,7 +193,7 @@ def run_poller(hub, name, fn):
             wait = fn(hub)
         except Exception as exc:
             hub.update(name, error=exc)
-            wait = 120
+            wait = 3600 if "429" in str(exc) else 120  # rate-limited: back off for an hour
         time.sleep(wait)
 
 
