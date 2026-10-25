@@ -34,6 +34,7 @@ jobs:
       - name: Build site
         env:
           EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           FULL_REFRESH: ${{ github.event.schedule == '11 11 * * *' || github.event_name == 'workflow_dispatch' }}
         run: python build_site.py
       - uses: actions/configure-pages@v5

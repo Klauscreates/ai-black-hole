@@ -1,7 +1,8 @@
 """Build one daily market snapshot for the AI Black Hole artifact.
 
-Fetches FRED series (no API key needed), merges news events and optional stock
-quotes from JSON files, and writes the snapshot document as JSON.
+Fetches FRED series (free FRED_API_KEY recommended; works without one, but FRED's
+public CSV throttles), merges news events and optional stock quotes from JSON files,
+and writes the snapshot document as JSON.
 
 Usage:
   python market_snapshot.py --out snap.json [--events new_events.json]
@@ -12,7 +13,9 @@ import argparse
 import csv
 import io
 import json
+import os
 import sys
+import time
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
@@ -22,26 +25,47 @@ SERIES = {
     "t10": ("DGS10", "10-year US Treasury yield, %"),
 }
 FRED_CSV = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={}"
+FRED_API = "https://api.stlouisfed.org/fred/series/observations?series_id={}&api_key={}&file_type=json"
 EVENT_WINDOW_DAYS = 60
 MAX_EVENTS = 25
 HIST_POINTS = 120
 
 
-def fetch_series(series_id):
-    req = urllib.request.Request(FRED_CSV.format(series_id), headers={"User-Agent": "ai-black-hole-snapshot/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
+def _fetch_series_once(series_id):
+    key = os.environ.get("FRED_API_KEY")
+    url = FRED_API.format(series_id, key) if key else FRED_CSV.format(series_id)
+    req = urllib.request.Request(url, headers={"User-Agent": "ai-black-hole-snapshot/1.0"})
+    with urllib.request.urlopen(req, timeout=60) as resp:
         text = resp.read().decode("utf-8")
     rows = []
-    for row in csv.reader(io.StringIO(text)):
-        if len(row) != 2 or row[0] == "observation_date":
-            continue
-        try:
-            rows.append((row[0], float(row[1])))
-        except ValueError:
-            continue
+    if key:
+        for o in json.loads(text).get("observations", []):
+            try:
+                rows.append((o["date"], float(o["value"])))
+            except (KeyError, ValueError):
+                continue  # FRED marks missing days with "."
+    else:
+        for row in csv.reader(io.StringIO(text)):
+            if len(row) != 2 or row[0] == "observation_date":
+                continue
+            try:
+                rows.append((row[0], float(row[1])))
+            except ValueError:
+                continue
     if not rows:
         raise RuntimeError(f"FRED returned no data for {series_id}")
     return rows
+
+
+def fetch_series(series_id, tries=3):
+    """FRED's official API when FRED_API_KEY is set (free, reliable), else the public CSV, which throttles."""
+    for attempt in range(tries):
+        try:
+            return _fetch_series_once(series_id)
+        except Exception:
+            if attempt == tries - 1:
+                raise
+            time.sleep(5 * (attempt + 1))
 
 
 def summarize(rows, label, series_id):

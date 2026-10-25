@@ -88,9 +88,13 @@ stays clean. GitHub's scheduler is approximate, so runs can be a few minutes lat
 pauses schedules in repos with no activity for 60 days.
 
 To run your own copy: in the repo's **Settings → Pages**, set the source to **GitHub Actions**;
-in **Settings → Secrets and variables → Actions**, add a secret named `EIA_API_KEY` with a free
-key from [eia.gov/opendata](https://www.eia.gov/opendata/) (without it, EIA's shared public key
-is often rate-limited).
+in **Settings → Secrets and variables → Actions**, add two free keys as secrets:
+
+- `FRED_API_KEY` from [fred.stlouisfed.org](https://fred.stlouisfed.org/docs/api/api_key.html).
+  Without it the morning refresh uses FRED's public CSV download, which often times out; the site
+  then keeps the previous day's data.
+- `EIA_API_KEY` from [eia.gov/opendata](https://www.eia.gov/opendata/). Without it, EIA's shared
+  public key is often rate-limited.
 
 The news summaries and tone are the one part that doesn't update itself. Write a fresh
 `data/analysis.json` with the [daily refresh prompt](DAILY_REFRESH.md) and push it; the next run
