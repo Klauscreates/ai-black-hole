@@ -1,0 +1,8114 @@
+{
+ "date": "2026-10-24",
+ "asOf": "2026-10-24T14:25:29+00:00",
+ "series": {
+  "bbb": {
+   "id": "BAMLC0A4CBBB",
+   "label": "ICE BofA BBB US corporate bond spread (OAS), %",
+   "value": 1.11,
+   "date": "2026-10-22",
+   "avg1y": 1.001,
+   "max1y": 1.16,
+   "min1y": 0.92,
+   "chg30": 0.16,
+   "hist": [],
+   "url": "https://fred.stlouisfed.org/series/BAMLC0A4CBBB"
+  },
+  "hy": {
+   "id": "BAMLH0A0HYM2",
+   "label": "ICE BofA US high-yield bond spread (OAS), %",
+   "value": 3.4,
+   "date": "2026-10-22",
+   "avg1y": 2.879,
+   "max1y": 3.46,
+   "min1y": 2.6,
+   "chg30": 0.72,
+   "hist": [],
+   "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
+  },
+  "t10": {
+   "id": "DGS10",
+   "label": "10-year US Treasury yield, %",
+   "value": 4.96,
+   "date": "2026-10-22",
+   "avg1y": 4.44,
+   "max1y": 5.31,
+   "min1y": 3.97,
+   "chg30": 0.0,
+   "hist": [
+    [
+     "2026-05-01",
+     4.39
+    ],
+    [
+     "2026-05-04",
+     4.45
+    ],
+    [
+     "2026-05-05",
+     4.43
+    ],
+    [
+     "2026-05-06",
+     4.36
+    ],
+    [
+     "2026-05-07",
+     4.41
+    ],
+    [
+     "2026-05-08",
+     4.38
+    ],
+    [
+     "2026-05-11",
+     4.42
+    ],
+    [
+     "2026-05-12",
+     4.46
+    ],
+    [
+     "2026-05-13",
+     4.46
+    ],
+    [
+     "2026-05-14",
+     4.47
+    ],
+    [
+     "2026-05-15",
+     4.59
+    ],
+    [
+     "2026-05-18",
+     4.61
+    ],
+    [
+     "2026-05-19",
+     4.67
+    ],
+    [
+     "2026-05-20",
+     4.57
+    ],
+    [
+     "2026-05-21",
+     4.57
+    ],
+    [
+     "2026-05-22",
+     4.56
+    ],
+    [
+     "2026-05-26",
+     4.5
+    ],
+    [
+     "2026-05-27",
+     4.48
+    ],
+    [
+     "2026-05-28",
+     4.45
+    ],
+    [
+     "2026-05-29",
+     4.45
+    ],
+    [
+     "2026-06-01",
+     4.47
+    ],
+    [
+     "2026-06-02",
+     4.46
+    ],
+    [
+     "2026-06-03",
+     4.49
+    ],
+    [
+     "2026-06-04",
+     4.47
+    ],
+    [
+     "2026-06-05",
+     4.55
+    ],
+    [
+     "2026-06-08",
+     4.56
+    ],
+    [
+     "2026-06-09",
+     4.53
+    ],
+    [
+     "2026-06-10",
+     4.55
+    ],
+    [
+     "2026-06-11",
+     4.45
+    ],
+    [
+     "2026-06-12",
+     4.48
+    ],
+    [
+     "2026-06-15",
+     4.47
+    ],
+    [
+     "2026-06-16",
+     4.43
+    ],
+    [
+     "2026-06-17",
+     4.49
+    ],
+    [
+     "2026-06-18",
+     4.46
+    ],
+    [
+     "2026-06-22",
+     4.51
+    ],
+    [
+     "2026-06-23",
+     4.5
+    ],
+    [
+     "2026-06-24",
+     4.41
+    ],
+    [
+     "2026-06-25",
+     4.4
+    ],
+    [
+     "2026-06-26",
+     4.38
+    ],
+    [
+     "2026-06-29",
+     4.38
+    ],
+    [
+     "2026-06-30",
+     4.44
+    ],
+    [
+     "2026-07-01",
+     4.48
+    ],
+    [
+     "2026-07-02",
+     4.49
+    ],
+    [
+     "2026-07-06",
+     4.48
+    ],
+    [
+     "2026-07-07",
+     4.55
+    ],
+    [
+     "2026-07-08",
+     4.56
+    ],
+    [
+     "2026-07-09",
+     4.54
+    ],
+    [
+     "2026-07-10",
+     4.56
+    ],
+    [
+     "2026-07-13",
+     4.62
+    ],
+    [
+     "2026-07-14",
+     4.58
+    ],
+    [
+     "2026-07-15",
+     4.55
+    ],
+    [
+     "2026-07-16",
+     4.57
+    ],
+    [
+     "2026-07-17",
+     4.55
+    ],
+    [
+     "2026-07-20",
+     4.6
+    ],
+    [
+     "2026-07-21",
+     4.63
+    ],
+    [
+     "2026-07-22",
+     4.67
+    ],
+    [
+     "2026-07-23",
+     4.71
+    ],
+    [
+     "2026-07-24",
+     4.69
+    ],
+    [
+     "2026-07-27",
+     4.65
+    ],
+    [
+     "2026-07-28",
+     4.61
+    ],
+    [
+     "2026-07-29",
+     4.67
+    ],
+    [
+     "2026-07-30",
+     4.68
+    ],
+    [
+     "2026-07-31",
+     4.75
+    ],
+    [
+     "2026-08-03",
+     4.7
+    ],
+    [
+     "2026-08-04",
+     4.63
+    ],
+    [
+     "2026-08-05",
+     4.63
+    ],
+    [
+     "2026-08-06",
+     4.69
+    ],
+    [
+     "2026-08-07",
+     4.65
+    ],
+    [
+     "2026-08-10",
+     4.72
+    ],
+    [
+     "2026-08-11",
+     4.7
+    ],
+    [
+     "2026-08-12",
+     4.68
+    ],
+    [
+     "2026-08-13",
+     4.63
+    ],
+    [
+     "2026-08-14",
+     4.68
+    ],
+    [
+     "2026-08-17",
+     4.72
+    ],
+    [
+     "2026-08-18",
+     4.71
+    ],
+    [
+     "2026-08-19",
+     4.65
+    ],
+    [
+     "2026-08-20",
+     4.69
+    ],
+    [
+     "2026-08-21",
+     4.74
+    ],
+    [
+     "2026-08-24",
+     4.7
+    ],
+    [
+     "2026-08-25",
+     4.64
+    ],
+    [
+     "2026-08-26",
+     4.66
+    ],
+    [
+     "2026-08-27",
+     4.67
+    ],
+    [
+     "2026-08-28",
+     4.73
+    ],
+    [
+     "2026-08-31",
+     4.75
+    ],
+    [
+     "2026-09-01",
+     4.79
+    ],
+    [
+     "2026-09-02",
+     4.79
+    ],
+    [
+     "2026-09-03",
+     4.77
+    ],
+    [
+     "2026-09-04",
+     4.78
+    ],
+    [
+     "2026-09-08",
+     4.8
+    ],
+    [
+     "2026-09-09",
+     4.83
+    ],
+    [
+     "2026-09-10",
+     4.95
+    ],
+    [
+     "2026-09-11",
+     4.96
+    ],
+    [
+     "2026-09-14",
+     4.97
+    ],
+    [
+     "2026-09-15",
+     5.0
+    ],
+    [
+     "2026-09-16",
+     5.01
+    ],
+    [
+     "2026-09-17",
+     4.94
+    ],
+    [
+     "2026-09-18",
+     5.01
+    ],
+    [
+     "2026-09-21",
+     4.96
+    ],
+    [
+     "2026-09-22",
+     4.96
+    ],
+    [
+     "2026-09-23",
+     5.11
+    ],
+    [
+     "2026-09-24",
+     5.18
+    ],
+    [
+     "2026-09-25",
+     5.17
+    ],
+    [
+     "2026-09-28",
+     5.24
+    ],
+    [
+     "2026-09-29",
+     5.26
+    ],
+    [
+     "2026-09-30",
+     5.29
+    ],
+    [
+     "2026-10-01",
+     5.24
+    ],
+    [
+     "2026-10-02",
+     5.28
+    ],
+    [
+     "2026-10-05",
+     5.31
+    ],
+    [
+     "2026-10-06",
+     5.27
+    ],
+    [
+     "2026-10-07",
+     5.28
+    ],
+    [
+     "2026-10-08",
+     5.22
+    ],
+    [
+     "2026-10-09",
+     5.24
+    ],
+    [
+     "2026-10-13",
+     5.21
+    ],
+    [
+     "2026-10-14",
+     5.19
+    ],
+    [
+     "2026-10-15",
+     5.1
+    ],
+    [
+     "2026-10-16",
+     5.09
+    ],
+    [
+     "2026-10-19",
+     5.15
+    ],
+    [
+     "2026-10-20",
+     5.12
+    ],
+    [
+     "2026-10-21",
+     5.13
+    ],
+    [
+     "2026-10-22",
+     4.96
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/DGS10"
+  }
+ },
+ "stocks": {
+  "date": "2026-10-24",
+  "source": "Yahoo Finance (unofficial, delayed), via the local live server",
+  "quotes": [
+   {
+    "symbol": "NVDA",
+    "price": 210.96,
+    "high52": 243.37,
+    "fromHigh": -0.1332,
+    "dayChange": -0.0059
+   },
+   {
+    "symbol": "ORCL",
+    "price": 126.16,
+    "high52": 287.0,
+    "fromHigh": -0.5604,
+    "dayChange": 0.0049
+   },
+   {
+    "symbol": "CRWV",
+    "price": 54.235,
+    "high52": 141.79,
+    "fromHigh": -0.6175,
+    "dayChange": -0.0246
+   },
+   {
+    "symbol": "MSFT",
+    "price": 524.51,
+    "high52": 553.72,
+    "fromHigh": -0.0528,
+    "dayChange": 0.0066
+   },
+   {
+    "symbol": "GOOGL",
+    "price": 320.21,
+    "high52": 408.61,
+    "fromHigh": -0.2163,
+    "dayChange": -0.0124
+   },
+   {
+    "symbol": "AMZN",
+    "price": 248.0,
+    "high52": 287.2,
+    "fromHigh": -0.1365,
+    "dayChange": -0.0095
+   },
+   {
+    "symbol": "META",
+    "price": 642.62,
+    "high52": 779.82,
+    "fromHigh": -0.1759,
+    "dayChange": -0.0096
+   },
+   {
+    "symbol": "SPCX",
+    "price": 147.49,
+    "high52": 225.64,
+    "fromHigh": -0.3463,
+    "dayChange": 0.0189
+   },
+   {
+    "symbol": "TSLA",
+    "price": 372.22,
+    "high52": 498.83,
+    "fromHigh": -0.2538,
+    "dayChange": -0.0063
+   },
+   {
+    "symbol": "AAPL",
+    "price": 347.725,
+    "high52": 351.73,
+    "fromHigh": -0.0114,
+    "dayChange": -0.0014
+   },
+   {
+    "symbol": "WMT",
+    "price": 119.89,
+    "high52": 135.16,
+    "fromHigh": -0.113,
+    "dayChange": -0.0102
+   },
+   {
+    "symbol": "SHOP",
+    "price": 168.68,
+    "high52": 182.19,
+    "fromHigh": -0.0742,
+    "dayChange": -0.0008
+   },
+   {
+    "symbol": "PDD",
+    "price": 79.04,
+    "high52": 139.41,
+    "fromHigh": -0.433,
+    "dayChange": -0.0016
+   },
+   {
+    "symbol": "GM",
+    "price": 75.92,
+    "high52": 91.85,
+    "fromHigh": -0.1734,
+    "dayChange": -0.0167
+   },
+   {
+    "symbol": "F",
+    "price": 11.6,
+    "high52": 17.78,
+    "fromHigh": -0.3476,
+    "dayChange": -0.0285
+   },
+   {
+    "symbol": "TM",
+    "price": 196.79,
+    "high52": 248.9,
+    "fromHigh": -0.2094,
+    "dayChange": -0.0072
+   },
+   {
+    "symbol": "NKE",
+    "price": 37.3,
+    "high52": 70.44,
+    "fromHigh": -0.4705,
+    "dayChange": -0.0266
+   },
+   {
+    "symbol": "LVMUY",
+    "price": 85.83,
+    "high52": 152.95,
+    "fromHigh": -0.4388,
+    "dayChange": -0.013
+   },
+   {
+    "symbol": "JPM",
+    "price": 331.58,
+    "high52": 366.5,
+    "fromHigh": -0.0953,
+    "dayChange": -0.0147
+   },
+   {
+    "symbol": "MUFG",
+    "price": 21.07,
+    "high52": 24.26,
+    "fromHigh": -0.1315,
+    "dayChange": -0.0159
+   },
+   {
+    "symbol": "APO",
+    "price": 112.83,
+    "high52": 153.29,
+    "fromHigh": -0.2639,
+    "dayChange": -0.0174
+   },
+   {
+    "symbol": "BX",
+    "price": 117.97,
+    "high52": 165.14,
+    "fromHigh": -0.2856,
+    "dayChange": -0.0066
+   },
+   {
+    "symbol": "ETSY",
+    "price": 86.93,
+    "high52": 91.12,
+    "fromHigh": -0.046,
+    "dayChange": -0.0428
+   },
+   {
+    "symbol": "EBAY",
+    "price": 121.41,
+    "high52": 124.59,
+    "fromHigh": -0.0255,
+    "dayChange": -0.0052
+   },
+   {
+    "symbol": "BABA",
+    "price": 99.64,
+    "high52": 182.5,
+    "fromHigh": -0.454,
+    "dayChange": -0.0214
+   },
+   {
+    "symbol": "TSM",
+    "price": 418.51,
+    "high52": 487.47,
+    "fromHigh": -0.1415,
+    "dayChange": 0.0149
+   },
+   {
+    "symbol": "ASML",
+    "price": 1571.8,
+    "high52": 1999.96,
+    "fromHigh": -0.2141,
+    "dayChange": 0.0072
+   },
+   {
+    "symbol": "AVGO",
+    "price": 321.68,
+    "high52": 495.0,
+    "fromHigh": -0.3501,
+    "dayChange": -0.0048
+   },
+   {
+    "symbol": "AMD",
+    "price": 516.79,
+    "high52": 658.52,
+    "fromHigh": -0.2152,
+    "dayChange": 0.0174
+   },
+   {
+    "symbol": "INTC",
+    "price": 86.96,
+    "high52": 142.35,
+    "fromHigh": -0.3891,
+    "dayChange": 0.0172
+   },
+   {
+    "symbol": "XOM",
+    "price": 183.21,
+    "high52": 183.75,
+    "fromHigh": -0.0029,
+    "dayChange": 0.0279
+   },
+   {
+    "symbol": "CVX",
+    "price": 233.21,
+    "high52": 233.74,
+    "fromHigh": -0.0023,
+    "dayChange": 0.0288
+   },
+   {
+    "symbol": "NEE",
+    "price": 82.1,
+    "high52": 98.75,
+    "fromHigh": -0.1686,
+    "dayChange": 0.0024
+   },
+   {
+    "symbol": "CEG",
+    "price": 253.45,
+    "high52": 406.043,
+    "fromHigh": -0.3758,
+    "dayChange": -0.0069
+   },
+   {
+    "symbol": "GEV",
+    "price": 815.0,
+    "high52": 1195.94,
+    "fromHigh": -0.3185,
+    "dayChange": -0.015
+   },
+   {
+    "symbol": "UNH",
+    "price": 418.09,
+    "high52": 461.62,
+    "fromHigh": -0.0943,
+    "dayChange": -0.0162
+   },
+   {
+    "symbol": "LLY",
+    "price": 1273.46,
+    "high52": 1321.21,
+    "fromHigh": -0.0361,
+    "dayChange": -0.0254
+   },
+   {
+    "symbol": "JNJ",
+    "price": 263.81,
+    "high52": 281.07,
+    "fromHigh": -0.0614,
+    "dayChange": -0.0142
+   },
+   {
+    "symbol": "BA",
+    "price": 188.35,
+    "high52": 254.35,
+    "fromHigh": -0.2595,
+    "dayChange": 0.0043
+   },
+   {
+    "symbol": "CAT",
+    "price": 687.0,
+    "high52": 1073.46,
+    "fromHigh": -0.36,
+    "dayChange": -0.0242
+   },
+   {
+    "symbol": "LMT",
+    "price": 604.18,
+    "high52": 692.0,
+    "fromHigh": -0.1269,
+    "dayChange": 0.0242
+   },
+   {
+    "symbol": "V",
+    "price": 407.92,
+    "high52": 414.6,
+    "fromHigh": -0.0161,
+    "dayChange": -0.0155
+   },
+   {
+    "symbol": "MA",
+    "price": 623.6,
+    "high52": 633.29,
+    "fromHigh": -0.0153,
+    "dayChange": -0.0152
+   },
+   {
+    "symbol": "PYPL",
+    "price": 57.02,
+    "high52": 79.215,
+    "fromHigh": -0.2802,
+    "dayChange": -0.009
+   }
+  ]
+ },
+ "events": [
+  {
+   "amountB": null,
+   "date": "2026-10-24",
+   "kind": "stress",
+   "node": "nvidia",
+   "source": "CNBC",
+   "status": "closed",
+   "title": "Nvidia's growing role as lender and investor to neoclouds faces its first real test as those customers' shares and bonds slide.",
+   "url": "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
+   "who": "Nvidia, CoreWeave"
+  },
+  {
+   "amountB": null,
+   "date": "2026-10-23",
+   "kind": "credit",
+   "node": "cloud",
+   "source": "FourWeekMBA, citing Bloomberg",
+   "status": "reported",
+   "title": "Chip-backed debt is on track to become a trillion-dollar market, per Bloomberg reporting.",
+   "url": "https://fourweekmba.com/ai-coreweaves-2023-loan-set-chip-debt-on-a-path-to-1-trillion/",
+   "who": "AI infrastructure lenders"
+  },
+  {
+   "amountB": 200,
+   "date": "2026-10-23",
+   "kind": "stress",
+   "node": "nvidia",
+   "source": "Tech Times",
+   "status": "closed",
+   "title": "Chip stocks shed about $200B in market value after an equipment maker's supply warning, with Nvidia down over 4%.",
+   "url": "https://www.techtimes.com/articles/329406/20261023/chip-stocks-lose-200-billion-equipment-makers-warning-counters-nvidias-ai-optimism.htm",
+   "who": "Nvidia, Lam Research"
+  },
+  {
+   "amountB": 30,
+   "date": "2026-10-22",
+   "kind": "raise",
+   "node": "labs",
+   "source": "CNBC",
+   "status": "reported",
+   "title": "OpenAI nears a round of up to $30B at a $1.25T valuation, led by UAE investors and Coatue. Terms are not final.",
+   "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+   "who": "OpenAI"
+  },
+  {
+   "amountB": 15,
+   "date": "2026-10-22",
+   "kind": "context",
+   "node": "labs",
+   "source": "TechCrunch",
+   "status": "reported",
+   "title": "DeepSeek reportedly raises about $15B, days after US restrictions. Outside the US money loop modeled here.",
+   "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+   "who": "DeepSeek"
+  },
+  {
+   "amountB": null,
+   "date": "2026-10-14",
+   "kind": "stress",
+   "node": "cloud",
+   "source": "SiliconANGLE",
+   "status": "closed",
+   "title": "Oracle falls 8.8% and neocloud shares drop on concerns about CoreWeave's debt.",
+   "url": "https://siliconangle.com/2026/10/14/shares-of-oracle-neoclouds-drop-on-coreweave-debt-concerns/",
+   "who": "Oracle, CoreWeave"
+  }
+ ],
+ "analysis": {
+  "asOf": "2026-10-24",
+  "flows": {
+   "bigtech>cloud": {
+    "news": "No new Microsoft and CoreWeave news; CoreWeave's dependence on Microsoft remains its biggest concentration risk while its shares are under pressure.",
+    "tone": 40
+   },
+   "bigtech>labs": {
+    "news": "No new Big Tech money into the labs this week; the latest OpenAI round is coming from outside investors.",
+    "tone": 52
+   },
+   "bigtech>nvidia": {
+    "news": "No new hyperscaler capex cuts this week, but the Oct 23 chip-stock sell-off shows how sensitive this flow is to any sign of slowing orders.",
+    "tone": 44
+   },
+   "cloud>citizens": {
+    "tone": 40,
+    "news": "Power-hungry hubs sit where water is tight: Taylor, TX, Maricopa, AZ, Dallas, TX are mostly in drought as of 2026-10-20, while PJM demand keeps growing (+2.1% y/y). No new PJM auction or rate-case news this week."
+   },
+   "cloud>nvidia": {
+    "news": "Falling neocloud shares and rising borrowing costs (Oct 14 to Oct 24) put the debt-funded part of Nvidia's sales under the most pressure.",
+    "tone": 28
+   },
+   "labs>bigtech": {
+    "news": "If OpenAI's reported round closes (Oct 22, not final), it extends how long OpenAI can keep paying its Azure and AWS commitments.",
+    "tone": 60
+   },
+   "labs>cloud": {
+    "news": "Lab funding looks healthy, but investors are questioning the debt on the cloud side of these contracts: Oracle fell 8.8% on Oct 14 over CoreWeave's borrowing.",
+    "tone": 34
+   },
+   "nvidia>cloud": {
+    "news": "CNBC (Oct 24) says Nvidia's lending and investing in neoclouds faces its first real test as their shares fall, which raises the odds its CoreWeave backstop gets used.",
+    "tone": 30
+   },
+   "nvidia>labs": {
+    "news": "OpenAI's reported new round (Oct 22) is led by UAE investors and Coatue rather than Nvidia, whose $30B in March was described as likely its last before an IPO.",
+    "tone": 52
+   },
+   "spacex>nvidia": {
+    "tone": 50,
+    "news": "No new xAI GPU purchase news this week; Colossus expansion continues to depend on SpaceX's IPO cash."
+   },
+   "spacex>citizens": {
+    "tone": 30,
+    "news": "About 69 gas turbines still power Colossus; unpermitted units won't be fully removed until July 2027, and the water-recycling plant is paused (TechCrunch, Jul 31)."
+   },
+   "tesla>spacex": {
+    "tone": 50,
+    "news": "No new news on Tesla's converted xAI stake this week; its value now moves with SPCX."
+   },
+   "tesla>nvidia": {
+    "tone": 40,
+    "news": "Tesla cut 2026 capex guidance to over $20B from over $25B (Oct 22) while still targeting 400 MW of AI training compute by year end."
+   },
+   "citizens>tesla": {
+    "tone": 45,
+    "news": "Tesla's energy storage revenue fell 16% to $2.88B in Q3 (Oct 21), even as grid demand keeps rising in PJM and ERCOT."
+   },
+   "citizens>retail": {
+    "tone": 45,
+    "news": "Retail sales were up 6.3% year over year in September even as sentiment slid, partly because prices are higher."
+   },
+   "citizens>autos": {
+    "tone": 38,
+    "news": "Vehicle sales slowed to 16.4M annualized in September, down 3.4% on the year."
+   },
+   "citizens>fashion": {
+    "tone": 35,
+    "news": "Clothing prices are up 3.4% on the year after tariffs and the end of duty-free parcels."
+   },
+   "citizens>education": {
+    "tone": 45,
+    "news": "No notable news this week."
+   },
+   "citizens>consumer": {
+    "tone": 48,
+    "news": "No notable news this week; weak consumer sentiment is the headwind for upgrades."
+   },
+   "retail>bigtech": {
+    "tone": 50,
+    "news": "No notable news this week; e-commerce reached 17.1% of retail sales in the latest quarter."
+   },
+   "bigtech>consumer": {
+    "tone": 50,
+    "news": "No notable news this week on the Google–Apple search deal."
+   },
+   "autos>nvidia": {
+    "tone": 50,
+    "news": "No notable news this week."
+   },
+   "banks>cloud": {
+    "tone": 30,
+    "news": "Oracle-tied and CoreWeave debt is under scrutiny after the Oct 14 sell-off; lenders were already slow to sell down the $38B loan."
+   },
+   "banks>labs": {
+    "tone": 45,
+    "news": "Bloomberg reporting (Oct 23) says chip-backed debt like Anthropic's $35B financing is heading toward a trillion-dollar market."
+   },
+   "banks>citizens": {
+    "tone": 55,
+    "news": "Card delinquency eased to 2.85% in Q2 2026, down 0.19 points on the year."
+   },
+   "education>labs": {
+    "tone": 55,
+    "news": "No notable news this week; universities keep rolling out ChatGPT Edu and Claude for Education."
+   },
+   "fashion>retail": {
+    "tone": 40,
+    "news": "No notable news this week; tariff costs keep squeezing brand margins."
+   },
+   "fed>banks": {
+    "tone": 45,
+    "news": "The September hike lifted the effective fed funds rate to 3.88%."
+   },
+   "fed>citizens": {
+    "tone": 32,
+    "news": "Thirty-year mortgage rates hit 7.32% on Oct 22, up about 1.1 points on the year."
+   },
+   "fed>cloud": {
+    "tone": 35,
+    "news": "Higher rates add to scrutiny of Oracle-tied and CoreWeave debt after the Oct 14 sell-off."
+   },
+   "citizens>fed": {
+    "tone": 45,
+    "news": "Unemployment was 4.2% in September, down 0.2 points on the year, while core inflation runs at 3.0%."
+   },
+   "labs>chips": {
+    "tone": 60,
+    "news": "AMD’s MI450 shipments to OpenAI are scheduled from the second half of 2026."
+   },
+   "bigtech>power": {
+    "tone": 60,
+    "news": "Constellation is restarting Three Mile Island Unit 1 as the Crane Clean Energy Center for Microsoft."
+   },
+   "power>cloud": {
+    "tone": 55,
+    "news": "Data-center turbine orders topped $5B in the first half of 2026 at higher prices; GE Vernova’s backlog is 116 GW."
+   }
+  },
+  "nodes": {
+   "bigtech": {
+    "news": "No major Big Tech capex changes in this week's news. Credit is softening around them: the high-yield spread is up 0.72 points in 30 days, which matters for the partners they lean on.",
+    "tone": 50
+   },
+   "citizens": {
+    "tone": 38,
+    "news": "Grid demand is up +2.1% in PJM and +3.0% in ERCOT versus the same weeks last year, and household electricity prices are +4.4% over 12 months (Sep). 3 of 11 data-center hubs are mostly in drought, led by Taylor, TX (Abilene Stargate campus) at 100% with severity rising."
+   },
+   "cloud": {
+    "news": "Oracle fell 8.8% on Oct 14 as neocloud shares dropped on worries about CoreWeave's debt, and Bloomberg reporting (Oct 23) says chip-backed debt is heading toward a trillion-dollar market. BBB and high-yield spreads both widened over the past month. Physical risk is rising too: the Abilene Stargate site's county (Taylor, TX) is 100% in drought.",
+    "tone": 24
+   },
+   "labs": {
+    "news": "OpenAI is reportedly close to a round of up to $30B at a $1.25T valuation, led by UAE investors and Coatue (Oct 22, terms not final), so appetite for lab equity is still strong. DeepSeek's reported ~$15B raise (Oct 22) adds competitive pressure from outside the US loop.",
+    "tone": 66
+   },
+   "nvidia": {
+    "news": "Chip stocks lost about $200B in market value on Oct 23 after an equipment maker's supply warning, with Nvidia among the decliners. On Oct 24 CNBC framed Nvidia's role as lender and investor to neoclouds as facing its first real test as those customers' shares fall.",
+    "tone": 36
+   },
+   "spacex": {
+    "tone": 42,
+    "news": "SPCX trades about 35% below its post-IPO high, though it rose 1.9% in the last session. Colossus still runs on roughly 69 gas turbines; SpaceX says the unpermitted ones stay until July 2027 while an NAACP Clean Air Act suit continues (TechCrunch, Jul 31)."
+   },
+   "tesla": {
+    "tone": 38,
+    "news": "Tesla's Q3 results (Oct 21) showed capex up about 110% on flat revenue and operating income down 56%; on Oct 22 it trimmed 2026 capex guidance to over $20B and is lining up about $30B of debt."
+   },
+   "consumer": {
+    "tone": 55,
+    "news": "Apple trades near its 1-year high. Consumer sentiment is weak (48.1 in September, down 7 points on the year), the main risk to device upgrades."
+   },
+   "retail": {
+    "tone": 42,
+    "news": "Retail sales grew 6.3% year over year in September, but consumer sentiment fell to 48.1. Temu's parent trades about 43% below its 1-year high; shoppers who left Temu and Shein after tariffs moved to Walmart, Amazon and Target."
+   },
+   "autos": {
+    "tone": 38,
+    "news": "Light vehicle sales ran at 16.4M a year in September, down 3.4% on the year. Ford is about 35% and Toyota about 21% below their 1-year highs."
+   },
+   "fashion": {
+    "tone": 30,
+    "news": "Apparel prices are up 3.4% on the year (September) and imports from China rose 7% (August). Nike trades about 47% and LVMH about 44% below their 1-year highs."
+   },
+   "education": {
+    "tone": 45,
+    "news": "No major education news this week. The latest Fed series puts student loans at about $1.78T (its most recent data point is from late 2024)."
+   },
+   "banks": {
+    "tone": 50,
+    "news": "Credit card delinquency eased to 2.85% (Q2 2026). Lenders' AI exposure is in focus after the Oracle and CoreWeave sell-offs; Apollo trades about 26% and Blackstone about 29% below their 1-year highs."
+   },
+   "fed": {
+    "tone": 40,
+    "news": "The Fed raised its target range a quarter point to 3.75–4.00% on Sep 16 (vote 12–0) with core PCE inflation at 3.0% in August. The next decision is Oct 27–28. Thirty-year mortgage rates were 7.32% on Oct 22, up about 1.1 points on the year."
+   },
+   "chips": {
+    "tone": 58,
+    "news": "AMD is due to start shipping MI450 chips under its 6 GW OpenAI deal in the second half of 2026; Broadcom builds the TPUs in Anthropic’s expanded Google deal. No new chip deals were gathered today."
+   },
+   "power": {
+    "tone": 55,
+    "news": "GE Vernova’s gas turbine backlog reached 116 GW in Q2, with over $5B of data-center orders in the first half at 10–20% higher prices. Constellation is restarting Three Mile Island Unit 1 for Microsoft under a 20-year deal."
+   },
+   "trade": {
+    "tone": 40,
+    "news": "Imports from China rose about 7% on the year in August while Mexico stays the largest source of US imports. Tariffs were rebuilt with replacement duties after the Supreme Court’s IEEPA ruling in February."
+   }
+  },
+  "note": ""
+ },
+ "energy": {
+  "asOf": "2026-10-24",
+  "grid": {
+   "ERCO": {
+    "name": "ERCOT (Texas)",
+    "date": "2026-10-23",
+    "unit": "GW (daily average)",
+    "avg28": 58.7,
+    "yoy": 0.0305,
+    "hist": [
+     [
+      "2026-07-26",
+      69.93
+     ],
+     [
+      "2026-07-27",
+      72.88
+     ],
+     [
+      "2026-07-28",
+      73.25
+     ],
+     [
+      "2026-07-29",
+      73.58
+     ],
+     [
+      "2026-07-30",
+      74.21
+     ],
+     [
+      "2026-07-31",
+      74.3
+     ],
+     [
+      "2026-08-01",
+      70.49
+     ],
+     [
+      "2026-08-02",
+      68.58
+     ],
+     [
+      "2026-08-03",
+      71.21
+     ],
+     [
+      "2026-08-04",
+      72.58
+     ],
+     [
+      "2026-08-05",
+      73.26
+     ],
+     [
+      "2026-08-06",
+      73.02
+     ],
+     [
+      "2026-08-07",
+      72.79
+     ],
+     [
+      "2026-08-08",
+      70.4
+     ],
+     [
+      "2026-08-09",
+      69.77
+     ],
+     [
+      "2026-08-10",
+      70.92
+     ],
+     [
+      "2026-08-11",
+      72.48
+     ],
+     [
+      "2026-08-12",
+      74.68
+     ],
+     [
+      "2026-08-13",
+      75.12
+     ],
+     [
+      "2026-08-14",
+      74.27
+     ],
+     [
+      "2026-08-15",
+      73.64
+     ],
+     [
+      "2026-08-16",
+      71.86
+     ],
+     [
+      "2026-08-17",
+      73.09
+     ],
+     [
+      "2026-08-18",
+      74.81
+     ],
+     [
+      "2026-08-19",
+      75.33
+     ],
+     [
+      "2026-08-20",
+      75.74
+     ],
+     [
+      "2026-08-21",
+      75.93
+     ],
+     [
+      "2026-08-22",
+      74.5
+     ],
+     [
+      "2026-08-23",
+      73.64
+     ],
+     [
+      "2026-08-24",
+      76.02
+     ],
+     [
+      "2026-08-25",
+      74.6
+     ],
+     [
+      "2026-08-26",
+      74.27
+     ],
+     [
+      "2026-08-27",
+      74.21
+     ],
+     [
+      "2026-08-28",
+      72.54
+     ],
+     [
+      "2026-08-29",
+      70.69
+     ],
+     [
+      "2026-08-30",
+      71.82
+     ],
+     [
+      "2026-08-31",
+      73.4
+     ],
+     [
+      "2026-09-01",
+      71.78
+     ],
+     [
+      "2026-09-02",
+      72.77
+     ],
+     [
+      "2026-09-03",
+      71.05
+     ],
+     [
+      "2026-09-04",
+      71.11
+     ],
+     [
+      "2026-09-05",
+      69.93
+     ],
+     [
+      "2026-09-06",
+      68.9
+     ],
+     [
+      "2026-09-07",
+      71.3
+     ],
+     [
+      "2026-09-08",
+      73.58
+     ],
+     [
+      "2026-09-09",
+      73.04
+     ],
+     [
+      "2026-09-10",
+      70.87
+     ],
+     [
+      "2026-09-11",
+      70.76
+     ],
+     [
+      "2026-09-12",
+      71.57
+     ],
+     [
+      "2026-09-13",
+      71.68
+     ],
+     [
+      "2026-09-14",
+      73.47
+     ],
+     [
+      "2026-09-15",
+      73.47
+     ],
+     [
+      "2026-09-16",
+      72.38
+     ],
+     [
+      "2026-09-17",
+      70.86
+     ],
+     [
+      "2026-09-18",
+      69.09
+     ],
+     [
+      "2026-09-19",
+      67.25
+     ],
+     [
+      "2026-09-20",
+      67.24
+     ],
+     [
+      "2026-09-21",
+      69.76
+     ],
+     [
+      "2026-09-22",
+      69.27
+     ],
+     [
+      "2026-09-23",
+      69.49
+     ],
+     [
+      "2026-09-24",
+      68.69
+     ],
+     [
+      "2026-09-25",
+      66.26
+     ],
+     [
+      "2026-09-26",
+      63.82
+     ],
+     [
+      "2026-09-27",
+      65.33
+     ],
+     [
+      "2026-09-28",
+      67.95
+     ],
+     [
+      "2026-09-29",
+      67.71
+     ],
+     [
+      "2026-09-30",
+      68.22
+     ],
+     [
+      "2026-10-01",
+      62.57
+     ],
+     [
+      "2026-10-02",
+      59.14
+     ],
+     [
+      "2026-10-03",
+      56.73
+     ],
+     [
+      "2026-10-04",
+      54.83
+     ],
+     [
+      "2026-10-05",
+      58.06
+     ],
+     [
+      "2026-10-06",
+      58.46
+     ],
+     [
+      "2026-10-07",
+      58.59
+     ],
+     [
+      "2026-10-08",
+      59.68
+     ],
+     [
+      "2026-10-09",
+      58.84
+     ],
+     [
+      "2026-10-10",
+      57.42
+     ],
+     [
+      "2026-10-11",
+      59.4
+     ],
+     [
+      "2026-10-12",
+      63.17
+     ],
+     [
+      "2026-10-13",
+      67.93
+     ],
+     [
+      "2026-10-14",
+      67.1
+     ],
+     [
+      "2026-10-15",
+      62.66
+     ],
+     [
+      "2026-10-16",
+      52.22
+     ],
+     [
+      "2026-10-17",
+      46.28
+     ],
+     [
+      "2026-10-18",
+      46.4
+     ],
+     [
+      "2026-10-19",
+      49.94
+     ],
+     [
+      "2026-10-20",
+      51.46
+     ],
+     [
+      "2026-10-21",
+      52.92
+     ],
+     [
+      "2026-10-22",
+      53.38
+     ],
+     [
+      "2026-10-23",
+      53.34
+     ]
+    ]
+   },
+   "PJM": {
+    "name": "PJM (Mid-Atlantic, incl. Northern Virginia)",
+    "date": "2026-10-23",
+    "unit": "GW (daily average)",
+    "avg28": 86.75,
+    "yoy": 0.0205,
+    "hist": [
+     [
+      "2026-07-26",
+      101.79
+     ],
+     [
+      "2026-07-27",
+      114.19
+     ],
+     [
+      "2026-07-28",
+      111.76
+     ],
+     [
+      "2026-07-29",
+      107.27
+     ],
+     [
+      "2026-07-30",
+      107.3
+     ],
+     [
+      "2026-07-31",
+      110.81
+     ],
+     [
+      "2026-08-01",
+      104.66
+     ],
+     [
+      "2026-08-02",
+      104.43
+     ],
+     [
+      "2026-08-03",
+      113.29
+     ],
+     [
+      "2026-08-04",
+      112.18
+     ],
+     [
+      "2026-08-05",
+      116.64
+     ],
+     [
+      "2026-08-06",
+      122.26
+     ],
+     [
+      "2026-08-07",
+      120.91
+     ],
+     [
+      "2026-08-08",
+      114.59
+     ],
+     [
+      "2026-08-09",
+      114.4
+     ],
+     [
+      "2026-08-10",
+      119.22
+     ],
+     [
+      "2026-08-11",
+      112.82
+     ],
+     [
+      "2026-08-12",
+      110.83
+     ],
+     [
+      "2026-08-13",
+      115.4
+     ],
+     [
+      "2026-08-14",
+      114.73
+     ],
+     [
+      "2026-08-15",
+      107.72
+     ],
+     [
+      "2026-08-16",
+      106.51
+     ],
+     [
+      "2026-08-17",
+      115.87
+     ],
+     [
+      "2026-08-18",
+      114.99
+     ],
+     [
+      "2026-08-19",
+      112.69
+     ],
+     [
+      "2026-08-20",
+      110.72
+     ],
+     [
+      "2026-08-21",
+      104.51
+     ],
+     [
+      "2026-08-22",
+      99.63
+     ],
+     [
+      "2026-08-23",
+      96.22
+     ],
+     [
+      "2026-08-24",
+      98.99
+     ],
+     [
+      "2026-08-25",
+      100.44
+     ],
+     [
+      "2026-08-26",
+      105.4
+     ],
+     [
+      "2026-08-27",
+      110.78
+     ],
+     [
+      "2026-08-28",
+      108.96
+     ],
+     [
+      "2026-08-29",
+      98.27
+     ],
+     [
+      "2026-08-30",
+      102.14
+     ],
+     [
+      "2026-08-31",
+      114.6
+     ],
+     [
+      "2026-09-01",
+      125.07
+     ],
+     [
+      "2026-09-02",
+      123.55
+     ],
+     [
+      "2026-09-03",
+      125.2
+     ],
+     [
+      "2026-09-04",
+      121.42
+     ],
+     [
+      "2026-09-05",
+      106.35
+     ],
+     [
+      "2026-09-06",
+      96.04
+     ],
+     [
+      "2026-09-07",
+      94.64
+     ],
+     [
+      "2026-09-08",
+      104.42
+     ],
+     [
+      "2026-09-09",
+      113.29
+     ],
+     [
+      "2026-09-10",
+      113.81
+     ],
+     [
+      "2026-09-11",
+      107.32
+     ],
+     [
+      "2026-09-12",
+      100.23
+     ],
+     [
+      "2026-09-13",
+      103.08
+     ],
+     [
+      "2026-09-14",
+      98.43
+     ],
+     [
+      "2026-09-15",
+      96.83
+     ],
+     [
+      "2026-09-16",
+      105.28
+     ],
+     [
+      "2026-09-17",
+      109.71
+     ],
+     [
+      "2026-09-18",
+      107.26
+     ],
+     [
+      "2026-09-19",
+      93.88
+     ],
+     [
+      "2026-09-20",
+      95.19
+     ],
+     [
+      "2026-09-21",
+      94.2
+     ],
+     [
+      "2026-09-22",
+      89.21
+     ],
+     [
+      "2026-09-23",
+      86.51
+     ],
+     [
+      "2026-09-24",
+      85.32
+     ],
+     [
+      "2026-09-25",
+      84.35
+     ],
+     [
+      "2026-09-26",
+      80.4
+     ],
+     [
+      "2026-09-27",
+      79.97
+     ],
+     [
+      "2026-09-28",
+      87.26
+     ],
+     [
+      "2026-09-29",
+      89.92
+     ],
+     [
+      "2026-09-30",
+      91.63
+     ],
+     [
+      "2026-10-01",
+      97.0
+     ],
+     [
+      "2026-10-02",
+      95.77
+     ],
+     [
+      "2026-10-03",
+      82.02
+     ],
+     [
+      "2026-10-04",
+      80.6
+     ],
+     [
+      "2026-10-05",
+      85.1
+     ],
+     [
+      "2026-10-06",
+      84.13
+     ],
+     [
+      "2026-10-07",
+      85.72
+     ],
+     [
+      "2026-10-08",
+      86.45
+     ],
+     [
+      "2026-10-09",
+      85.18
+     ],
+     [
+      "2026-10-10",
+      80.72
+     ],
+     [
+      "2026-10-11",
+      82.42
+     ],
+     [
+      "2026-10-12",
+      89.53
+     ],
+     [
+      "2026-10-13",
+      94.02
+     ],
+     [
+      "2026-10-14",
+      96.18
+     ],
+     [
+      "2026-10-15",
+      89.63
+     ],
+     [
+      "2026-10-16",
+      90.03
+     ],
+     [
+      "2026-10-17",
+      80.76
+     ],
+     [
+      "2026-10-18",
+      80.72
+     ],
+     [
+      "2026-10-19",
+      87.42
+     ],
+     [
+      "2026-10-20",
+      86.82
+     ],
+     [
+      "2026-10-21",
+      86.47
+     ],
+     [
+      "2026-10-22",
+      87.32
+     ],
+     [
+      "2026-10-23",
+      85.94
+     ]
+    ]
+   },
+   "US48": {
+    "name": "Lower 48 states",
+    "date": "2026-10-23",
+    "unit": "GW (daily average)",
+    "avg28": 470.38,
+    "yoy": 0.0292,
+    "hist": [
+     [
+      "2026-07-26",
+      580.89
+     ],
+     [
+      "2026-07-27",
+      624.35
+     ],
+     [
+      "2026-07-28",
+      618.69
+     ],
+     [
+      "2026-07-29",
+      609.26
+     ],
+     [
+      "2026-07-30",
+      599.6
+     ],
+     [
+      "2026-07-31",
+      598.42
+     ],
+     [
+      "2026-08-01",
+      570.54
+     ],
+     [
+      "2026-08-02",
+      559.72
+     ],
+     [
+      "2026-08-03",
+      593.07
+     ],
+     [
+      "2026-08-04",
+      590.9
+     ],
+     [
+      "2026-08-05",
+      599.4
+     ],
+     [
+      "2026-08-06",
+      613.08
+     ],
+     [
+      "2026-08-07",
+      618.24
+     ],
+     [
+      "2026-08-08",
+      596.99
+     ],
+     [
+      "2026-08-09",
+      594.36
+     ],
+     [
+      "2026-08-10",
+      623.88
+     ],
+     [
+      "2026-08-11",
+      623.13
+     ],
+     [
+      "2026-08-12",
+      609.94
+     ],
+     [
+      "2026-08-13",
+      616.07
+     ],
+     [
+      "2026-08-14",
+      608.29
+     ],
+     [
+      "2026-08-15",
+      581.09
+     ],
+     [
+      "2026-08-16",
+      581.4
+     ],
+     [
+      "2026-08-17",
+      615.15
+     ],
+     [
+      "2026-08-18",
+      616.76
+     ],
+     [
+      "2026-08-19",
+      613.22
+     ],
+     [
+      "2026-08-20",
+      609.0
+     ],
+     [
+      "2026-08-21",
+      595.54
+     ],
+     [
+      "2026-08-22",
+      566.58
+     ],
+     [
+      "2026-08-23",
+      552.89
+     ],
+     [
+      "2026-08-24",
+      572.25
+     ],
+     [
+      "2026-08-25",
+      579.19
+     ],
+     [
+      "2026-08-26",
+      589.71
+     ],
+     [
+      "2026-08-27",
+      592.11
+     ],
+     [
+      "2026-08-28",
+      585.61
+     ],
+     [
+      "2026-08-29",
+      550.32
+     ],
+     [
+      "2026-08-30",
+      557.77
+     ],
+     [
+      "2026-08-31",
+      596.49
+     ],
+     [
+      "2026-09-01",
+      612.05
+     ],
+     [
+      "2026-09-02",
+      615.43
+     ],
+     [
+      "2026-09-03",
+      616.8
+     ],
+     [
+      "2026-09-04",
+      609.76
+     ],
+     [
+      "2026-09-05",
+      569.11
+     ],
+     [
+      "2026-09-06",
+      538.04
+     ],
+     [
+      "2026-09-07",
+      535.87
+     ],
+     [
+      "2026-09-08",
+      574.21
+     ],
+     [
+      "2026-09-09",
+      597.37
+     ],
+     [
+      "2026-09-10",
+      592.79
+     ],
+     [
+      "2026-09-11",
+      572.16
+     ],
+     [
+      "2026-09-12",
+      543.32
+     ],
+     [
+      "2026-09-13",
+      542.88
+     ],
+     [
+      "2026-09-14",
+      551.52
+     ],
+     [
+      "2026-09-15",
+      553.39
+     ],
+     [
+      "2026-09-16",
+      560.55
+     ],
+     [
+      "2026-09-17",
+      565.97
+     ],
+     [
+      "2026-09-18",
+      557.88
+     ],
+     [
+      "2026-09-19",
+      518.44
+     ],
+     [
+      "2026-09-20",
+      512.32
+     ],
+     [
+      "2026-09-21",
+      524.08
+     ],
+     [
+      "2026-09-22",
+      509.4
+     ],
+     [
+      "2026-09-23",
+      498.44
+     ],
+     [
+      "2026-09-24",
+      490.28
+     ],
+     [
+      "2026-09-25",
+      479.58
+     ],
+     [
+      "2026-09-26",
+      456.69
+     ],
+     [
+      "2026-09-27",
+      459.34
+     ],
+     [
+      "2026-09-28",
+      488.99
+     ],
+     [
+      "2026-09-29",
+      493.17
+     ],
+     [
+      "2026-09-30",
+      505.53
+     ],
+     [
+      "2026-10-01",
+      511.35
+     ],
+     [
+      "2026-10-02",
+      506.2
+     ],
+     [
+      "2026-10-03",
+      469.64
+     ],
+     [
+      "2026-10-04",
+      459.64
+     ],
+     [
+      "2026-10-05",
+      484.53
+     ],
+     [
+      "2026-10-06",
+      480.87
+     ],
+     [
+      "2026-10-07",
+      483.88
+     ],
+     [
+      "2026-10-08",
+      487.08
+     ],
+     [
+      "2026-10-09",
+      477.72
+     ],
+     [
+      "2026-10-10",
+      451.13
+     ],
+     [
+      "2026-10-11",
+      454.91
+     ],
+     [
+      "2026-10-12",
+      487.11
+     ],
+     [
+      "2026-10-13",
+      502.36
+     ],
+     [
+      "2026-10-14",
+      499.24
+     ],
+     [
+      "2026-10-15",
+      488.51
+     ],
+     [
+      "2026-10-16",
+      470.43
+     ],
+     [
+      "2026-10-17",
+      418.41
+     ],
+     [
+      "2026-10-18",
+      412.62
+     ],
+     [
+      "2026-10-19",
+      441.67
+     ],
+     [
+      "2026-10-20",
+      445.5
+     ],
+     [
+      "2026-10-21",
+      446.85
+     ],
+     [
+      "2026-10-22",
+      446.85
+     ],
+     [
+      "2026-10-23",
+      440.47
+     ]
+    ]
+   }
+  },
+  "prices": {
+   "gas": {
+    "id": "DHHNGSP",
+    "label": "Henry Hub natural gas spot price, $/MMBtu",
+    "value": 3.1,
+    "date": "2026-10-20",
+    "avg1y": 3.553,
+    "max1y": 30.72,
+    "min1y": 2.54,
+    "chg30": 0.13,
+    "hist": [
+     [
+      "2026-04-30",
+      2.64
+     ],
+     [
+      "2026-05-01",
+      2.63
+     ],
+     [
+      "2026-05-04",
+      2.67
+     ],
+     [
+      "2026-05-05",
+      2.83
+     ],
+     [
+      "2026-05-06",
+      2.75
+     ],
+     [
+      "2026-05-07",
+      2.7
+     ],
+     [
+      "2026-05-08",
+      2.75
+     ],
+     [
+      "2026-05-11",
+      2.82
+     ],
+     [
+      "2026-05-12",
+      2.91
+     ],
+     [
+      "2026-05-13",
+      2.88
+     ],
+     [
+      "2026-05-14",
+      2.79
+     ],
+     [
+      "2026-05-15",
+      2.89
+     ],
+     [
+      "2026-05-18",
+      3.07
+     ],
+     [
+      "2026-05-19",
+      3.23
+     ],
+     [
+      "2026-05-20",
+      3.18
+     ],
+     [
+      "2026-05-21",
+      3.14
+     ],
+     [
+      "2026-05-22",
+      2.92
+     ],
+     [
+      "2026-05-26",
+      3.1
+     ],
+     [
+      "2026-05-27",
+      3.13
+     ],
+     [
+      "2026-05-28",
+      3.04
+     ],
+     [
+      "2026-05-29",
+      3.34
+     ],
+     [
+      "2026-06-01",
+      3.07
+     ],
+     [
+      "2026-06-02",
+      2.97
+     ],
+     [
+      "2026-06-03",
+      2.97
+     ],
+     [
+      "2026-06-04",
+      3.08
+     ],
+     [
+      "2026-06-05",
+      3.05
+     ],
+     [
+      "2026-06-08",
+      3.1
+     ],
+     [
+      "2026-06-09",
+      3.18
+     ],
+     [
+      "2026-06-10",
+      3.27
+     ],
+     [
+      "2026-06-11",
+      3.16
+     ],
+     [
+      "2026-06-12",
+      3.06
+     ],
+     [
+      "2026-06-15",
+      3.06
+     ],
+     [
+      "2026-06-16",
+      3.1
+     ],
+     [
+      "2026-06-17",
+      3.25
+     ],
+     [
+      "2026-06-18",
+      3.08
+     ],
+     [
+      "2026-06-22",
+      3.16
+     ],
+     [
+      "2026-06-23",
+      3.15
+     ],
+     [
+      "2026-06-24",
+      3.19
+     ],
+     [
+      "2026-06-25",
+      3.21
+     ],
+     [
+      "2026-06-26",
+      3.26
+     ],
+     [
+      "2026-06-29",
+      3.33
+     ],
+     [
+      "2026-06-30",
+      3.34
+     ],
+     [
+      "2026-07-01",
+      3.34
+     ],
+     [
+      "2026-07-02",
+      3.34
+     ],
+     [
+      "2026-07-06",
+      3.29
+     ],
+     [
+      "2026-07-07",
+      3.13
+     ],
+     [
+      "2026-07-08",
+      3.13
+     ],
+     [
+      "2026-07-09",
+      3.17
+     ],
+     [
+      "2026-07-10",
+      2.73
+     ],
+     [
+      "2026-07-13",
+      2.83
+     ],
+     [
+      "2026-07-14",
+      2.76
+     ],
+     [
+      "2026-07-15",
+      2.8
+     ],
+     [
+      "2026-07-16",
+      2.83
+     ],
+     [
+      "2026-07-17",
+      2.75
+     ],
+     [
+      "2026-07-20",
+      2.8
+     ],
+     [
+      "2026-07-21",
+      2.8
+     ],
+     [
+      "2026-07-22",
+      2.93
+     ],
+     [
+      "2026-07-23",
+      2.92
+     ],
+     [
+      "2026-07-24",
+      2.87
+     ],
+     [
+      "2026-07-27",
+      2.63
+     ],
+     [
+      "2026-07-28",
+      2.65
+     ],
+     [
+      "2026-07-29",
+      2.58
+     ],
+     [
+      "2026-07-30",
+      2.65
+     ],
+     [
+      "2026-07-31",
+      2.59
+     ],
+     [
+      "2026-08-03",
+      2.81
+     ],
+     [
+      "2026-08-04",
+      2.74
+     ],
+     [
+      "2026-08-05",
+      2.6
+     ],
+     [
+      "2026-08-06",
+      2.6
+     ],
+     [
+      "2026-08-07",
+      2.56
+     ],
+     [
+      "2026-08-10",
+      2.72
+     ],
+     [
+      "2026-08-11",
+      2.79
+     ],
+     [
+      "2026-08-12",
+      2.82
+     ],
+     [
+      "2026-08-13",
+      2.82
+     ],
+     [
+      "2026-08-14",
+      2.79
+     ],
+     [
+      "2026-08-17",
+      2.77
+     ],
+     [
+      "2026-08-18",
+      2.82
+     ],
+     [
+      "2026-08-19",
+      2.94
+     ],
+     [
+      "2026-08-20",
+      2.94
+     ],
+     [
+      "2026-08-21",
+      2.82
+     ],
+     [
+      "2026-08-24",
+      2.83
+     ],
+     [
+      "2026-08-25",
+      2.7
+     ],
+     [
+      "2026-08-26",
+      2.81
+     ],
+     [
+      "2026-08-27",
+      2.89
+     ],
+     [
+      "2026-08-28",
+      2.82
+     ],
+     [
+      "2026-08-31",
+      2.9
+     ],
+     [
+      "2026-09-01",
+      2.9
+     ],
+     [
+      "2026-09-02",
+      2.88
+     ],
+     [
+      "2026-09-03",
+      2.95
+     ],
+     [
+      "2026-09-04",
+      2.92
+     ],
+     [
+      "2026-09-08",
+      2.9
+     ],
+     [
+      "2026-09-09",
+      2.81
+     ],
+     [
+      "2026-09-10",
+      2.76
+     ],
+     [
+      "2026-09-11",
+      2.71
+     ],
+     [
+      "2026-09-14",
+      2.85
+     ],
+     [
+      "2026-09-15",
+      2.97
+     ],
+     [
+      "2026-09-16",
+      3.0
+     ],
+     [
+      "2026-09-17",
+      2.9
+     ],
+     [
+      "2026-09-18",
+      2.97
+     ],
+     [
+      "2026-09-21",
+      2.93
+     ],
+     [
+      "2026-09-22",
+      2.9
+     ],
+     [
+      "2026-09-23",
+      3.06
+     ],
+     [
+      "2026-09-24",
+      3.0
+     ],
+     [
+      "2026-09-25",
+      3.21
+     ],
+     [
+      "2026-09-28",
+      3.13
+     ],
+     [
+      "2026-09-29",
+      3.18
+     ],
+     [
+      "2026-09-30",
+      3.02
+     ],
+     [
+      "2026-10-01",
+      3.0
+     ],
+     [
+      "2026-10-02",
+      2.9
+     ],
+     [
+      "2026-10-05",
+      2.96
+     ],
+     [
+      "2026-10-06",
+      3.03
+     ],
+     [
+      "2026-10-07",
+      3.16
+     ],
+     [
+      "2026-10-08",
+      3.24
+     ],
+     [
+      "2026-10-09",
+      3.1
+     ],
+     [
+      "2026-10-12",
+      3.1
+     ],
+     [
+      "2026-10-13",
+      3.14
+     ],
+     [
+      "2026-10-14",
+      3.22
+     ],
+     [
+      "2026-10-15",
+      3.3
+     ],
+     [
+      "2026-10-16",
+      3.22
+     ],
+     [
+      "2026-10-19",
+      3.28
+     ],
+     [
+      "2026-10-20",
+      3.1
+     ]
+    ],
+    "url": "https://fred.stlouisfed.org/series/DHHNGSP"
+   },
+   "elecCpi": {
+    "id": "CUSR0000SEHF01",
+    "label": "CPI: electricity (index)",
+    "value": 306.199,
+    "date": "2026-09-01",
+    "yoy": 0.0437,
+    "hist": [
+     [
+      "2023-09-01",
+      269.078
+     ],
+     [
+      "2023-10-01",
+      269.512
+     ],
+     [
+      "2023-11-01",
+      272.151
+     ],
+     [
+      "2023-12-01",
+      274.016
+     ],
+     [
+      "2024-01-01",
+      277.305
+     ],
+     [
+      "2024-02-01",
+      277.638
+     ],
+     [
+      "2024-03-01",
+      279.797
+     ],
+     [
+      "2024-04-01",
+      279.303
+     ],
+     [
+      "2024-05-01",
+      279.103
+     ],
+     [
+      "2024-06-01",
+      277.715
+     ],
+     [
+      "2024-07-01",
+      278.242
+     ],
+     [
+      "2024-08-01",
+      277.101
+     ],
+     [
+      "2024-09-01",
+      279.137
+     ],
+     [
+      "2024-10-01",
+      281.719
+     ],
+     [
+      "2024-11-01",
+      280.608
+     ],
+     [
+      "2024-12-01",
+      281.742
+     ],
+     [
+      "2025-01-01",
+      282.369
+     ],
+     [
+      "2025-02-01",
+      284.448
+     ],
+     [
+      "2025-03-01",
+      287.436
+     ],
+     [
+      "2025-04-01",
+      289.368
+     ],
+     [
+      "2025-05-01",
+      291.637
+     ],
+     [
+      "2025-06-01",
+      293.838
+     ],
+     [
+      "2025-07-01",
+      293.754
+     ],
+     [
+      "2025-08-01",
+      294.295
+     ],
+     [
+      "2025-09-01",
+      293.388
+     ],
+     [
+      "2025-11-01",
+      300.112
+     ],
+     [
+      "2025-12-01",
+      300.563
+     ],
+     [
+      "2026-01-01",
+      300.241
+     ],
+     [
+      "2026-02-01",
+      298.113
+     ],
+     [
+      "2026-03-01",
+      300.545
+     ],
+     [
+      "2026-04-01",
+      306.977
+     ],
+     [
+      "2026-05-01",
+      308.903
+     ],
+     [
+      "2026-06-01",
+      305.692
+     ],
+     [
+      "2026-07-01",
+      306.095
+     ],
+     [
+      "2026-08-01",
+      305.444
+     ],
+     [
+      "2026-09-01",
+      306.199
+     ]
+    ],
+    "url": "https://fred.stlouisfed.org/series/CUSR0000SEHF01"
+   },
+   "kwh": {
+    "id": "APU000072610",
+    "label": "Average US residential electricity price, $/kWh",
+    "value": 0.196,
+    "date": "2026-09-01",
+    "yoy": 0.0426,
+    "hist": [
+     [
+      "2023-09-01",
+      0.171
+     ],
+     [
+      "2023-10-01",
+      0.169
+     ],
+     [
+      "2023-11-01",
+      0.168
+     ],
+     [
+      "2023-12-01",
+      0.169
+     ],
+     [
+      "2024-01-01",
+      0.173
+     ],
+     [
+      "2024-02-01",
+      0.173
+     ],
+     [
+      "2024-03-01",
+      0.174
+     ],
+     [
+      "2024-04-01",
+      0.173
+     ],
+     [
+      "2024-05-01",
+      0.175
+     ],
+     [
+      "2024-06-01",
+      0.178
+     ],
+     [
+      "2024-07-01",
+      0.178
+     ],
+     [
+      "2024-08-01",
+      0.177
+     ],
+     [
+      "2024-09-01",
+      0.178
+     ],
+     [
+      "2024-10-01",
+      0.177
+     ],
+     [
+      "2024-11-01",
+      0.176
+     ],
+     [
+      "2024-12-01",
+      0.176
+     ],
+     [
+      "2025-01-01",
+      0.179
+     ],
+     [
+      "2025-02-01",
+      0.179
+     ],
+     [
+      "2025-03-01",
+      0.181
+     ],
+     [
+      "2025-04-01",
+      0.181
+     ],
+     [
+      "2025-05-01",
+      0.182
+     ],
+     [
+      "2025-06-01",
+      0.19
+     ],
+     [
+      "2025-07-01",
+      0.189
+     ],
+     [
+      "2025-08-01",
+      0.19
+     ],
+     [
+      "2025-09-01",
+      0.188
+     ],
+     [
+      "2025-11-01",
+      0.189
+     ],
+     [
+      "2025-12-01",
+      0.189
+     ],
+     [
+      "2026-01-01",
+      0.192
+     ],
+     [
+      "2026-02-01",
+      0.189
+     ],
+     [
+      "2026-03-01",
+      0.19
+     ],
+     [
+      "2026-04-01",
+      0.194
+     ],
+     [
+      "2026-05-01",
+      0.196
+     ],
+     [
+      "2026-06-01",
+      0.198
+     ],
+     [
+      "2026-07-01",
+      0.197
+     ],
+     [
+      "2026-08-01",
+      0.196
+     ],
+     [
+      "2026-09-01",
+      0.196
+     ]
+    ],
+    "url": "https://fred.stlouisfed.org/series/APU000072610"
+   }
+  },
+  "water": {
+   "counties": [
+    {
+     "fips": "51107",
+     "name": "Loudoun, VA",
+     "why": "Data Center Alley",
+     "date": "2026-10-20",
+     "droughtPct": 0.0,
+     "dsci": 86,
+     "dsci4wAgo": 188
+    },
+    {
+     "fips": "51153",
+     "name": "Prince William, VA",
+     "why": "Northern Virginia expansion",
+     "date": "2026-10-20",
+     "droughtPct": 0.0,
+     "dsci": 5,
+     "dsci4wAgo": 102
+    },
+    {
+     "fips": "04013",
+     "name": "Maricopa, AZ",
+     "why": "Phoenix cluster",
+     "date": "2026-10-20",
+     "droughtPct": 78.5,
+     "dsci": 205,
+     "dsci4wAgo": 290
+    },
+    {
+     "fips": "48113",
+     "name": "Dallas, TX",
+     "why": "Dallas–Fort Worth cluster",
+     "date": "2026-10-20",
+     "droughtPct": 100.0,
+     "dsci": 204,
+     "dsci4wAgo": 432
+    },
+    {
+     "fips": "48441",
+     "name": "Taylor, TX",
+     "why": "Abilene Stargate campus",
+     "date": "2026-10-20",
+     "droughtPct": 100.0,
+     "dsci": 342,
+     "dsci4wAgo": 218
+    },
+    {
+     "fips": "39049",
+     "name": "Franklin, OH",
+     "why": "Columbus cluster",
+     "date": "2026-10-20",
+     "droughtPct": 0.0,
+     "dsci": 0,
+     "dsci4wAgo": 0
+    },
+    {
+     "fips": "13121",
+     "name": "Fulton, GA",
+     "why": "Atlanta cluster",
+     "date": "2026-10-20",
+     "droughtPct": 0.0,
+     "dsci": 100,
+     "dsci4wAgo": 100
+    },
+    {
+     "fips": "17031",
+     "name": "Cook, IL",
+     "why": "Chicago cluster",
+     "date": "2026-10-20",
+     "droughtPct": 0.0,
+     "dsci": 0,
+     "dsci4wAgo": 0
+    },
+    {
+     "fips": "06085",
+     "name": "Santa Clara, CA",
+     "why": "Silicon Valley",
+     "date": "2026-10-20",
+     "droughtPct": 0.0,
+     "dsci": 0,
+     "dsci4wAgo": 0
+    },
+    {
+     "fips": "55089",
+     "name": "Ozaukee, WI",
+     "why": "Port Washington campus (Oracle-leased)",
+     "date": "2026-10-20",
+     "droughtPct": 0.0,
+     "dsci": 0,
+     "dsci4wAgo": 0
+    },
+    {
+     "fips": "35013",
+     "name": "Doña Ana, NM",
+     "why": "Project Jupiter",
+     "date": "2026-10-20",
+     "droughtPct": 0.0,
+     "dsci": 13,
+     "dsci4wAgo": 133
+    }
+   ],
+   "avgDroughtPct": 25.3,
+   "avgDsci": 87,
+   "source": "US Drought Monitor (droughtmonitor.unl.edu)"
+  },
+  "errors": []
+ },
+ "society": {
+  "retail": {
+   "id": "RSAFS",
+   "label": "Retail and food services sales, $M per month",
+   "value": 745021.0,
+   "date": "2026-09-01",
+   "yoy": 0.0629,
+   "chg1y": 44073.0,
+   "hist": [
+    [
+     "2023-10-01",
+     667815.0
+    ],
+    [
+     "2023-11-01",
+     666419.0
+    ],
+    [
+     "2023-12-01",
+     666963.0
+    ],
+    [
+     "2024-01-01",
+     660602.0
+    ],
+    [
+     "2024-02-01",
+     664621.0
+    ],
+    [
+     "2024-03-01",
+     664328.0
+    ],
+    [
+     "2024-04-01",
+     664858.0
+    ],
+    [
+     "2024-05-01",
+     667659.0
+    ],
+    [
+     "2024-06-01",
+     666040.0
+    ],
+    [
+     "2024-07-01",
+     673662.0
+    ],
+    [
+     "2024-08-01",
+     670668.0
+    ],
+    [
+     "2024-09-01",
+     676005.0
+    ],
+    [
+     "2024-10-01",
+     681808.0
+    ],
+    [
+     "2024-11-01",
+     685709.0
+    ],
+    [
+     "2024-12-01",
+     691794.0
+    ],
+    [
+     "2025-01-01",
+     687058.0
+    ],
+    [
+     "2025-02-01",
+     683772.0
+    ],
+    [
+     "2025-03-01",
+     694750.0
+    ],
+    [
+     "2025-04-01",
+     695464.0
+    ],
+    [
+     "2025-05-01",
+     685488.0
+    ],
+    [
+     "2025-06-01",
+     691883.0
+    ],
+    [
+     "2025-07-01",
+     698280.0
+    ],
+    [
+     "2025-08-01",
+     700407.0
+    ],
+    [
+     "2025-09-01",
+     700948.0
+    ],
+    [
+     "2025-10-01",
+     700790.0
+    ],
+    [
+     "2025-11-01",
+     705453.0
+    ],
+    [
+     "2025-12-01",
+     706264.0
+    ],
+    [
+     "2026-01-01",
+     701860.0
+    ],
+    [
+     "2026-02-01",
+     707959.0
+    ],
+    [
+     "2026-03-01",
+     719700.0
+    ],
+    [
+     "2026-04-01",
+     723921.0
+    ],
+    [
+     "2026-05-01",
+     731415.0
+    ],
+    [
+     "2026-06-01",
+     732898.0
+    ],
+    [
+     "2026-07-01",
+     729915.0
+    ],
+    [
+     "2026-08-01",
+     739322.0
+    ],
+    [
+     "2026-09-01",
+     745021.0
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/RSAFS"
+  },
+  "ecom": {
+   "id": "ECOMPCTSA",
+   "label": "E-commerce share of retail sales, %",
+   "value": 17.1,
+   "date": "2026-04-01",
+   "yoy": 0.0491,
+   "chg1y": 0.8,
+   "hist": [
+    [
+     "2017-07-01",
+     8.9
+    ],
+    [
+     "2017-10-01",
+     9.1
+    ],
+    [
+     "2018-01-01",
+     9.4
+    ],
+    [
+     "2018-04-01",
+     9.6
+    ],
+    [
+     "2018-07-01",
+     9.7
+    ],
+    [
+     "2018-10-01",
+     9.9
+    ],
+    [
+     "2019-01-01",
+     10.0
+    ],
+    [
+     "2019-04-01",
+     10.3
+    ],
+    [
+     "2019-07-01",
+     10.8
+    ],
+    [
+     "2019-10-01",
+     11.2
+    ],
+    [
+     "2020-01-01",
+     11.9
+    ],
+    [
+     "2020-04-01",
+     16.3
+    ],
+    [
+     "2020-07-01",
+     14.9
+    ],
+    [
+     "2020-10-01",
+     15.0
+    ],
+    [
+     "2021-01-01",
+     14.9
+    ],
+    [
+     "2021-04-01",
+     14.6
+    ],
+    [
+     "2021-07-01",
+     14.5
+    ],
+    [
+     "2021-10-01",
+     14.6
+    ],
+    [
+     "2022-01-01",
+     14.4
+    ],
+    [
+     "2022-04-01",
+     14.2
+    ],
+    [
+     "2022-07-01",
+     14.5
+    ],
+    [
+     "2022-10-01",
+     14.6
+    ],
+    [
+     "2023-01-01",
+     15.0
+    ],
+    [
+     "2023-04-01",
+     15.3
+    ],
+    [
+     "2023-07-01",
+     15.4
+    ],
+    [
+     "2023-10-01",
+     15.5
+    ],
+    [
+     "2024-01-01",
+     15.9
+    ],
+    [
+     "2024-04-01",
+     16.1
+    ],
+    [
+     "2024-07-01",
+     16.2
+    ],
+    [
+     "2024-10-01",
+     16.2
+    ],
+    [
+     "2025-01-01",
+     16.0
+    ],
+    [
+     "2025-04-01",
+     16.3
+    ],
+    [
+     "2025-07-01",
+     16.4
+    ],
+    [
+     "2025-10-01",
+     16.7
+    ],
+    [
+     "2026-01-01",
+     17.0
+    ],
+    [
+     "2026-04-01",
+     17.1
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/ECOMPCTSA"
+  },
+  "vehicles": {
+   "id": "TOTALSA",
+   "label": "Light vehicle sales, millions per year (SAAR)",
+   "value": 16.378,
+   "date": "2026-09-01",
+   "yoy": -0.0344,
+   "chg1y": -0.583,
+   "hist": [
+    [
+     "2023-10-01",
+     15.844
+    ],
+    [
+     "2023-11-01",
+     15.864
+    ],
+    [
+     "2023-12-01",
+     16.308
+    ],
+    [
+     "2024-01-01",
+     15.862
+    ],
+    [
+     "2024-02-01",
+     16.259
+    ],
+    [
+     "2024-03-01",
+     16.064
+    ],
+    [
+     "2024-04-01",
+     16.349
+    ],
+    [
+     "2024-05-01",
+     16.427
+    ],
+    [
+     "2024-06-01",
+     15.807
+    ],
+    [
+     "2024-07-01",
+     16.187
+    ],
+    [
+     "2024-08-01",
+     15.811
+    ],
+    [
+     "2024-09-01",
+     16.306
+    ],
+    [
+     "2024-10-01",
+     16.625
+    ],
+    [
+     "2024-11-01",
+     17.025
+    ],
+    [
+     "2024-12-01",
+     17.275
+    ],
+    [
+     "2025-01-01",
+     16.317
+    ],
+    [
+     "2025-02-01",
+     16.471
+    ],
+    [
+     "2025-03-01",
+     18.189
+    ],
+    [
+     "2025-04-01",
+     17.516
+    ],
+    [
+     "2025-05-01",
+     16.158
+    ],
+    [
+     "2025-06-01",
+     16.329
+    ],
+    [
+     "2025-07-01",
+     16.843
+    ],
+    [
+     "2025-08-01",
+     16.745
+    ],
+    [
+     "2025-09-01",
+     16.961
+    ],
+    [
+     "2025-10-01",
+     16.027
+    ],
+    [
+     "2025-11-01",
+     16.154
+    ],
+    [
+     "2025-12-01",
+     16.403
+    ],
+    [
+     "2026-01-01",
+     15.347
+    ],
+    [
+     "2026-02-01",
+     15.925
+    ],
+    [
+     "2026-03-01",
+     16.439
+    ],
+    [
+     "2026-04-01",
+     16.544
+    ],
+    [
+     "2026-05-01",
+     16.87
+    ],
+    [
+     "2026-06-01",
+     17.218
+    ],
+    [
+     "2026-07-01",
+     16.601
+    ],
+    [
+     "2026-08-01",
+     16.98
+    ],
+    [
+     "2026-09-01",
+     16.378
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/TOTALSA"
+  },
+  "sentiment": {
+   "id": "UMCSENT",
+   "label": "University of Michigan consumer sentiment",
+   "value": 48.1,
+   "date": "2026-09-01",
+   "yoy": -0.127,
+   "chg1y": -7.0,
+   "hist": [
+    [
+     "2023-10-01",
+     63.8
+    ],
+    [
+     "2023-11-01",
+     61.3
+    ],
+    [
+     "2023-12-01",
+     69.7
+    ],
+    [
+     "2024-01-01",
+     79.0
+    ],
+    [
+     "2024-02-01",
+     76.9
+    ],
+    [
+     "2024-03-01",
+     79.4
+    ],
+    [
+     "2024-04-01",
+     77.2
+    ],
+    [
+     "2024-05-01",
+     69.1
+    ],
+    [
+     "2024-06-01",
+     68.2
+    ],
+    [
+     "2024-07-01",
+     66.4
+    ],
+    [
+     "2024-08-01",
+     67.9
+    ],
+    [
+     "2024-09-01",
+     70.1
+    ],
+    [
+     "2024-10-01",
+     70.5
+    ],
+    [
+     "2024-11-01",
+     71.8
+    ],
+    [
+     "2024-12-01",
+     74.0
+    ],
+    [
+     "2025-01-01",
+     71.7
+    ],
+    [
+     "2025-02-01",
+     64.7
+    ],
+    [
+     "2025-03-01",
+     57.0
+    ],
+    [
+     "2025-04-01",
+     52.2
+    ],
+    [
+     "2025-05-01",
+     52.2
+    ],
+    [
+     "2025-06-01",
+     60.7
+    ],
+    [
+     "2025-07-01",
+     61.7
+    ],
+    [
+     "2025-08-01",
+     58.2
+    ],
+    [
+     "2025-09-01",
+     55.1
+    ],
+    [
+     "2025-10-01",
+     53.6
+    ],
+    [
+     "2025-11-01",
+     51.0
+    ],
+    [
+     "2025-12-01",
+     52.9
+    ],
+    [
+     "2026-01-01",
+     56.4
+    ],
+    [
+     "2026-02-01",
+     56.6
+    ],
+    [
+     "2026-03-01",
+     53.3
+    ],
+    [
+     "2026-04-01",
+     49.8
+    ],
+    [
+     "2026-05-01",
+     44.8
+    ],
+    [
+     "2026-06-01",
+     49.5
+    ],
+    [
+     "2026-07-01",
+     55.2
+    ],
+    [
+     "2026-08-01",
+     51.7
+    ],
+    [
+     "2026-09-01",
+     48.1
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/UMCSENT"
+  },
+  "studentLoans": {
+   "id": "SLOAS",
+   "label": "Student loans outstanding, $B",
+   "value": 1777101.97,
+   "date": "2024-10-01",
+   "yoy": 0.0277,
+   "chg1y": 47962.84,
+   "hist": [
+    [
+     "2016-01-01",
+     1358137.44
+    ],
+    [
+     "2016-04-01",
+     1365269.83
+    ],
+    [
+     "2016-07-01",
+     1398573.2
+    ],
+    [
+     "2016-10-01",
+     1405332.16
+    ],
+    [
+     "2017-01-01",
+     1440358.58
+    ],
+    [
+     "2017-04-01",
+     1446680.08
+    ],
+    [
+     "2017-07-01",
+     1479029.56
+    ],
+    [
+     "2017-10-01",
+     1488895.48
+    ],
+    [
+     "2018-01-01",
+     1523343.76
+    ],
+    [
+     "2018-04-01",
+     1530756.57
+    ],
+    [
+     "2018-07-01",
+     1560681.65
+    ],
+    [
+     "2018-10-01",
+     1566903.43
+    ],
+    [
+     "2019-01-01",
+     1597654.09
+    ],
+    [
+     "2019-04-01",
+     1603292.89
+    ],
+    [
+     "2019-07-01",
+     1635131.96
+    ],
+    [
+     "2019-10-01",
+     1637880.7
+    ],
+    [
+     "2020-01-01",
+     1671968.77
+    ],
+    [
+     "2020-04-01",
+     1672503.14
+    ],
+    [
+     "2020-07-01",
+     1696474.62
+    ],
+    [
+     "2020-10-01",
+     1693860.24
+    ],
+    [
+     "2021-01-01",
+     1718706.56
+    ],
+    [
+     "2021-04-01",
+     1719067.5
+    ],
+    [
+     "2021-07-01",
+     1739443.83
+    ],
+    [
+     "2021-10-01",
+     1733415.18
+    ],
+    [
+     "2022-01-01",
+     1747455.51
+    ],
+    [
+     "2022-04-01",
+     1744007.0
+    ],
+    [
+     "2022-07-01",
+     1761742.0
+    ],
+    [
+     "2022-10-01",
+     1764067.41
+    ],
+    [
+     "2023-01-01",
+     1774909.9
+    ],
+    [
+     "2023-04-01",
+     1761243.56
+    ],
+    [
+     "2023-07-01",
+     1732575.34
+    ],
+    [
+     "2023-10-01",
+     1729139.13
+    ],
+    [
+     "2024-01-01",
+     1753333.67
+    ],
+    [
+     "2024-04-01",
+     1741137.84
+    ],
+    [
+     "2024-07-01",
+     1772891.41
+    ],
+    [
+     "2024-10-01",
+     1777101.97
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/SLOAS"
+  },
+  "chinaImports": {
+   "id": "IMPCH",
+   "label": "US goods imports from China, $M per month",
+   "value": 27133.815902,
+   "date": "2026-08-01",
+   "yoy": 0.0695,
+   "chg1y": 1762.791,
+   "hist": [
+    [
+     "2023-09-01",
+     40252.484038
+    ],
+    [
+     "2023-10-01",
+     41561.686424
+    ],
+    [
+     "2023-11-01",
+     35536.269646
+    ],
+    [
+     "2023-12-01",
+     34167.527826
+    ],
+    [
+     "2024-01-01",
+     35770.786274
+    ],
+    [
+     "2024-02-01",
+     31863.545208
+    ],
+    [
+     "2024-03-01",
+     29928.941186
+    ],
+    [
+     "2024-04-01",
+     31618.25076
+    ],
+    [
+     "2024-05-01",
+     35047.590046
+    ],
+    [
+     "2024-06-01",
+     34165.560562
+    ],
+    [
+     "2024-07-01",
+     40868.789849
+    ],
+    [
+     "2024-08-01",
+     39980.150933
+    ],
+    [
+     "2024-09-01",
+     43163.583103
+    ],
+    [
+     "2024-10-01",
+     42019.923773
+    ],
+    [
+     "2024-11-01",
+     38129.370238
+    ],
+    [
+     "2024-12-01",
+     37762.896038
+    ],
+    [
+     "2025-01-01",
+     41770.43202
+    ],
+    [
+     "2025-02-01",
+     31654.580012
+    ],
+    [
+     "2025-03-01",
+     29510.815086
+    ],
+    [
+     "2025-04-01",
+     25332.364312
+    ],
+    [
+     "2025-05-01",
+     20424.522008
+    ],
+    [
+     "2025-06-01",
+     18898.740452
+    ],
+    [
+     "2025-07-01",
+     26383.579659
+    ],
+    [
+     "2025-08-01",
+     25371.025214
+    ],
+    [
+     "2025-09-01",
+     23521.315359
+    ],
+    [
+     "2025-10-01",
+     24036.240222
+    ],
+    [
+     "2025-11-01",
+     20641.404785
+    ],
+    [
+     "2025-12-01",
+     21106.844551
+    ],
+    [
+     "2026-01-01",
+     21057.908407
+    ],
+    [
+     "2026-02-01",
+     18955.647956
+    ],
+    [
+     "2026-03-01",
+     20859.034011
+    ],
+    [
+     "2026-04-01",
+     19789.163922
+    ],
+    [
+     "2026-05-01",
+     23507.8161
+    ],
+    [
+     "2026-06-01",
+     25149.961532
+    ],
+    [
+     "2026-07-01",
+     27070.651366
+    ],
+    [
+     "2026-08-01",
+     27133.815902
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/IMPCH"
+  },
+  "apparel": {
+   "id": "CPIAPPSL",
+   "label": "CPI: apparel",
+   "value": 136.875,
+   "date": "2026-09-01",
+   "yoy": 0.0337,
+   "chg1y": 4.464,
+   "hist": [
+    [
+     "2023-09-01",
+     130.338
+    ],
+    [
+     "2023-10-01",
+     131.274
+    ],
+    [
+     "2023-11-01",
+     130.099
+    ],
+    [
+     "2023-12-01",
+     129.942
+    ],
+    [
+     "2024-01-01",
+     129.685
+    ],
+    [
+     "2024-02-01",
+     130.309
+    ],
+    [
+     "2024-03-01",
+     130.956
+    ],
+    [
+     "2024-04-01",
+     132.237
+    ],
+    [
+     "2024-05-01",
+     132.027
+    ],
+    [
+     "2024-06-01",
+     131.956
+    ],
+    [
+     "2024-07-01",
+     131.569
+    ],
+    [
+     "2024-08-01",
+     131.415
+    ],
+    [
+     "2024-09-01",
+     132.539
+    ],
+    [
+     "2024-10-01",
+     131.741
+    ],
+    [
+     "2024-11-01",
+     131.692
+    ],
+    [
+     "2024-12-01",
+     131.568
+    ],
+    [
+     "2025-01-01",
+     130.436
+    ],
+    [
+     "2025-02-01",
+     131.095
+    ],
+    [
+     "2025-03-01",
+     131.388
+    ],
+    [
+     "2025-04-01",
+     131.201
+    ],
+    [
+     "2025-05-01",
+     130.782
+    ],
+    [
+     "2025-06-01",
+     131.214
+    ],
+    [
+     "2025-07-01",
+     131.354
+    ],
+    [
+     "2025-08-01",
+     131.694
+    ],
+    [
+     "2025-09-01",
+     132.411
+    ],
+    [
+     "2025-11-01",
+     131.883
+    ],
+    [
+     "2025-12-01",
+     132.317
+    ],
+    [
+     "2026-01-01",
+     132.723
+    ],
+    [
+     "2026-02-01",
+     134.419
+    ],
+    [
+     "2026-03-01",
+     135.804
+    ],
+    [
+     "2026-04-01",
+     136.67
+    ],
+    [
+     "2026-05-01",
+     137.069
+    ],
+    [
+     "2026-06-01",
+     136.313
+    ],
+    [
+     "2026-07-01",
+     136.434
+    ],
+    [
+     "2026-08-01",
+     136.457
+    ],
+    [
+     "2026-09-01",
+     136.875
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/CPIAPPSL"
+  },
+  "cardDelinq": {
+   "id": "DRCCLACBS",
+   "label": "Credit card delinquency rate, %",
+   "value": 2.85,
+   "date": "2026-04-01",
+   "yoy": -0.0625,
+   "chg1y": -0.19,
+   "hist": [
+    [
+     "2017-07-01",
+     2.54
+    ],
+    [
+     "2017-10-01",
+     2.48
+    ],
+    [
+     "2018-01-01",
+     2.5
+    ],
+    [
+     "2018-04-01",
+     2.5
+    ],
+    [
+     "2018-07-01",
+     2.52
+    ],
+    [
+     "2018-10-01",
+     2.54
+    ],
+    [
+     "2019-01-01",
+     2.54
+    ],
+    [
+     "2019-04-01",
+     2.59
+    ],
+    [
+     "2019-07-01",
+     2.6
+    ],
+    [
+     "2019-10-01",
+     2.61
+    ],
+    [
+     "2020-01-01",
+     2.69
+    ],
+    [
+     "2020-04-01",
+     2.45
+    ],
+    [
+     "2020-07-01",
+     1.99
+    ],
+    [
+     "2020-10-01",
+     2.1
+    ],
+    [
+     "2021-01-01",
+     1.88
+    ],
+    [
+     "2021-04-01",
+     1.59
+    ],
+    [
+     "2021-07-01",
+     1.53
+    ],
+    [
+     "2021-10-01",
+     1.57
+    ],
+    [
+     "2022-01-01",
+     1.69
+    ],
+    [
+     "2022-04-01",
+     1.83
+    ],
+    [
+     "2022-07-01",
+     2.05
+    ],
+    [
+     "2022-10-01",
+     2.26
+    ],
+    [
+     "2023-01-01",
+     2.47
+    ],
+    [
+     "2023-04-01",
+     2.75
+    ],
+    [
+     "2023-07-01",
+     2.95
+    ],
+    [
+     "2023-10-01",
+     3.1
+    ],
+    [
+     "2024-01-01",
+     3.17
+    ],
+    [
+     "2024-04-01",
+     3.22
+    ],
+    [
+     "2024-07-01",
+     3.2
+    ],
+    [
+     "2024-10-01",
+     3.08
+    ],
+    [
+     "2025-01-01",
+     3.05
+    ],
+    [
+     "2025-04-01",
+     3.04
+    ],
+    [
+     "2025-07-01",
+     2.99
+    ],
+    [
+     "2025-10-01",
+     2.95
+    ],
+    [
+     "2026-01-01",
+     2.91
+    ],
+    [
+     "2026-04-01",
+     2.85
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/DRCCLACBS"
+  },
+  "errors": []
+ },
+ "sources": [
+  "FRED (Federal Reserve Bank of St. Louis), ICE BofA indices",
+  "EIA Hourly Electric Grid Monitor (EIA-930) daily demand",
+  "US Drought Monitor county statistics",
+  "News search"
+ ],
+ "households": {
+  "wealthTop1": {
+   "id": "WFRBST01134",
+   "label": "Share of US net worth held by the top 1%, %",
+   "value": 32.5,
+   "date": "2026-04-01",
+   "yoy": 0.045,
+   "chg1y": 1.4,
+   "hist": [
+    [
+     "2017-07-01",
+     30.5
+    ],
+    [
+     "2017-10-01",
+     30.6
+    ],
+    [
+     "2018-01-01",
+     30.4
+    ],
+    [
+     "2018-04-01",
+     30.3
+    ],
+    [
+     "2018-07-01",
+     30.5
+    ],
+    [
+     "2018-10-01",
+     29.8
+    ],
+    [
+     "2019-01-01",
+     30.4
+    ],
+    [
+     "2019-04-01",
+     30.2
+    ],
+    [
+     "2019-07-01",
+     30.1
+    ],
+    [
+     "2019-10-01",
+     30.4
+    ],
+    [
+     "2020-01-01",
+     29.0
+    ],
+    [
+     "2020-04-01",
+     29.6
+    ],
+    [
+     "2020-07-01",
+     29.8
+    ],
+    [
+     "2020-10-01",
+     30.4
+    ],
+    [
+     "2021-01-01",
+     30.5
+    ],
+    [
+     "2021-04-01",
+     30.7
+    ],
+    [
+     "2021-07-01",
+     30.700000000000003
+    ],
+    [
+     "2021-10-01",
+     30.9
+    ],
+    [
+     "2022-01-01",
+     30.4
+    ],
+    [
+     "2022-04-01",
+     29.4
+    ],
+    [
+     "2022-07-01",
+     29.3
+    ],
+    [
+     "2022-10-01",
+     29.7
+    ],
+    [
+     "2023-01-01",
+     30.0
+    ],
+    [
+     "2023-04-01",
+     30.0
+    ],
+    [
+     "2023-07-01",
+     29.8
+    ],
+    [
+     "2023-10-01",
+     30.200000000000003
+    ],
+    [
+     "2024-01-01",
+     30.4
+    ],
+    [
+     "2024-04-01",
+     30.4
+    ],
+    [
+     "2024-07-01",
+     30.700000000000003
+    ],
+    [
+     "2024-10-01",
+     30.9
+    ],
+    [
+     "2025-01-01",
+     30.8
+    ],
+    [
+     "2025-04-01",
+     31.1
+    ],
+    [
+     "2025-07-01",
+     31.5
+    ],
+    [
+     "2025-10-01",
+     31.8
+    ],
+    [
+     "2026-01-01",
+     31.7
+    ],
+    [
+     "2026-04-01",
+     32.5
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/WFRBST01134"
+  },
+  "wealthTop01": {
+   "id": "WFRBSTP1300",
+   "label": "Share of US net worth held by the top 0.1%, %",
+   "value": 15.0,
+   "date": "2026-04-01",
+   "yoy": 0.0638,
+   "chg1y": 0.9,
+   "hist": [
+    [
+     "2017-07-01",
+     12.5
+    ],
+    [
+     "2017-10-01",
+     12.5
+    ],
+    [
+     "2018-01-01",
+     12.4
+    ],
+    [
+     "2018-04-01",
+     12.3
+    ],
+    [
+     "2018-07-01",
+     12.4
+    ],
+    [
+     "2018-10-01",
+     11.9
+    ],
+    [
+     "2019-01-01",
+     12.3
+    ],
+    [
+     "2019-04-01",
+     12.2
+    ],
+    [
+     "2019-07-01",
+     12.1
+    ],
+    [
+     "2019-10-01",
+     12.4
+    ],
+    [
+     "2020-01-01",
+     11.7
+    ],
+    [
+     "2020-04-01",
+     12.2
+    ],
+    [
+     "2020-07-01",
+     12.5
+    ],
+    [
+     "2020-10-01",
+     13.0
+    ],
+    [
+     "2021-01-01",
+     13.2
+    ],
+    [
+     "2021-04-01",
+     13.5
+    ],
+    [
+     "2021-07-01",
+     13.6
+    ],
+    [
+     "2021-10-01",
+     13.8
+    ],
+    [
+     "2022-01-01",
+     13.6
+    ],
+    [
+     "2022-04-01",
+     13.1
+    ],
+    [
+     "2022-07-01",
+     13.1
+    ],
+    [
+     "2022-10-01",
+     13.3
+    ],
+    [
+     "2023-01-01",
+     13.5
+    ],
+    [
+     "2023-04-01",
+     13.5
+    ],
+    [
+     "2023-07-01",
+     13.4
+    ],
+    [
+     "2023-10-01",
+     13.6
+    ],
+    [
+     "2024-01-01",
+     13.7
+    ],
+    [
+     "2024-04-01",
+     13.7
+    ],
+    [
+     "2024-07-01",
+     13.9
+    ],
+    [
+     "2024-10-01",
+     14.0
+    ],
+    [
+     "2025-01-01",
+     14.0
+    ],
+    [
+     "2025-04-01",
+     14.1
+    ],
+    [
+     "2025-07-01",
+     14.4
+    ],
+    [
+     "2025-10-01",
+     14.6
+    ],
+    [
+     "2026-01-01",
+     14.5
+    ],
+    [
+     "2026-04-01",
+     15.0
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/WFRBSTP1300"
+  },
+  "wealthMid40": {
+   "id": "WFRBSN40188",
+   "label": "Share of US net worth held by the 50th-90th percentiles, %",
+   "value": 28.8,
+   "date": "2026-04-01",
+   "yoy": -0.0432,
+   "chg1y": -1.3,
+   "hist": [
+    [
+     "2017-07-01",
+     28.7
+    ],
+    [
+     "2017-10-01",
+     28.6
+    ],
+    [
+     "2018-01-01",
+     28.7
+    ],
+    [
+     "2018-04-01",
+     28.6
+    ],
+    [
+     "2018-07-01",
+     28.5
+    ],
+    [
+     "2018-10-01",
+     28.9
+    ],
+    [
+     "2019-01-01",
+     28.3
+    ],
+    [
+     "2019-04-01",
+     28.4
+    ],
+    [
+     "2019-07-01",
+     28.4
+    ],
+    [
+     "2019-10-01",
+     28.4
+    ],
+    [
+     "2020-01-01",
+     29.8
+    ],
+    [
+     "2020-04-01",
+     29.4
+    ],
+    [
+     "2020-07-01",
+     29.5
+    ],
+    [
+     "2020-10-01",
+     29.2
+    ],
+    [
+     "2021-01-01",
+     29.3
+    ],
+    [
+     "2021-04-01",
+     29.3
+    ],
+    [
+     "2021-07-01",
+     29.6
+    ],
+    [
+     "2021-10-01",
+     29.6
+    ],
+    [
+     "2022-01-01",
+     30.3
+    ],
+    [
+     "2022-04-01",
+     31.4
+    ],
+    [
+     "2022-07-01",
+     31.6
+    ],
+    [
+     "2022-10-01",
+     31.2
+    ],
+    [
+     "2023-01-01",
+     30.9
+    ],
+    [
+     "2023-04-01",
+     31.0
+    ],
+    [
+     "2023-07-01",
+     31.2
+    ],
+    [
+     "2023-10-01",
+     30.7
+    ],
+    [
+     "2024-01-01",
+     30.6
+    ],
+    [
+     "2024-04-01",
+     30.7
+    ],
+    [
+     "2024-07-01",
+     30.3
+    ],
+    [
+     "2024-10-01",
+     30.2
+    ],
+    [
+     "2025-01-01",
+     30.3
+    ],
+    [
+     "2025-04-01",
+     30.1
+    ],
+    [
+     "2025-07-01",
+     29.5
+    ],
+    [
+     "2025-10-01",
+     29.3
+    ],
+    [
+     "2026-01-01",
+     29.5
+    ],
+    [
+     "2026-04-01",
+     28.8
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/WFRBSN40188"
+  },
+  "wealthBottom50": {
+   "id": "WFRBSB50215",
+   "label": "Share of US net worth held by the bottom 50%, %",
+   "value": 2.3,
+   "date": "2026-04-01",
+   "yoy": -0.0417,
+   "chg1y": -0.1,
+   "hist": [
+    [
+     "2017-07-01",
+     1.4
+    ],
+    [
+     "2017-10-01",
+     1.4
+    ],
+    [
+     "2018-01-01",
+     1.5
+    ],
+    [
+     "2018-04-01",
+     1.6
+    ],
+    [
+     "2018-07-01",
+     1.6
+    ],
+    [
+     "2018-10-01",
+     1.6
+    ],
+    [
+     "2019-01-01",
+     1.6
+    ],
+    [
+     "2019-04-01",
+     1.6
+    ],
+    [
+     "2019-07-01",
+     1.7
+    ],
+    [
+     "2019-10-01",
+     1.7
+    ],
+    [
+     "2020-01-01",
+     1.9
+    ],
+    [
+     "2020-04-01",
+     2.0
+    ],
+    [
+     "2020-07-01",
+     2.1
+    ],
+    [
+     "2020-10-01",
+     2.2
+    ],
+    [
+     "2021-01-01",
+     2.3
+    ],
+    [
+     "2021-04-01",
+     2.4
+    ],
+    [
+     "2021-07-01",
+     2.4
+    ],
+    [
+     "2021-10-01",
+     2.4
+    ],
+    [
+     "2022-01-01",
+     2.6
+    ],
+    [
+     "2022-04-01",
+     2.7
+    ],
+    [
+     "2022-07-01",
+     2.7
+    ],
+    [
+     "2022-10-01",
+     2.6
+    ],
+    [
+     "2023-01-01",
+     2.6
+    ],
+    [
+     "2023-04-01",
+     2.6
+    ],
+    [
+     "2023-07-01",
+     2.6
+    ],
+    [
+     "2023-10-01",
+     2.5
+    ],
+    [
+     "2024-01-01",
+     2.5
+    ],
+    [
+     "2024-04-01",
+     2.5
+    ],
+    [
+     "2024-07-01",
+     2.4
+    ],
+    [
+     "2024-10-01",
+     2.4
+    ],
+    [
+     "2025-01-01",
+     2.4
+    ],
+    [
+     "2025-04-01",
+     2.4
+    ],
+    [
+     "2025-07-01",
+     2.4
+    ],
+    [
+     "2025-10-01",
+     2.4
+    ],
+    [
+     "2026-01-01",
+     2.4
+    ],
+    [
+     "2026-04-01",
+     2.3
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/WFRBSB50215"
+  },
+  "saving": {
+   "id": "PSAVERT",
+   "label": "Personal saving rate, %",
+   "value": 4.1,
+   "date": "2026-08-01",
+   "yoy": -0.2115,
+   "chg1y": -1.1,
+   "hist": [
+    [
+     "2023-09-01",
+     6.0
+    ],
+    [
+     "2023-10-01",
+     6.2
+    ],
+    [
+     "2023-11-01",
+     6.4
+    ],
+    [
+     "2023-12-01",
+     6.6
+    ],
+    [
+     "2024-01-01",
+     7.2
+    ],
+    [
+     "2024-02-01",
+     6.9
+    ],
+    [
+     "2024-03-01",
+     6.7
+    ],
+    [
+     "2024-04-01",
+     6.7
+    ],
+    [
+     "2024-05-01",
+     6.6
+    ],
+    [
+     "2024-06-01",
+     6.6
+    ],
+    [
+     "2024-07-01",
+     6.2
+    ],
+    [
+     "2024-08-01",
+     6.2
+    ],
+    [
+     "2024-09-01",
+     5.7
+    ],
+    [
+     "2024-10-01",
+     5.8
+    ],
+    [
+     "2024-11-01",
+     5.7
+    ],
+    [
+     "2024-12-01",
+     5.1
+    ],
+    [
+     "2025-01-01",
+     5.7
+    ],
+    [
+     "2025-02-01",
+     5.7
+    ],
+    [
+     "2025-03-01",
+     5.7
+    ],
+    [
+     "2025-04-01",
+     6.2
+    ],
+    [
+     "2025-05-01",
+     5.7
+    ],
+    [
+     "2025-06-01",
+     5.5
+    ],
+    [
+     "2025-07-01",
+     5.3
+    ],
+    [
+     "2025-08-01",
+     5.2
+    ],
+    [
+     "2025-09-01",
+     5.1
+    ],
+    [
+     "2025-10-01",
+     4.9
+    ],
+    [
+     "2025-11-01",
+     4.9
+    ],
+    [
+     "2025-12-01",
+     5.0
+    ],
+    [
+     "2026-01-01",
+     5.6
+    ],
+    [
+     "2026-02-01",
+     5.3
+    ],
+    [
+     "2026-03-01",
+     5.1
+    ],
+    [
+     "2026-04-01",
+     4.4
+    ],
+    [
+     "2026-05-01",
+     4.4
+    ],
+    [
+     "2026-06-01",
+     4.4
+    ],
+    [
+     "2026-07-01",
+     4.6
+    ],
+    [
+     "2026-08-01",
+     4.1
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/PSAVERT"
+  },
+  "income": {
+   "id": "DSPIC96",
+   "label": "Real disposable personal income, $B (2017 dollars, annual rate)",
+   "value": 18410.5,
+   "date": "2026-08-01",
+   "yoy": 0.013,
+   "chg1y": 236.5,
+   "hist": [
+    [
+     "2023-09-01",
+     17369.5
+    ],
+    [
+     "2023-10-01",
+     17435.9
+    ],
+    [
+     "2023-11-01",
+     17524.8
+    ],
+    [
+     "2023-12-01",
+     17589.4
+    ],
+    [
+     "2024-01-01",
+     17679.6
+    ],
+    [
+     "2024-02-01",
+     17681.0
+    ],
+    [
+     "2024-03-01",
+     17699.2
+    ],
+    [
+     "2024-04-01",
+     17747.2
+    ],
+    [
+     "2024-05-01",
+     17820.5
+    ],
+    [
+     "2024-06-01",
+     17869.8
+    ],
+    [
+     "2024-07-01",
+     17862.8
+    ],
+    [
+     "2024-08-01",
+     17865.2
+    ],
+    [
+     "2024-09-01",
+     17875.4
+    ],
+    [
+     "2024-10-01",
+     17914.4
+    ],
+    [
+     "2024-11-01",
+     17955.4
+    ],
+    [
+     "2024-12-01",
+     17963.9
+    ],
+    [
+     "2025-01-01",
+     17955.6
+    ],
+    [
+     "2025-02-01",
+     17957.4
+    ],
+    [
+     "2025-03-01",
+     18073.0
+    ],
+    [
+     "2025-04-01",
+     18190.1
+    ],
+    [
+     "2025-05-01",
+     18072.0
+    ],
+    [
+     "2025-06-01",
+     18088.6
+    ],
+    [
+     "2025-07-01",
+     18144.4
+    ],
+    [
+     "2025-08-01",
+     18174.0
+    ],
+    [
+     "2025-09-01",
+     18192.7
+    ],
+    [
+     "2025-10-01",
+     18168.4
+    ],
+    [
+     "2025-11-01",
+     18201.5
+    ],
+    [
+     "2025-12-01",
+     18208.6
+    ],
+    [
+     "2026-01-01",
+     18322.5
+    ],
+    [
+     "2026-02-01",
+     18284.8
+    ],
+    [
+     "2026-03-01",
+     18301.6
+    ],
+    [
+     "2026-04-01",
+     18231.9
+    ],
+    [
+     "2026-05-01",
+     18292.8
+    ],
+    [
+     "2026-06-01",
+     18358.4
+    ],
+    [
+     "2026-07-01",
+     18415.4
+    ],
+    [
+     "2026-08-01",
+     18410.5
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/DSPIC96"
+  },
+  "credit": {
+   "id": "TOTALSL",
+   "label": "Consumer credit outstanding, $M",
+   "value": 5196778.44,
+   "date": "2026-08-01",
+   "yoy": 0.0273,
+   "chg1y": 138188.67,
+   "hist": [
+    [
+     "2023-09-01",
+     4955832.25
+    ],
+    [
+     "2023-10-01",
+     4969073.22
+    ],
+    [
+     "2023-11-01",
+     4993197.93
+    ],
+    [
+     "2023-12-01",
+     4988225.98
+    ],
+    [
+     "2024-01-01",
+     5002475.58
+    ],
+    [
+     "2024-02-01",
+     5015273.37
+    ],
+    [
+     "2024-03-01",
+     5014899.75
+    ],
+    [
+     "2024-04-01",
+     5016165.95
+    ],
+    [
+     "2024-05-01",
+     5024842.11
+    ],
+    [
+     "2024-06-01",
+     5026364.81
+    ],
+    [
+     "2024-07-01",
+     5046177.04
+    ],
+    [
+     "2024-08-01",
+     5055767.39
+    ],
+    [
+     "2024-09-01",
+     5058345.12
+    ],
+    [
+     "2024-10-01",
+     5071588.43
+    ],
+    [
+     "2024-11-01",
+     5065689.77
+    ],
+    [
+     "2024-12-01",
+     4947229.57
+    ],
+    [
+     "2025-01-01",
+     4955619.41
+    ],
+    [
+     "2025-02-01",
+     4957607.46
+    ],
+    [
+     "2025-03-01",
+     5021864.24
+    ],
+    [
+     "2025-04-01",
+     5038214.15
+    ],
+    [
+     "2025-05-01",
+     5048281.76
+    ],
+    [
+     "2025-06-01",
+     5043533.83
+    ],
+    [
+     "2025-07-01",
+     5055914.28
+    ],
+    [
+     "2025-08-01",
+     5058589.77
+    ],
+    [
+     "2025-09-01",
+     5071963.31
+    ],
+    [
+     "2025-10-01",
+     5079764.65
+    ],
+    [
+     "2025-11-01",
+     5083079.45
+    ],
+    [
+     "2025-12-01",
+     5098820.82
+    ],
+    [
+     "2026-01-01",
+     5103212.46
+    ],
+    [
+     "2026-02-01",
+     5110390.78
+    ],
+    [
+     "2026-03-01",
+     5131428.77
+    ],
+    [
+     "2026-04-01",
+     5152527.91
+    ],
+    [
+     "2026-05-01",
+     5155421.48
+    ],
+    [
+     "2026-06-01",
+     5170757.74
+    ],
+    [
+     "2026-07-01",
+     5188497.83
+    ],
+    [
+     "2026-08-01",
+     5196778.44
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/TOTALSL"
+  },
+  "cpiShelter": {
+   "id": "CUSR0000SAH1",
+   "label": "CPI: shelter",
+   "value": 431.908,
+   "date": "2026-09-01",
+   "yoy": 0.0322,
+   "chg1y": 13.486,
+   "hist": [
+    [
+     "2023-09-01",
+     385.285
+    ],
+    [
+     "2023-10-01",
+     386.771
+    ],
+    [
+     "2023-11-01",
+     388.525
+    ],
+    [
+     "2023-12-01",
+     390.139
+    ],
+    [
+     "2024-01-01",
+     392.322
+    ],
+    [
+     "2024-02-01",
+     394.078
+    ],
+    [
+     "2024-03-01",
+     395.827
+    ],
+    [
+     "2024-04-01",
+     397.196
+    ],
+    [
+     "2024-05-01",
+     398.689
+    ],
+    [
+     "2024-06-01",
+     399.699
+    ],
+    [
+     "2024-07-01",
+     401.139
+    ],
+    [
+     "2024-08-01",
+     402.895
+    ],
+    [
+     "2024-09-01",
+     403.956
+    ],
+    [
+     "2024-10-01",
+     405.721
+    ],
+    [
+     "2024-11-01",
+     407.114
+    ],
+    [
+     "2024-12-01",
+     408.165
+    ],
+    [
+     "2025-01-01",
+     409.579
+    ],
+    [
+     "2025-02-01",
+     410.793
+    ],
+    [
+     "2025-03-01",
+     411.639
+    ],
+    [
+     "2025-04-01",
+     413.04
+    ],
+    [
+     "2025-05-01",
+     414.109
+    ],
+    [
+     "2025-06-01",
+     414.981
+    ],
+    [
+     "2025-07-01",
+     415.931
+    ],
+    [
+     "2025-08-01",
+     417.555
+    ],
+    [
+     "2025-09-01",
+     418.422
+    ],
+    [
+     "2025-11-01",
+     419.431
+    ],
+    [
+     "2025-12-01",
+     421.039
+    ],
+    [
+     "2026-01-01",
+     421.965
+    ],
+    [
+     "2026-02-01",
+     422.942
+    ],
+    [
+     "2026-03-01",
+     424.069
+    ],
+    [
+     "2026-04-01",
+     426.642
+    ],
+    [
+     "2026-05-01",
+     427.998
+    ],
+    [
+     "2026-06-01",
+     428.501
+    ],
+    [
+     "2026-07-01",
+     429.095
+    ],
+    [
+     "2026-08-01",
+     430.227
+    ],
+    [
+     "2026-09-01",
+     431.908
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/CUSR0000SAH1"
+  },
+  "cpiFood": {
+   "id": "CPIUFDSL",
+   "label": "CPI: food",
+   "value": 350.477,
+   "date": "2026-09-01",
+   "yoy": 0.0245,
+   "chg1y": 8.391,
+   "hist": [
+    [
+     "2023-09-01",
+     324.379
+    ],
+    [
+     "2023-10-01",
+     325.442
+    ],
+    [
+     "2023-11-01",
+     325.93
+    ],
+    [
+     "2023-12-01",
+     326.434
+    ],
+    [
+     "2024-01-01",
+     327.424
+    ],
+    [
+     "2024-02-01",
+     327.707
+    ],
+    [
+     "2024-03-01",
+     327.774
+    ],
+    [
+     "2024-04-01",
+     328.449
+    ],
+    [
+     "2024-05-01",
+     328.949
+    ],
+    [
+     "2024-06-01",
+     329.6
+    ],
+    [
+     "2024-07-01",
+     330.329
+    ],
+    [
+     "2024-08-01",
+     330.748
+    ],
+    [
+     "2024-09-01",
+     331.753
+    ],
+    [
+     "2024-10-01",
+     332.463
+    ],
+    [
+     "2024-11-01",
+     333.629
+    ],
+    [
+     "2024-12-01",
+     334.464
+    ],
+    [
+     "2025-01-01",
+     335.441
+    ],
+    [
+     "2025-02-01",
+     336.065
+    ],
+    [
+     "2025-03-01",
+     337.331
+    ],
+    [
+     "2025-04-01",
+     337.493
+    ],
+    [
+     "2025-05-01",
+     338.474
+    ],
+    [
+     "2025-06-01",
+     339.468
+    ],
+    [
+     "2025-07-01",
+     339.891
+    ],
+    [
+     "2025-08-01",
+     341.32
+    ],
+    [
+     "2025-09-01",
+     342.086
+    ],
+    [
+     "2025-11-01",
+     342.386
+    ],
+    [
+     "2025-12-01",
+     344.632
+    ],
+    [
+     "2026-01-01",
+     345.271
+    ],
+    [
+     "2026-02-01",
+     346.622
+    ],
+    [
+     "2026-03-01",
+     346.603
+    ],
+    [
+     "2026-04-01",
+     348.349
+    ],
+    [
+     "2026-05-01",
+     348.892
+    ],
+    [
+     "2026-06-01",
+     349.609
+    ],
+    [
+     "2026-07-01",
+     349.881
+    ],
+    [
+     "2026-08-01",
+     350.309
+    ],
+    [
+     "2026-09-01",
+     350.477
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/CPIUFDSL"
+  },
+  "cpiEnergy": {
+   "id": "CPIENGSL",
+   "label": "CPI: energy",
+   "value": 337.834,
+   "date": "2026-09-01",
+   "yoy": 0.2035,
+   "chg1y": 57.134,
+   "hist": [
+    [
+     "2023-09-01",
+     292.623
+    ],
+    [
+     "2023-10-01",
+     286.765
+    ],
+    [
+     "2023-11-01",
+     282.146
+    ],
+    [
+     "2023-12-01",
+     280.763
+    ],
+    [
+     "2024-01-01",
+     279.953
+    ],
+    [
+     "2024-02-01",
+     283.331
+    ],
+    [
+     "2024-03-01",
+     288.688
+    ],
+    [
+     "2024-04-01",
+     287.611
+    ],
+    [
+     "2024-05-01",
+     284.165
+    ],
+    [
+     "2024-06-01",
+     278.284
+    ],
+    [
+     "2024-07-01",
+     278.287
+    ],
+    [
+     "2024-08-01",
+     275.706
+    ],
+    [
+     "2024-09-01",
+     272.681
+    ],
+    [
+     "2024-10-01",
+     273.003
+    ],
+    [
+     "2024-11-01",
+     273.281
+    ],
+    [
+     "2024-12-01",
+     279.829
+    ],
+    [
+     "2025-01-01",
+     282.272
+    ],
+    [
+     "2025-02-01",
+     282.096
+    ],
+    [
+     "2025-03-01",
+     278.906
+    ],
+    [
+     "2025-04-01",
+     277.343
+    ],
+    [
+     "2025-05-01",
+     275.377
+    ],
+    [
+     "2025-06-01",
+     276.558
+    ],
+    [
+     "2025-07-01",
+     274.85
+    ],
+    [
+     "2025-08-01",
+     276.734
+    ],
+    [
+     "2025-09-01",
+     280.7
+    ],
+    [
+     "2025-11-01",
+     284.648
+    ],
+    [
+     "2025-12-01",
+     285.624
+    ],
+    [
+     "2026-01-01",
+     281.436
+    ],
+    [
+     "2026-02-01",
+     283.223
+    ],
+    [
+     "2026-03-01",
+     314.019
+    ],
+    [
+     "2026-04-01",
+     325.978
+    ],
+    [
+     "2026-05-01",
+     338.639
+    ],
+    [
+     "2026-06-01",
+     319.29
+    ],
+    [
+     "2026-07-01",
+     314.553
+    ],
+    [
+     "2026-08-01",
+     321.148
+    ],
+    [
+     "2026-09-01",
+     337.834
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/CPIENGSL"
+  },
+  "cpiMedical": {
+   "id": "CPIMEDSL",
+   "label": "CPI: medical care",
+   "value": 593.666,
+   "date": "2026-09-01",
+   "yoy": 0.015,
+   "chg1y": 8.794,
+   "hist": [
+    [
+     "2023-09-01",
+     548.398
+    ],
+    [
+     "2023-10-01",
+     549.793
+    ],
+    [
+     "2023-11-01",
+     552.42
+    ],
+    [
+     "2023-12-01",
+     554.406
+    ],
+    [
+     "2024-01-01",
+     556.741
+    ],
+    [
+     "2024-02-01",
+     557.163
+    ],
+    [
+     "2024-03-01",
+     559.269
+    ],
+    [
+     "2024-04-01",
+     561.275
+    ],
+    [
+     "2024-05-01",
+     564.191
+    ],
+    [
+     "2024-06-01",
+     564.997
+    ],
+    [
+     "2024-07-01",
+     564.593
+    ],
+    [
+     "2024-08-01",
+     564.183
+    ],
+    [
+     "2024-09-01",
+     566.256
+    ],
+    [
+     "2024-10-01",
+     567.974
+    ],
+    [
+     "2024-11-01",
+     569.476
+    ],
+    [
+     "2024-12-01",
+     570.11
+    ],
+    [
+     "2025-01-01",
+     571.366
+    ],
+    [
+     "2025-02-01",
+     573.284
+    ],
+    [
+     "2025-03-01",
+     574.069
+    ],
+    [
+     "2025-04-01",
+     576.548
+    ],
+    [
+     "2025-05-01",
+     578.073
+    ],
+    [
+     "2025-06-01",
+     580.527
+    ],
+    [
+     "2025-07-01",
+     584.45
+    ],
+    [
+     "2025-08-01",
+     583.809
+    ],
+    [
+     "2025-09-01",
+     584.872
+    ],
+    [
+     "2025-11-01",
+     585.987
+    ],
+    [
+     "2025-12-01",
+     588.092
+    ],
+    [
+     "2026-01-01",
+     589.61
+    ],
+    [
+     "2026-02-01",
+     592.554
+    ],
+    [
+     "2026-03-01",
+     591.587
+    ],
+    [
+     "2026-04-01",
+     591.202
+    ],
+    [
+     "2026-05-01",
+     593.057
+    ],
+    [
+     "2026-06-01",
+     592.283
+    ],
+    [
+     "2026-07-01",
+     594.393
+    ],
+    [
+     "2026-08-01",
+     592.934
+    ],
+    [
+     "2026-09-01",
+     593.666
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/CPIMEDSL"
+  },
+  "cpiUsedCars": {
+   "id": "CUSR0000SETA02",
+   "label": "CPI: used cars and trucks",
+   "value": 182.176,
+   "date": "2026-09-01",
+   "yoy": -0.0146,
+   "chg1y": -2.693,
+   "hist": [
+    [
+     "2023-10-01",
+     186.879
+    ],
+    [
+     "2023-11-01",
+     189.444
+    ],
+    [
+     "2023-12-01",
+     190.57
+    ],
+    [
+     "2024-01-01",
+     183.189
+    ],
+    [
+     "2024-02-01",
+     185.254
+    ],
+    [
+     "2024-03-01",
+     184.6
+    ],
+    [
+     "2024-04-01",
+     181.983
+    ],
+    [
+     "2024-05-01",
+     180.577
+    ],
+    [
+     "2024-06-01",
+     177.965
+    ],
+    [
+     "2024-07-01",
+     175.308
+    ],
+    [
+     "2024-08-01",
+     174.703
+    ],
+    [
+     "2024-09-01",
+     175.834
+    ],
+    [
+     "2024-10-01",
+     177.734
+    ],
+    [
+     "2024-11-01",
+     179.904
+    ],
+    [
+     "2024-12-01",
+     181.705
+    ],
+    [
+     "2025-01-01",
+     184.891
+    ],
+    [
+     "2025-02-01",
+     186.557
+    ],
+    [
+     "2025-03-01",
+     185.728
+    ],
+    [
+     "2025-04-01",
+     184.8
+    ],
+    [
+     "2025-05-01",
+     183.664
+    ],
+    [
+     "2025-06-01",
+     182.833
+    ],
+    [
+     "2025-07-01",
+     183.746
+    ],
+    [
+     "2025-08-01",
+     185.259
+    ],
+    [
+     "2025-09-01",
+     184.869
+    ],
+    [
+     "2025-10-01",
+     186.111
+    ],
+    [
+     "2025-11-01",
+     186.298
+    ],
+    [
+     "2025-12-01",
+     184.668
+    ],
+    [
+     "2026-01-01",
+     181.269
+    ],
+    [
+     "2026-02-01",
+     180.589
+    ],
+    [
+     "2026-03-01",
+     179.83
+    ],
+    [
+     "2026-04-01",
+     179.822
+    ],
+    [
+     "2026-05-01",
+     180.005
+    ],
+    [
+     "2026-06-01",
+     179.591
+    ],
+    [
+     "2026-07-01",
+     180.306
+    ],
+    [
+     "2026-08-01",
+     180.965
+    ],
+    [
+     "2026-09-01",
+     182.176
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/CUSR0000SETA02"
+  },
+  "impMexico": {
+   "id": "IMPMX",
+   "label": "US goods imports from Mexico, $M per month",
+   "value": 60637.409823,
+   "date": "2026-08-01",
+   "yoy": 0.3418,
+   "chg1y": 15447.75,
+   "hist": [
+    [
+     "2023-09-01",
+     39284.191017
+    ],
+    [
+     "2023-10-01",
+     42735.072144
+    ],
+    [
+     "2023-11-01",
+     39613.196786
+    ],
+    [
+     "2023-12-01",
+     36422.55696
+    ],
+    [
+     "2024-01-01",
+     37826.106079
+    ],
+    [
+     "2024-02-01",
+     39992.217929
+    ],
+    [
+     "2024-03-01",
+     41373.388641
+    ],
+    [
+     "2024-04-01",
+     42856.973887
+    ],
+    [
+     "2024-05-01",
+     43671.016201
+    ],
+    [
+     "2024-06-01",
+     41952.424903
+    ],
+    [
+     "2024-07-01",
+     41713.670045
+    ],
+    [
+     "2024-08-01",
+     43442.240473
+    ],
+    [
+     "2024-09-01",
+     44000.586862
+    ],
+    [
+     "2024-10-01",
+     45214.631883
+    ],
+    [
+     "2024-11-01",
+     42084.979699
+    ],
+    [
+     "2024-12-01",
+     38981.876122
+    ],
+    [
+     "2025-01-01",
+     41597.114578
+    ],
+    [
+     "2025-02-01",
+     41565.516994
+    ],
+    [
+     "2025-03-01",
+     48018.160511
+    ],
+    [
+     "2025-04-01",
+     41845.110321
+    ],
+    [
+     "2025-05-01",
+     46113.080232
+    ],
+    [
+     "2025-06-01",
+     44831.878204
+    ],
+    [
+     "2025-07-01",
+     45316.83095
+    ],
+    [
+     "2025-08-01",
+     45189.659508
+    ],
+    [
+     "2025-09-01",
+     44582.752607
+    ],
+    [
+     "2025-10-01",
+     48491.31482
+    ],
+    [
+     "2025-11-01",
+     44391.612047
+    ],
+    [
+     "2025-12-01",
+     42371.878613
+    ],
+    [
+     "2026-01-01",
+     42517.650656
+    ],
+    [
+     "2026-02-01",
+     44310.729841
+    ],
+    [
+     "2026-03-01",
+     51202.802514
+    ],
+    [
+     "2026-04-01",
+     50691.989593
+    ],
+    [
+     "2026-05-01",
+     54179.631779
+    ],
+    [
+     "2026-06-01",
+     55254.581232
+    ],
+    [
+     "2026-07-01",
+     60549.615043
+    ],
+    [
+     "2026-08-01",
+     60637.409823
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/IMPMX"
+  },
+  "impVietnam": {
+   "id": "IMP5520",
+   "label": "US goods imports from Vietnam, $M per month",
+   "value": 26474.521616,
+   "date": "2026-08-01",
+   "yoy": 0.6097,
+   "chg1y": 10027.837,
+   "hist": [
+    [
+     "2023-09-01",
+     10664.08244
+    ],
+    [
+     "2023-10-01",
+     10822.643543
+    ],
+    [
+     "2023-11-01",
+     10283.723648
+    ],
+    [
+     "2023-12-01",
+     9642.726906
+    ],
+    [
+     "2024-01-01",
+     9519.580662
+    ],
+    [
+     "2024-02-01",
+     9546.970781
+    ],
+    [
+     "2024-03-01",
+     9959.301874
+    ],
+    [
+     "2024-04-01",
+     10105.687734
+    ],
+    [
+     "2024-05-01",
+     11368.953789
+    ],
+    [
+     "2024-06-01",
+     11429.373657
+    ],
+    [
+     "2024-07-01",
+     11925.518106
+    ],
+    [
+     "2024-08-01",
+     11838.7703
+    ],
+    [
+     "2024-09-01",
+     13922.65875
+    ],
+    [
+     "2024-10-01",
+     12832.591331
+    ],
+    [
+     "2024-11-01",
+     12122.851718
+    ],
+    [
+     "2024-12-01",
+     11745.343762
+    ],
+    [
+     "2025-01-01",
+     12991.588955
+    ],
+    [
+     "2025-02-01",
+     11919.800496
+    ],
+    [
+     "2025-03-01",
+     14788.649471
+    ],
+    [
+     "2025-04-01",
+     14844.563387
+    ],
+    [
+     "2025-05-01",
+     15987.785835
+    ],
+    [
+     "2025-06-01",
+     17760.2523
+    ],
+    [
+     "2025-07-01",
+     17990.94573
+    ],
+    [
+     "2025-08-01",
+     16446.684125
+    ],
+    [
+     "2025-09-01",
+     17816.779483
+    ],
+    [
+     "2025-10-01",
+     17774.47165
+    ],
+    [
+     "2025-11-01",
+     17030.323165
+    ],
+    [
+     "2025-12-01",
+     18527.476552
+    ],
+    [
+     "2026-01-01",
+     19595.49836
+    ],
+    [
+     "2026-02-01",
+     15732.307463
+    ],
+    [
+     "2026-03-01",
+     20536.4958
+    ],
+    [
+     "2026-04-01",
+     20403.588188
+    ],
+    [
+     "2026-05-01",
+     21757.53478
+    ],
+    [
+     "2026-06-01",
+     25168.36855
+    ],
+    [
+     "2026-07-01",
+     26419.36136
+    ],
+    [
+     "2026-08-01",
+     26474.521616
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/IMP5520"
+  },
+  "impCanada": {
+   "id": "IMPCA",
+   "label": "US goods imports from Canada, $M per month",
+   "value": 35980.03995,
+   "date": "2026-08-01",
+   "yoy": 0.2347,
+   "chg1y": 6839.676,
+   "hist": [
+    [
+     "2023-09-01",
+     34898.761348
+    ],
+    [
+     "2023-10-01",
+     36340.55161
+    ],
+    [
+     "2023-11-01",
+     36178.982867
+    ],
+    [
+     "2023-12-01",
+     33060.337213
+    ],
+    [
+     "2024-01-01",
+     33379.145243
+    ],
+    [
+     "2024-02-01",
+     33112.372914
+    ],
+    [
+     "2024-03-01",
+     33999.03965
+    ],
+    [
+     "2024-04-01",
+     34350.189831
+    ],
+    [
+     "2024-05-01",
+     35598.482518
+    ],
+    [
+     "2024-06-01",
+     34374.791125
+    ],
+    [
+     "2024-07-01",
+     35909.406371
+    ],
+    [
+     "2024-08-01",
+     32830.460521
+    ],
+    [
+     "2024-09-01",
+     34532.022027
+    ],
+    [
+     "2024-10-01",
+     34413.502802
+    ],
+    [
+     "2024-11-01",
+     33446.477024
+    ],
+    [
+     "2024-12-01",
+     35825.700666
+    ],
+    [
+     "2025-01-01",
+     38949.656278
+    ],
+    [
+     "2025-02-01",
+     34787.423872
+    ],
+    [
+     "2025-03-01",
+     34967.520099
+    ],
+    [
+     "2025-04-01",
+     29101.655844
+    ],
+    [
+     "2025-05-01",
+     29977.446512
+    ],
+    [
+     "2025-06-01",
+     29645.029011
+    ],
+    [
+     "2025-07-01",
+     32195.874058
+    ],
+    [
+     "2025-08-01",
+     29140.363978
+    ],
+    [
+     "2025-09-01",
+     31749.010166
+    ],
+    [
+     "2025-10-01",
+     31235.491687
+    ],
+    [
+     "2025-11-01",
+     28513.69644
+    ],
+    [
+     "2025-12-01",
+     31658.890347
+    ],
+    [
+     "2026-01-01",
+     28330.595475
+    ],
+    [
+     "2026-02-01",
+     29172.287264
+    ],
+    [
+     "2026-03-01",
+     34089.317327
+    ],
+    [
+     "2026-04-01",
+     35028.144854
+    ],
+    [
+     "2026-05-01",
+     36337.15396
+    ],
+    [
+     "2026-06-01",
+     37216.785546
+    ],
+    [
+     "2026-07-01",
+     33491.12506
+    ],
+    [
+     "2026-08-01",
+     35980.03995
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/IMPCA"
+  },
+  "customs": {
+   "id": "B235RC1Q027SBEA",
+   "label": "Federal customs duties collected, $B (annual rate)",
+   "value": 306.398,
+   "date": "2026-04-01",
+   "yoy": 0.1323,
+   "chg1y": 35.806,
+   "hist": [
+    [
+     "2017-07-01",
+     38.156
+    ],
+    [
+     "2017-10-01",
+     39.506
+    ],
+    [
+     "2018-01-01",
+     41.337
+    ],
+    [
+     "2018-04-01",
+     46.657
+    ],
+    [
+     "2018-07-01",
+     53.244
+    ],
+    [
+     "2018-10-01",
+     71.898
+    ],
+    [
+     "2019-01-01",
+     75.735
+    ],
+    [
+     "2019-04-01",
+     70.03
+    ],
+    [
+     "2019-07-01",
+     79.886
+    ],
+    [
+     "2019-10-01",
+     85.356
+    ],
+    [
+     "2020-01-01",
+     79.515
+    ],
+    [
+     "2020-04-01",
+     55.361
+    ],
+    [
+     "2020-07-01",
+     66.4
+    ],
+    [
+     "2020-10-01",
+     73.23
+    ],
+    [
+     "2021-01-01",
+     81.759
+    ],
+    [
+     "2021-04-01",
+     88.181
+    ],
+    [
+     "2021-07-01",
+     88.826
+    ],
+    [
+     "2021-10-01",
+     97.64
+    ],
+    [
+     "2022-01-01",
+     108.681
+    ],
+    [
+     "2022-04-01",
+     108.544
+    ],
+    [
+     "2022-07-01",
+     101.05
+    ],
+    [
+     "2022-10-01",
+     91.055
+    ],
+    [
+     "2023-01-01",
+     85.687
+    ],
+    [
+     "2023-04-01",
+     82.33
+    ],
+    [
+     "2023-07-01",
+     78.861
+    ],
+    [
+     "2023-10-01",
+     79.653
+    ],
+    [
+     "2024-01-01",
+     80.48
+    ],
+    [
+     "2024-04-01",
+     79.679
+    ],
+    [
+     "2024-07-01",
+     85.084
+    ],
+    [
+     "2024-10-01",
+     89.104
+    ],
+    [
+     "2025-01-01",
+     103.66
+    ],
+    [
+     "2025-04-01",
+     270.592
+    ],
+    [
+     "2025-07-01",
+     333.75
+    ],
+    [
+     "2025-10-01",
+     366.651
+    ],
+    [
+     "2026-01-01",
+     326.223
+    ],
+    [
+     "2026-04-01",
+     306.398
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/B235RC1Q027SBEA"
+  },
+  "freight": {
+   "id": "TSIFRGHT",
+   "label": "Freight transportation services index",
+   "value": 135.7,
+   "date": "2026-07-01",
+   "yoy": -0.0202,
+   "chg1y": -2.8,
+   "hist": [
+    [
+     "2023-08-01",
+     137.0
+    ],
+    [
+     "2023-09-01",
+     137.5
+    ],
+    [
+     "2023-10-01",
+     137.7
+    ],
+    [
+     "2023-11-01",
+     137.5
+    ],
+    [
+     "2023-12-01",
+     138.5
+    ],
+    [
+     "2024-01-01",
+     135.2
+    ],
+    [
+     "2024-02-01",
+     136.7
+    ],
+    [
+     "2024-03-01",
+     136.7
+    ],
+    [
+     "2024-04-01",
+     135.2
+    ],
+    [
+     "2024-05-01",
+     138.6
+    ],
+    [
+     "2024-06-01",
+     138.0
+    ],
+    [
+     "2024-07-01",
+     137.3
+    ],
+    [
+     "2024-08-01",
+     138.8
+    ],
+    [
+     "2024-09-01",
+     137.3
+    ],
+    [
+     "2024-10-01",
+     138.3
+    ],
+    [
+     "2024-11-01",
+     137.1
+    ],
+    [
+     "2024-12-01",
+     137.4
+    ],
+    [
+     "2025-01-01",
+     137.8
+    ],
+    [
+     "2025-02-01",
+     136.8
+    ],
+    [
+     "2025-03-01",
+     137.6
+    ],
+    [
+     "2025-04-01",
+     137.5
+    ],
+    [
+     "2025-05-01",
+     136.9
+    ],
+    [
+     "2025-06-01",
+     137.0
+    ],
+    [
+     "2025-07-01",
+     138.5
+    ],
+    [
+     "2025-08-01",
+     138.9
+    ],
+    [
+     "2025-09-01",
+     138.0
+    ],
+    [
+     "2025-10-01",
+     136.7
+    ],
+    [
+     "2025-11-01",
+     137.2
+    ],
+    [
+     "2025-12-01",
+     136.9
+    ],
+    [
+     "2026-01-01",
+     136.3
+    ],
+    [
+     "2026-02-01",
+     138.4
+    ],
+    [
+     "2026-03-01",
+     139.3
+    ],
+    [
+     "2026-04-01",
+     138.2
+    ],
+    [
+     "2026-05-01",
+     135.3
+    ],
+    [
+     "2026-06-01",
+     136.6
+    ],
+    [
+     "2026-07-01",
+     135.7
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/TSIFRGHT"
+  },
+  "errors": []
+ },
+ "fed": {
+  "fedfunds": {
+   "id": "DFF",
+   "label": "Effective federal funds rate, %",
+   "value": 3.88,
+   "date": "2026-10-22",
+   "yoy": -0.0583,
+   "chg1y": -0.24,
+   "hist": [
+    [
+     "2026-02-19",
+     3.64
+    ],
+    [
+     "2026-02-26",
+     3.64
+    ],
+    [
+     "2026-03-05",
+     3.64
+    ],
+    [
+     "2026-03-12",
+     3.64
+    ],
+    [
+     "2026-03-19",
+     3.64
+    ],
+    [
+     "2026-03-26",
+     3.64
+    ],
+    [
+     "2026-04-02",
+     3.64
+    ],
+    [
+     "2026-04-09",
+     3.64
+    ],
+    [
+     "2026-04-16",
+     3.64
+    ],
+    [
+     "2026-04-23",
+     3.64
+    ],
+    [
+     "2026-04-30",
+     3.64
+    ],
+    [
+     "2026-05-07",
+     3.63
+    ],
+    [
+     "2026-05-14",
+     3.63
+    ],
+    [
+     "2026-05-21",
+     3.62
+    ],
+    [
+     "2026-05-28",
+     3.62
+    ],
+    [
+     "2026-06-04",
+     3.62
+    ],
+    [
+     "2026-06-11",
+     3.62
+    ],
+    [
+     "2026-06-18",
+     3.63
+    ],
+    [
+     "2026-06-25",
+     3.63
+    ],
+    [
+     "2026-07-02",
+     3.63
+    ],
+    [
+     "2026-07-09",
+     3.62
+    ],
+    [
+     "2026-07-16",
+     3.63
+    ],
+    [
+     "2026-07-23",
+     3.63
+    ],
+    [
+     "2026-07-30",
+     3.63
+    ],
+    [
+     "2026-08-06",
+     3.63
+    ],
+    [
+     "2026-08-13",
+     3.63
+    ],
+    [
+     "2026-08-20",
+     3.63
+    ],
+    [
+     "2026-08-27",
+     3.63
+    ],
+    [
+     "2026-09-03",
+     3.63
+    ],
+    [
+     "2026-09-10",
+     3.63
+    ],
+    [
+     "2026-09-17",
+     3.88
+    ],
+    [
+     "2026-09-24",
+     3.88
+    ],
+    [
+     "2026-10-01",
+     3.88
+    ],
+    [
+     "2026-10-08",
+     3.88
+    ],
+    [
+     "2026-10-15",
+     3.88
+    ],
+    [
+     "2026-10-22",
+     3.88
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/DFF"
+  },
+  "targetUpper": {
+   "id": "DFEDTARU",
+   "label": "Federal funds target range, upper limit, %",
+   "value": 4.0,
+   "date": "2026-10-24",
+   "yoy": -0.0588,
+   "chg1y": -0.25,
+   "hist": [
+    [
+     "2026-02-21",
+     3.75
+    ],
+    [
+     "2026-02-28",
+     3.75
+    ],
+    [
+     "2026-03-07",
+     3.75
+    ],
+    [
+     "2026-03-14",
+     3.75
+    ],
+    [
+     "2026-03-21",
+     3.75
+    ],
+    [
+     "2026-03-28",
+     3.75
+    ],
+    [
+     "2026-04-04",
+     3.75
+    ],
+    [
+     "2026-04-11",
+     3.75
+    ],
+    [
+     "2026-04-18",
+     3.75
+    ],
+    [
+     "2026-04-25",
+     3.75
+    ],
+    [
+     "2026-05-02",
+     3.75
+    ],
+    [
+     "2026-05-09",
+     3.75
+    ],
+    [
+     "2026-05-16",
+     3.75
+    ],
+    [
+     "2026-05-23",
+     3.75
+    ],
+    [
+     "2026-05-30",
+     3.75
+    ],
+    [
+     "2026-06-06",
+     3.75
+    ],
+    [
+     "2026-06-13",
+     3.75
+    ],
+    [
+     "2026-06-20",
+     3.75
+    ],
+    [
+     "2026-06-27",
+     3.75
+    ],
+    [
+     "2026-07-04",
+     3.75
+    ],
+    [
+     "2026-07-11",
+     3.75
+    ],
+    [
+     "2026-07-18",
+     3.75
+    ],
+    [
+     "2026-07-25",
+     3.75
+    ],
+    [
+     "2026-08-01",
+     3.75
+    ],
+    [
+     "2026-08-08",
+     3.75
+    ],
+    [
+     "2026-08-15",
+     3.75
+    ],
+    [
+     "2026-08-22",
+     3.75
+    ],
+    [
+     "2026-08-29",
+     3.75
+    ],
+    [
+     "2026-09-05",
+     3.75
+    ],
+    [
+     "2026-09-12",
+     3.75
+    ],
+    [
+     "2026-09-19",
+     4.0
+    ],
+    [
+     "2026-09-26",
+     4.0
+    ],
+    [
+     "2026-10-03",
+     4.0
+    ],
+    [
+     "2026-10-10",
+     4.0
+    ],
+    [
+     "2026-10-17",
+     4.0
+    ],
+    [
+     "2026-10-24",
+     4.0
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/DFEDTARU"
+  },
+  "targetLower": {
+   "id": "DFEDTARL",
+   "label": "Federal funds target range, lower limit, %",
+   "value": 3.75,
+   "date": "2026-10-24",
+   "yoy": -0.0625,
+   "chg1y": -0.25,
+   "hist": [
+    [
+     "2026-02-21",
+     3.5
+    ],
+    [
+     "2026-02-28",
+     3.5
+    ],
+    [
+     "2026-03-07",
+     3.5
+    ],
+    [
+     "2026-03-14",
+     3.5
+    ],
+    [
+     "2026-03-21",
+     3.5
+    ],
+    [
+     "2026-03-28",
+     3.5
+    ],
+    [
+     "2026-04-04",
+     3.5
+    ],
+    [
+     "2026-04-11",
+     3.5
+    ],
+    [
+     "2026-04-18",
+     3.5
+    ],
+    [
+     "2026-04-25",
+     3.5
+    ],
+    [
+     "2026-05-02",
+     3.5
+    ],
+    [
+     "2026-05-09",
+     3.5
+    ],
+    [
+     "2026-05-16",
+     3.5
+    ],
+    [
+     "2026-05-23",
+     3.5
+    ],
+    [
+     "2026-05-30",
+     3.5
+    ],
+    [
+     "2026-06-06",
+     3.5
+    ],
+    [
+     "2026-06-13",
+     3.5
+    ],
+    [
+     "2026-06-20",
+     3.5
+    ],
+    [
+     "2026-06-27",
+     3.5
+    ],
+    [
+     "2026-07-04",
+     3.5
+    ],
+    [
+     "2026-07-11",
+     3.5
+    ],
+    [
+     "2026-07-18",
+     3.5
+    ],
+    [
+     "2026-07-25",
+     3.5
+    ],
+    [
+     "2026-08-01",
+     3.5
+    ],
+    [
+     "2026-08-08",
+     3.5
+    ],
+    [
+     "2026-08-15",
+     3.5
+    ],
+    [
+     "2026-08-22",
+     3.5
+    ],
+    [
+     "2026-08-29",
+     3.5
+    ],
+    [
+     "2026-09-05",
+     3.5
+    ],
+    [
+     "2026-09-12",
+     3.5
+    ],
+    [
+     "2026-09-19",
+     3.75
+    ],
+    [
+     "2026-09-26",
+     3.75
+    ],
+    [
+     "2026-10-03",
+     3.75
+    ],
+    [
+     "2026-10-10",
+     3.75
+    ],
+    [
+     "2026-10-17",
+     3.75
+    ],
+    [
+     "2026-10-24",
+     3.75
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/DFEDTARL"
+  },
+  "balance": {
+   "id": "WALCL",
+   "label": "Federal Reserve total assets, $M (weekly)",
+   "value": 6753604.0,
+   "date": "2026-10-21",
+   "yoy": 0.0249,
+   "chg1y": 164071.0,
+   "hist": [
+    [
+     "2025-06-18",
+     6681056.0
+    ],
+    [
+     "2025-07-02",
+     6659598.0
+    ],
+    [
+     "2025-07-16",
+     6659273.0
+    ],
+    [
+     "2025-07-30",
+     6642578.0
+    ],
+    [
+     "2025-08-13",
+     6643615.0
+    ],
+    [
+     "2025-08-27",
+     6603384.0
+    ],
+    [
+     "2025-09-10",
+     6605962.0
+    ],
+    [
+     "2025-09-24",
+     6608395.0
+    ],
+    [
+     "2025-10-08",
+     6590815.0
+    ],
+    [
+     "2025-10-22",
+     6589533.0
+    ],
+    [
+     "2025-11-05",
+     6572732.0
+    ],
+    [
+     "2025-11-19",
+     6555283.0
+    ],
+    [
+     "2025-12-03",
+     6535781.0
+    ],
+    [
+     "2025-12-17",
+     6556861.0
+    ],
+    [
+     "2025-12-31",
+     6640618.0
+    ],
+    [
+     "2026-01-14",
+     6581700.0
+    ],
+    [
+     "2026-01-28",
+     6587568.0
+    ],
+    [
+     "2026-02-11",
+     6622382.0
+    ],
+    [
+     "2026-02-25",
+     6613797.0
+    ],
+    [
+     "2026-03-11",
+     6646344.0
+    ],
+    [
+     "2026-03-25",
+     6657161.0
+    ],
+    [
+     "2026-04-08",
+     6693871.0
+    ],
+    [
+     "2026-04-22",
+     6707419.0
+    ],
+    [
+     "2026-05-06",
+     6709505.0
+    ],
+    [
+     "2026-05-20",
+     6713643.0
+    ],
+    [
+     "2026-06-03",
+     6711495.0
+    ],
+    [
+     "2026-06-17",
+     6736424.0
+    ],
+    [
+     "2026-07-01",
+     6724564.0
+    ],
+    [
+     "2026-07-15",
+     6743028.0
+    ],
+    [
+     "2026-07-29",
+     6738190.0
+    ],
+    [
+     "2026-08-12",
+     6759955.0
+    ],
+    [
+     "2026-08-26",
+     6730912.0
+    ],
+    [
+     "2026-09-09",
+     6740619.0
+    ],
+    [
+     "2026-09-23",
+     6747704.0
+    ],
+    [
+     "2026-10-07",
+     6747560.0
+    ],
+    [
+     "2026-10-21",
+     6753604.0
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/WALCL"
+  },
+  "corePce": {
+   "id": "PCEPILFE",
+   "label": "Core PCE price index (the Fed's preferred inflation gauge)",
+   "value": 130.455,
+   "date": "2026-08-01",
+   "yoy": 0.0301,
+   "chg1y": 3.809,
+   "hist": [
+    [
+     "2023-09-01",
+     120.053
+    ],
+    [
+     "2023-10-01",
+     120.321
+    ],
+    [
+     "2023-11-01",
+     120.525
+    ],
+    [
+     "2023-12-01",
+     120.694
+    ],
+    [
+     "2024-01-01",
+     121.201
+    ],
+    [
+     "2024-02-01",
+     121.57
+    ],
+    [
+     "2024-03-01",
+     122.016
+    ],
+    [
+     "2024-04-01",
+     122.252
+    ],
+    [
+     "2024-05-01",
+     122.406
+    ],
+    [
+     "2024-06-01",
+     122.667
+    ],
+    [
+     "2024-07-01",
+     122.872
+    ],
+    [
+     "2024-08-01",
+     123.135
+    ],
+    [
+     "2024-09-01",
+     123.462
+    ],
+    [
+     "2024-10-01",
+     123.816
+    ],
+    [
+     "2024-11-01",
+     123.989
+    ],
+    [
+     "2024-12-01",
+     124.198
+    ],
+    [
+     "2025-01-01",
+     124.609
+    ],
+    [
+     "2025-02-01",
+     125.002
+    ],
+    [
+     "2025-03-01",
+     125.144
+    ],
+    [
+     "2025-04-01",
+     125.524
+    ],
+    [
+     "2025-05-01",
+     125.818
+    ],
+    [
+     "2025-06-01",
+     126.133
+    ],
+    [
+     "2025-07-01",
+     126.363
+    ],
+    [
+     "2025-08-01",
+     126.646
+    ],
+    [
+     "2025-09-01",
+     126.94
+    ],
+    [
+     "2025-10-01",
+     127.165
+    ],
+    [
+     "2025-11-01",
+     127.363
+    ],
+    [
+     "2025-12-01",
+     127.765
+    ],
+    [
+     "2026-01-01",
+     128.27
+    ],
+    [
+     "2026-02-01",
+     128.701
+    ],
+    [
+     "2026-03-01",
+     129.03
+    ],
+    [
+     "2026-04-01",
+     129.395
+    ],
+    [
+     "2026-05-01",
+     129.796
+    ],
+    [
+     "2026-06-01",
+     129.969
+    ],
+    [
+     "2026-07-01",
+     130.133
+    ],
+    [
+     "2026-08-01",
+     130.455
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/PCEPILFE"
+  },
+  "mortgage": {
+   "id": "MORTGAGE30US",
+   "label": "30-year fixed mortgage rate, % (weekly)",
+   "value": 7.32,
+   "date": "2026-10-22",
+   "yoy": 0.1826,
+   "chg1y": 1.13,
+   "hist": [
+    [
+     "2025-06-18",
+     6.81
+    ],
+    [
+     "2025-07-03",
+     6.67
+    ],
+    [
+     "2025-07-17",
+     6.75
+    ],
+    [
+     "2025-07-31",
+     6.72
+    ],
+    [
+     "2025-08-14",
+     6.58
+    ],
+    [
+     "2025-08-28",
+     6.56
+    ],
+    [
+     "2025-09-11",
+     6.35
+    ],
+    [
+     "2025-09-25",
+     6.3
+    ],
+    [
+     "2025-10-09",
+     6.3
+    ],
+    [
+     "2025-10-23",
+     6.19
+    ],
+    [
+     "2025-11-06",
+     6.22
+    ],
+    [
+     "2025-11-20",
+     6.26
+    ],
+    [
+     "2025-12-04",
+     6.19
+    ],
+    [
+     "2025-12-18",
+     6.21
+    ],
+    [
+     "2025-12-31",
+     6.15
+    ],
+    [
+     "2026-01-15",
+     6.06
+    ],
+    [
+     "2026-01-29",
+     6.1
+    ],
+    [
+     "2026-02-12",
+     6.09
+    ],
+    [
+     "2026-02-26",
+     5.98
+    ],
+    [
+     "2026-03-12",
+     6.11
+    ],
+    [
+     "2026-03-26",
+     6.38
+    ],
+    [
+     "2026-04-09",
+     6.37
+    ],
+    [
+     "2026-04-23",
+     6.23
+    ],
+    [
+     "2026-05-07",
+     6.37
+    ],
+    [
+     "2026-05-21",
+     6.51
+    ],
+    [
+     "2026-06-04",
+     6.48
+    ],
+    [
+     "2026-06-18",
+     6.47
+    ],
+    [
+     "2026-07-02",
+     6.43
+    ],
+    [
+     "2026-07-16",
+     6.55
+    ],
+    [
+     "2026-07-30",
+     6.66
+    ],
+    [
+     "2026-08-13",
+     6.67
+    ],
+    [
+     "2026-08-27",
+     6.66
+    ],
+    [
+     "2026-09-10",
+     6.76
+    ],
+    [
+     "2026-09-24",
+     7.03
+    ],
+    [
+     "2026-10-08",
+     7.4
+    ],
+    [
+     "2026-10-22",
+     7.32
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/MORTGAGE30US"
+  },
+  "unemployment": {
+   "id": "UNRATE",
+   "label": "Unemployment rate, %",
+   "value": 4.2,
+   "date": "2026-09-01",
+   "yoy": -0.0455,
+   "chg1y": -0.2,
+   "hist": [
+    [
+     "2023-09-01",
+     3.7
+    ],
+    [
+     "2023-10-01",
+     3.9
+    ],
+    [
+     "2023-11-01",
+     3.7
+    ],
+    [
+     "2023-12-01",
+     3.8
+    ],
+    [
+     "2024-01-01",
+     3.7
+    ],
+    [
+     "2024-02-01",
+     3.9
+    ],
+    [
+     "2024-03-01",
+     3.9
+    ],
+    [
+     "2024-04-01",
+     3.9
+    ],
+    [
+     "2024-05-01",
+     3.9
+    ],
+    [
+     "2024-06-01",
+     4.1
+    ],
+    [
+     "2024-07-01",
+     4.2
+    ],
+    [
+     "2024-08-01",
+     4.2
+    ],
+    [
+     "2024-09-01",
+     4.1
+    ],
+    [
+     "2024-10-01",
+     4.1
+    ],
+    [
+     "2024-11-01",
+     4.2
+    ],
+    [
+     "2024-12-01",
+     4.1
+    ],
+    [
+     "2025-01-01",
+     4.0
+    ],
+    [
+     "2025-02-01",
+     4.2
+    ],
+    [
+     "2025-03-01",
+     4.2
+    ],
+    [
+     "2025-04-01",
+     4.2
+    ],
+    [
+     "2025-05-01",
+     4.3
+    ],
+    [
+     "2025-06-01",
+     4.1
+    ],
+    [
+     "2025-07-01",
+     4.3
+    ],
+    [
+     "2025-08-01",
+     4.3
+    ],
+    [
+     "2025-09-01",
+     4.4
+    ],
+    [
+     "2025-11-01",
+     4.5
+    ],
+    [
+     "2025-12-01",
+     4.4
+    ],
+    [
+     "2026-01-01",
+     4.3
+    ],
+    [
+     "2026-02-01",
+     4.4
+    ],
+    [
+     "2026-03-01",
+     4.3
+    ],
+    [
+     "2026-04-01",
+     4.3
+    ],
+    [
+     "2026-05-01",
+     4.3
+    ],
+    [
+     "2026-06-01",
+     4.2
+    ],
+    [
+     "2026-07-01",
+     4.1
+    ],
+    [
+     "2026-08-01",
+     4.1
+    ],
+    [
+     "2026-09-01",
+     4.2
+    ]
+   ],
+   "url": "https://fred.stlouisfed.org/series/UNRATE"
+  },
+  "errors": []
+ }
+}
