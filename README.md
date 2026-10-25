@@ -11,11 +11,15 @@ policy between them. The more pressure on a player, the closer it is pulled in.
 Nothing is simulated or forecast. Every number comes from a public source, and the page shows
 where.
 
+**[Open the live demo →](https://klauscreates.github.io/ai-black-hole/)**
+
 ![The AI Black Hole: the Fed above the black hole, 20 players and 75 companies and concepts in orbit](docs/screenshot.jpg)
 
 ## Try it
 
-- **Quickest:** open [`docs/index.html`](docs/index.html) in a browser. It is a single file with
+- **Live demo:** [klauscreates.github.io/ai-black-hole](https://klauscreates.github.io/ai-black-hole/),
+  no install, works on phones. It shows one day of real data, marked "Saved copy".
+- **Offline:** open [`docs/index.html`](docs/index.html) in a browser. It is a single file with
   one day's data built in (marked "Saved copy"), and it works offline apart from the 3D engine,
   which loads from jsDelivr.
 - **Live on your computer:** run the local server, which streams delayed stock quotes and
