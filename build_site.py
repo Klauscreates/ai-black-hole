@@ -1,7 +1,8 @@
 """Build the hosted (GitHub Pages) version of the AI Black Hole into _site/.
 
 Runs on a schedule in GitHub Actions (.github/workflows/live.yml), with no server:
-  1. Start from the snapshot the site is already serving (its data.json), or sample/snapshot.json.
+  1. Start from the snapshot the site is already serving (its data.json), or sample/snapshot.json;
+     a newer data/snapshot.json in the repo (pushed from your own daily refresh) wins.
   2. On a full refresh (each morning, or a manual run), rebuild the daily snapshot with
      market_snapshot.py: FRED, the Fed, EIA grid, drought and economy data. News analysis and
      events carry forward; a newer data/analysis.json in the repo replaces the analysis.
@@ -25,6 +26,7 @@ HERE = Path(__file__).resolve().parent
 SITE = HERE / "_site"
 SAMPLE = HERE / "sample" / "snapshot.json"
 ANALYSIS = HERE / "data" / "analysis.json"
+SNAPSHOT_FILE = HERE / "data" / "snapshot.json"  # a newer daily snapshot pushed from your own refresh
 
 
 def site_url():
@@ -66,6 +68,10 @@ def full_refresh(prev):
 
 def main():
     snap, origin = previous_snapshot()
+    if SNAPSHOT_FILE.exists():
+        pushed = json.loads(SNAPSHOT_FILE.read_text(encoding="utf-8"))
+        if str(pushed.get("date", "")) > str(snap.get("date", "")):
+            snap, origin = pushed, "data/snapshot.json"
     print(f"base snapshot {snap.get('date')} from {origin}")
     if os.environ.get("FULL_REFRESH", "").lower() == "true":
         snap = full_refresh(snap)
