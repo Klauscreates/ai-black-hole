@@ -1,28 +1,28 @@
 {
  "date": "2026-11-06",
- "asOf": "2026-11-06T15:06:41+00:00",
+ "asOf": "2026-11-06T20:30:39+00:00",
  "series": {
   "bbb": {
    "id": "BAMLC0A4CBBB",
    "label": "ICE BofA BBB US corporate bond spread (OAS), %",
-   "value": 1.13,
-   "date": "2026-11-04",
+   "value": 1.16,
+   "date": "2026-11-05",
    "avg1y": 1.006,
    "max1y": 1.17,
    "min1y": 0.92,
-   "chg30": 0.09,
+   "chg30": 0.14,
    "hist": [],
    "url": "https://fred.stlouisfed.org/series/BAMLC0A4CBBB"
   },
   "hy": {
    "id": "BAMLH0A0HYM2",
    "label": "ICE BofA US high-yield bond spread (OAS), %",
-   "value": 3.32,
-   "date": "2026-11-04",
-   "avg1y": 2.893,
-   "max1y": 3.46,
+   "value": 3.48,
+   "date": "2026-11-05",
+   "avg1y": 2.895,
+   "max1y": 3.48,
    "min1y": 2.6,
-   "chg30": 0.2,
+   "chg30": 0.45,
    "hist": [],
    "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
   },
@@ -523,48 +523,103 @@
  "stocks": null,
  "events": [
   {
+   "amountB": null,
+   "date": "2026-11-06",
+   "kind": "context",
+   "node": "fed",
+   "source": "Yahoo Finance",
+   "status": "closed",
+   "title": "October payrolls rose 165,000, well above forecasts, strengthening expectations of a Fed rate hike in December.",
+   "url": "https://finance.yahoo.com/economy/policy/article/blockbuster-october-jobs-report-keeps-fed-rate-hike-in-play-for-december-135325070.html",
+   "who": "Federal Reserve, BLS"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "stress",
+   "status": "reported",
+   "who": "Anthropic",
+   "node": "labs",
+   "amountB": null,
+   "title": "Anthropic's IPO valuation could be cut to around $1 trillion from a $1.5 trillion target, and the listing may be delayed after the AI stock rout, a report said.",
+   "source": "Decrypt",
+   "url": "https://decrypt.co/382716/anthropic-ipo-valuation-could-fall-to-1-trillion-after-ai-stock-rout-report"
+  },
+  {
    "date": "2026-11-06",
    "kind": "context",
    "status": "closed",
-   "who": "Federal Reserve, BLS",
-   "node": "fed",
-   "amountB": null,
-   "title": "October payrolls rose 165,000, well above forecasts, strengthening expectations of a Fed rate hike in December.",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/economy/policy/article/blockbuster-october-jobs-report-keeps-fed-rate-hike-in-play-for-december-135325070.html"
-  },
-  {
-   "date": "2026-11-05",
-   "kind": "stress",
-   "status": "closed",
-   "who": "Nvidia",
-   "node": "nvidia",
-   "amountB": null,
-   "title": "Nvidia closed down about 9% at $181.64 in an AI chip rout, erasing its gains for 2026.",
-   "source": "Seeking Alpha",
-   "url": "https://seekingalpha.com/news/4667280-nvidia-drops-9-now-down-for-2026"
-  },
-  {
-   "date": "2026-11-05",
-   "kind": "stress",
-   "status": "closed",
-   "who": "Microsoft, Alphabet, Amazon, Meta, Nvidia",
+   "who": "Nasdaq, AI stocks",
    "node": "bigtech",
+   "amountB": null,
+   "title": "The Nasdaq opened higher on Friday and recovered part of Thursday's AI sell-off, though tech stocks stayed below prior levels.",
+   "source": "Fox News",
+   "url": "https://www.foxnews.com/live-news/nasdaq-rebound-ai-correction-tech-stocks-11-06-26"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-05",
+   "kind": "stress",
+   "node": "nvidia",
+   "source": "Seeking Alpha",
+   "status": "closed",
+   "title": "Nvidia closed down about 9% at $181.64 in an AI chip rout, erasing its gains for 2026.",
+   "url": "https://seekingalpha.com/news/4667280-nvidia-drops-9-now-down-for-2026",
+   "who": "Nvidia"
+  },
+  {
    "amountB": 1000,
-   "title": "The Magnificent Seven lost over $1 trillion in market value as the Nasdaq fell about 5.5% on fears of data-center limits after the midterms.",
+   "date": "2026-11-05",
+   "kind": "stress",
+   "node": "bigtech",
    "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html"
+   "status": "closed",
+   "title": "The Magnificent Seven lost over $1 trillion in market value as the Nasdaq fell about 5.5% on fears of data-center limits after the midterms.",
+   "url": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html",
+   "who": "Microsoft, Alphabet, Amazon, Meta, Nvidia"
+  },
+  {
+   "amountB": 30,
+   "date": "2026-11-05",
+   "kind": "context",
+   "node": "trade",
+   "source": "Anadolu Agency",
+   "status": "reported",
+   "title": "China's Commerce Ministry said it would buy more US farm goods once both sides enact the agreed tariff cuts on about $30 billion of goods each.",
+   "url": "https://aa.com.tr/en/economy/china-signals-willingness-to-expand-us-farm-imports-if-reciprocal-tariff-cuts-implemented/4112880",
+   "who": "China, United States"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "stress",
+   "status": "closed",
+   "who": "AMD, Broadcom, Nvidia",
+   "node": "chips",
+   "amountB": null,
+   "title": "Chip stocks led the Nasdaq into a correction, with AMD down about 17% and Broadcom about 10% on fears the midterm results slow the AI buildout.",
+   "source": "Quartz",
+   "url": "https://qz.com/nasdaq-correction-ai-chip-stocks-midterms-selloff-110526"
+  },
+  {
+   "date": "2026-11-05",
+   "kind": "stress",
+   "status": "closed",
+   "who": "Tesla, SpaceX",
+   "node": "spacex",
+   "amountB": 420,
+   "title": "Tesla and SpaceX lost over $420 billion of combined market value in two days after the midterms, with analysts flagging possible delays to SpaceX's Texas compute.",
+   "source": "CNBC",
+   "url": "https://cnbc.com/2026/11/05/tesla-spacex-stocks-fall-after-2026-midterms.html"
   },
   {
    "date": "2026-11-05",
    "kind": "context",
-   "status": "reported",
-   "who": "China, United States",
-   "node": "trade",
-   "amountB": 30,
-   "title": "China's Commerce Ministry said it would buy more US farm goods once both sides enact the agreed tariff cuts on about $30 billion of goods each.",
-   "source": "Anadolu Agency",
-   "url": "https://aa.com.tr/en/economy/china-signals-willingness-to-expand-us-farm-imports-if-reciprocal-tariff-cuts-implemented/4112880"
+   "status": "closed",
+   "who": "OpenAI",
+   "node": "labs",
+   "amountB": null,
+   "title": "OpenAI president Greg Brockman said the company could be ready for an IPO in 2027, citing growing enterprise revenue.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/"
   },
   {
    "amountB": null,
@@ -589,15 +644,15 @@
    "who": "CoreWeave"
   },
   {
+   "amountB": null,
    "date": "2026-11-04",
    "kind": "grid",
-   "status": "reported",
-   "who": "Texas data centers",
    "node": "cloud",
-   "amountB": null,
-   "title": "Texas governor-elect Gina Hinojosa has pledged a moratorium on new data-center approvals until new water and grid laws pass in 2027.",
    "source": "KFOX14",
-   "url": "https://kfoxtv.com/news/local/gina-hinojosa-won-the-governors-race-what-happens-to-texas-data-centers-now-11-04-2026"
+   "status": "reported",
+   "title": "Texas governor-elect Gina Hinojosa has pledged a moratorium on new data-center approvals until new water and grid laws pass in 2027.",
+   "url": "https://kfoxtv.com/news/local/gina-hinojosa-won-the-governors-race-what-happens-to-texas-data-centers-now-11-04-2026",
+   "who": "Texas data centers"
   },
   {
    "amountB": 720,
@@ -611,26 +666,26 @@
    "who": "Amazon, Microsoft, Google, Meta"
   },
   {
+   "amountB": 8.5,
    "date": "2026-11-03",
    "kind": "context",
-   "status": "closed",
-   "who": "AMD",
    "node": "chips",
-   "amountB": 8.5,
-   "title": "AMD's third-quarter data-center revenue nearly doubled to $8.5 billion and it guided to about $17 billion of fourth-quarter sales.",
    "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html"
+   "status": "closed",
+   "title": "AMD's third-quarter data-center revenue nearly doubled to $8.5 billion and it guided to about $17 billion of fourth-quarter sales.",
+   "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+   "who": "AMD"
   },
   {
+   "amountB": 3.74,
    "date": "2026-11-03",
    "kind": "context",
-   "status": "closed",
-   "who": "Shopify",
    "node": "retail",
-   "amountB": 3.74,
-   "title": "Shopify grew third-quarter revenue about 32% to $3.74 billion, but its shares fell roughly 9% on a merchandise-volume miss.",
    "source": "MarketBeat",
-   "url": "https://www.marketbeat.com/earnings/reports/2026-11-3-shopify-inc-stock/"
+   "status": "closed",
+   "title": "Shopify grew third-quarter revenue about 32% to $3.74 billion, but its shares fell roughly 9% on a merchandise-volume miss.",
+   "url": "https://www.marketbeat.com/earnings/reports/2026-11-3-shopify-inc-stock/",
+   "who": "Shopify"
   },
   {
    "amountB": 20,
@@ -644,26 +699,26 @@
    "who": "OpenAI"
   },
   {
+   "amountB": 10,
    "date": "2026-11-02",
    "kind": "credit",
-   "status": "closed",
-   "who": "Oracle",
    "node": "cloud",
-   "amountB": 10,
-   "title": "Oracle offered $10 billion of investment-grade bonds to fund its AI data-center buildout, and its shares fell about 4%.",
    "source": "24/7 Wall St.",
-   "url": "https://247wallst.com/investing/2026/11/02/oracle-declines-4-as-10-billion-bond-sale-revives-ai-debt-worries-coreweave-advances-2-microsoft-holds-steady/"
+   "status": "closed",
+   "title": "Oracle offered $10 billion of investment-grade bonds to fund its AI data-center buildout, and its shares fell about 4%.",
+   "url": "https://247wallst.com/investing/2026/11/02/oracle-declines-4-as-10-billion-bond-sale-revives-ai-debt-worries-coreweave-advances-2-microsoft-holds-steady/",
+   "who": "Oracle"
   },
   {
+   "amountB": null,
    "date": "2026-11-02",
    "kind": "context",
-   "status": "closed",
-   "who": "Moody's, private credit lenders",
    "node": "banks",
-   "amountB": null,
-   "title": "A Moody's official said record default-swap prices on AI data-center debt are not a systemic red flag, with stress in older speculative private loans.",
    "source": "CNBC",
-   "url": "https://www.cnbc.com/video/2026/11/02/why-private-credit-holds-firm-despite-ai-debt-wave-moodyas-ratings.html"
+   "status": "closed",
+   "title": "A Moody's official said record default-swap prices on AI data-center debt are not a systemic red flag, with stress in older speculative private loans.",
+   "url": "https://www.cnbc.com/video/2026/11/02/why-private-credit-holds-firm-despite-ai-debt-wave-moodyas-ratings.html",
+   "who": "Moody's, private credit lenders"
   },
   {
    "amountB": null,
@@ -741,61 +796,6 @@
    "title": "The Fed held its target range at 3.75%-4% after September's hike, with Cook and Hammack dissenting in favor of another quarter-point increase.",
    "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
    "who": "Federal Reserve"
-  },
-  {
-   "amountB": 40,
-   "date": "2026-10-28",
-   "kind": "credit",
-   "node": "spacex",
-   "source": "24/7 Wall St.",
-   "status": "closed",
-   "title": "Fitch kept SpaceX at BBB+ after its Apollo-managed lease of Nvidia Vera Rubin chips, but SpaceX shares still slipped about 3%.",
-   "url": "https://247wallst.com/investing/2026/10/28/spacex-falls-3-despite-fitch-holding-rating-after-40b-gpu-lease-rocket-lab-and-ast-spacemobile-slip-2",
-   "who": "SpaceX, Apollo, Fitch"
-  },
-  {
-   "amountB": null,
-   "date": "2026-10-28",
-   "kind": "stress",
-   "node": "nvidia",
-   "source": "Gotrade",
-   "status": "reported",
-   "title": "Nvidia fell about 1.2% after a report that the Justice Department is probing how its planned Hugging Face deal affects AI competition.",
-   "url": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-29-2026/",
-   "who": "Nvidia"
-  },
-  {
-   "amountB": 9,
-   "date": "2026-10-28",
-   "kind": "grid",
-   "node": "power",
-   "source": "GE Vernova (SEC filing)",
-   "status": "closed",
-   "title": "GE Vernova reported over $5 billion of data-center electrification orders so far this year and agreed to buy grid-equipment maker Trench Group.",
-   "url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000162/gevpressrelease3q26.htm",
-   "who": "GE Vernova"
-  },
-  {
-   "amountB": null,
-   "date": "2026-10-28",
-   "kind": "stress",
-   "node": "fed",
-   "source": "Fox Business",
-   "status": "closed",
-   "title": "The Fed held its target range at 3.75-4% with two governors dissenting in favor of a hike, saying inflation remains elevated.",
-   "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-october-28-2026",
-   "who": "Federal Reserve"
-  },
-  {
-   "amountB": null,
-   "date": "2026-10-27",
-   "kind": "context",
-   "node": "industrials",
-   "source": "CNBC",
-   "status": "closed",
-   "title": "Boeing narrowed its third-quarter loss on higher defense sales and beat revenue estimates, but its per-share loss was wider than expected.",
-   "url": "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html",
-   "who": "Boeing"
   }
  ],
  "analysis": {
@@ -817,12 +817,12 @@
     "weak": "Its order book depends on buyers whose financing and building permits are both now in doubt."
    },
    "labs": {
-    "tone": 32,
-    "news": "OpenAI's round is reportedly down to about $20B with no final deals yet (Nov 6 reports), while Anthropic's IPO filing meets a Nasdaq that fell into correction on Nov 5."
+    "tone": 28,
+    "news": "A report on Nov 6 said Anthropic's IPO valuation could fall to about $1T from a $1.5T target and the listing may slip after the Nov 5 AI rout; OpenAI's round is reportedly near $20B and Brockman said Nov 5 an IPO could be ready in 2027."
    },
    "bigtech": {
-    "tone": 28,
-    "news": "The Magnificent Seven lost over $1T on Nov 5 as the Nasdaq fell about 5.5%; hyperscaler capex above $720B a year (Nov 3) now meets new state and local limits on data centers after the midterms.",
+    "tone": 30,
+    "news": "The Magnificent Seven lost over $1T on Nov 5 as the Nasdaq fell about 5.5%; Friday (Nov 6) brought only a partial rebound, while hyperscaler capex above $720B a year (Nov 3) faces new state limits on data centers.",
     "pros": [
      "Cash-rich balance sheets can absorb a slowdown",
      "Cloud revenue keeps growing",
@@ -854,12 +854,12 @@
     "news": "October payrolls rose 165k (Nov 6), but the 30-year mortgage is 7.18%, energy CPI is up 20% y/y, sentiment is 48.1 and saving is 3.8%; lower-48 grid demand is up 3.6% y/y (PJM +4.5%, ERCOT +4.8%, SRP down 17%) with Henry Hub gas cheap at $2.63, and the Dallas and Taylor County, TX hubs are fully in drought."
    },
    "spacex": {
-    "tone": 36,
-    "news": "SpaceX shares sit in the AI sell-off that deepened on Nov 5 while it carries $40B of chip debt (Oct 26); Tesla merger talks continue, and ERCOT demand is up 4.8% y/y with Texas data-center hubs 100% in drought."
+    "tone": 30,
+    "news": "Tesla and SpaceX lost over $420B of combined value in two days after the midterms (Nov 5), with analysts flagging delays to SpaceX's Texas compute; it still carries $40B of chip debt (Oct 26) while ERCOT demand runs 4.8% above last year."
    },
    "tesla": {
-    "tone": 42,
-    "news": "Tesla said it will wind down Cybertruck output by mid-2027 to make room for Cybercab, and its SpaceX stake and merger talks tie it to the Nov 5 AI rout."
+    "tone": 36,
+    "news": "Tesla shares fell with SpaceX after the midterms (Nov 5), as Texas results raised regulatory risk for the proposed merger; it is also winding down Cybertruck output by mid-2027 for Cybercab."
    },
    "consumer": {
     "tone": 46,
@@ -882,16 +882,16 @@
     "news": "Student-loan balances keep growing and graduate hiring is soft; no notable news this week."
    },
    "banks": {
-    "tone": 38,
-    "news": "High-yield spreads rose 0.20 pt in 30 days to 3.32% and AI default-swap prices are at records, though Moody's said Nov 2 the stress sits in older speculative private loans rather than the whole system."
+    "tone": 34,
+    "news": "High-yield spreads widened 0.45 pt in 30 days to 3.48%, a one-year high, and BBB spreads sit at 1.16%; Moody's said Nov 2 the AI debt stress is concentrated in older speculative private loans."
    },
    "fed": {
-    "tone": 36,
-    "news": "October payrolls jumped 165k vs 70k expected (Nov 6), keeping a December hike in play; fed funds is 3.88% inside the 3.75-4.00% target, core PCE runs 3.1% y/y vs the 2% goal, unemployment is 4.2% and mortgages are 7.18%."
+    "tone": 34,
+    "news": "October payrolls jumped 165k vs about 65k expected (Nov 6), lifting December hike odds to roughly 77%; fed funds is 3.88% inside the 3.75-4.00% target, core PCE runs 3.1% vs the 2% goal, and mortgages are 7.18%."
    },
    "chips": {
-    "tone": 40,
-    "news": "AMD's data-center revenue nearly doubled to $8.5B (Nov 3), but chip stocks including AMD were hit hard in the Nov 5 AI rout."
+    "tone": 32,
+    "news": "Chip stocks led the Nasdaq into a correction on Nov 5, with AMD down about 17% and Broadcom about 10%, despite AMD's data-center revenue nearly doubling to $8.5B (Nov 3)."
    },
    "power": {
     "tone": 44,
@@ -924,8 +924,8 @@
     "news": "Debt-funded neocloud chip purchases look fragile: CoreWeave bonds are at new lows (Nov 4) and data-center stocks fell over 14% on Nov 5."
    },
    "nvidia>labs": {
-    "tone": 34,
-    "news": "Nvidia's stake money in lab rounds is worth less after its own 9% drop on Nov 5 and OpenAI's shrunken round."
+    "tone": 30,
+    "news": "Nvidia's equity in lab rounds faces markdowns as Anthropic's IPO valuation may drop toward $1T (Nov 6) and OpenAI's round shrinks to about $20B."
    },
    "nvidia>cloud": {
     "tone": 26,
@@ -960,8 +960,8 @@
     "news": "Colossus turbines and water use stay a local flashpoint, and election results point to tighter rules on data centers."
    },
    "tesla>spacex": {
-    "tone": 40,
-    "news": "Tesla's former xAI stake, now SpaceX shares, falls with the AI rout as merger talks continue."
+    "tone": 34,
+    "news": "Tesla's xAI stake, now SpaceX shares, lost value as both stocks fell over $420B combined after the midterms (Nov 5), and the merger talks face more regulatory risk."
    },
    "tesla>nvidia": {
     "tone": 44,
@@ -1024,8 +1024,8 @@
     "news": "Brands keep selling through retailers ahead of the holidays; no notable news this week."
    },
    "fed>banks": {
-    "tone": 36,
-    "news": "A strong October jobs report (Nov 6) keeps a December hike in play, holding bank funding costs high."
+    "tone": 34,
+    "news": "A hot October jobs report (Nov 6) raised odds of a December hike, keeping bank funding costs high as high-yield spreads hit a one-year high of 3.48%."
    },
    "fed>citizens": {
     "tone": 30,
@@ -1060,8 +1060,8 @@
     "news": "TSMC keeps making Nvidia's chips with tight CoWoS packaging; demand doubts after Nov 5 cool the outlook."
    },
    "labs>chips": {
-    "tone": 40,
-    "news": "Lab deals with AMD and Broadcom underpin AMD's 97% data-center growth (Nov 3), but lab funding is tightening."
+    "tone": 38,
+    "news": "Labs' AMD and Broadcom deals look riskier after both stocks fell 10-17% on Nov 5 and Anthropic's IPO valuation may be cut (Nov 6), squeezing the cash that funds them."
    },
    "bigtech>chips": {
     "tone": 46,
@@ -2231,7 +2231,7 @@
     "name": "Lower 48 states",
     "date": "2026-11-05",
     "unit": "GW (daily average)",
-    "avg28": 451.98,
+    "avg28": 451.97,
     "yoy": 0.0358,
     "hist": [
      [
@@ -2592,7 +2592,7 @@
      ],
      [
       "2026-11-05",
-      454.93
+      454.68
      ]
     ]
    }
@@ -3517,15 +3517,11 @@
   "vehicles": {
    "id": "TOTALSA",
    "label": "Light vehicle sales, millions per year (SAAR)",
-   "value": 16.378,
-   "date": "2026-09-01",
-   "yoy": -0.0344,
-   "chg1y": -0.583,
+   "value": 16.003,
+   "date": "2026-10-01",
+   "yoy": -0.0015,
+   "chg1y": -0.024,
    "hist": [
-    [
-     "2023-10-01",
-     15.844
-    ],
     [
      "2023-11-01",
      15.864
@@ -3632,39 +3628,43 @@
     ],
     [
      "2026-01-01",
-     15.347
+     15.357
     ],
     [
      "2026-02-01",
-     15.925
+     15.935
     ],
     [
      "2026-03-01",
-     16.439
+     16.449
     ],
     [
      "2026-04-01",
-     16.544
+     16.542
     ],
     [
      "2026-05-01",
-     16.87
+     16.869
     ],
     [
      "2026-06-01",
-     17.218
+     17.217
     ],
     [
      "2026-07-01",
-     16.601
+     16.596
     ],
     [
      "2026-08-01",
-     16.98
+     16.975
     ],
     [
      "2026-09-01",
-     16.378
+     16.413
+    ],
+    [
+     "2026-10-01",
+     16.003
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/TOTALSA"
@@ -8018,15 +8018,11 @@
   "unemployment": {
    "id": "UNRATE",
    "label": "Unemployment rate, %",
-   "value": 4.2,
-   "date": "2026-09-01",
-   "yoy": -0.0455,
-   "chg1y": -0.2,
+   "value": 4.1,
+   "date": "2026-10-01",
+   "yoy": -0.0682,
+   "chg1y": -0.3,
    "hist": [
-    [
-     "2023-09-01",
-     3.7
-    ],
     [
      "2023-10-01",
      3.9
@@ -8166,6 +8162,10 @@
     [
      "2026-09-01",
      4.2
+    ],
+    [
+     "2026-10-01",
+     4.1
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/UNRATE"
