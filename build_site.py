@@ -70,7 +70,7 @@ def main():
     snap, origin = previous_snapshot()
     if SNAPSHOT_FILE.exists():
         pushed = json.loads(SNAPSHOT_FILE.read_text(encoding="utf-8"))
-        if str(pushed.get("date", "")) > str(snap.get("date", "")):
+        if str(pushed.get("date", "")) >= str(snap.get("date", "")):
             snap, origin = pushed, "data/snapshot.json"
     print(f"base snapshot {snap.get('date')} from {origin}")
     if os.environ.get("FULL_REFRESH", "").lower() == "true":
