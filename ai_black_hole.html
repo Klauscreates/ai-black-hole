@@ -1018,7 +1018,7 @@ function energyInputs() {
   const counties = (Array.isArray(w.counties) ? w.counties : []).filter(c => c && typeof c.name === 'string' && num(c.dsci) !== null).sort((a, b) => b.dsci - a.dsci);
   return {
     en, g, pr, counties,
-    pjm: g.PJM && num(g.PJM.yoy), elecYoy: pr.elecCpi && num(pr.elecCpi.yoy),
+    pjm: g.PJM ? num(g.PJM.yoy) : null, elecYoy: pr.elecCpi ? num(pr.elecCpi.yoy) : null,
     waterStress: counties.length ? counties.reduce((a, c) => a + c.dsci, 0) / counties.length / 500 : 0,
     inDrought: counties.filter(c => num(c.droughtPct) !== null && c.droughtPct >= 50).length, worst: counties[0] || null,
   };

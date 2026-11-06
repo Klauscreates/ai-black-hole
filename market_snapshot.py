@@ -150,7 +150,7 @@ def monthly_yoy(series_id, label):
     prior = [v for d, v in rows if d <= ref]
     return {"id": series_id, "label": label, "value": last_val, "date": last_date,
             "yoy": round(last_val / prior[-1] - 1, 4) if prior else None,
-            "hist": [[d, v] for d, v in rows[::-1][::step][:36][::-1]], "url": f"https://fred.stlouisfed.org/series/{series_id}"}
+            "hist": [[d, v] for d, v in rows[::-1][:36][::-1]], "url": f"https://fred.stlouisfed.org/series/{series_id}"}
 
 
 def county_drought(today):
