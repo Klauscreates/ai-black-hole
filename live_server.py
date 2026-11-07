@@ -18,7 +18,9 @@ import json
 import os
 import threading
 import time
+import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -111,33 +113,73 @@ class Hub:
                          "events": sorted(self.events.values(), key=lambda e: e["time"]), "serverTime": now_iso()}}
 
 
-def poll_quotes(hub):
-    quotes, open_now = {}, False
-    for sym in ALL_TICKERS:
-        try:
-            data = json.loads(fetch(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=1d&interval=5m"))
-        except Exception:
-            continue  # one bad symbol shouldn't drop the other 47
-        if not (data.get("chart") or {}).get("result"):
-            continue
-        r = data["chart"]["result"][0]
-        m = r["meta"]
-        price, prev, hi = m.get("regularMarketPrice"), m.get("chartPreviousClose") or m.get("previousClose"), m.get("fiftyTwoWeekHigh")
-        reg = (m.get("currentTradingPeriod") or {}).get("regular") or {}
-        if reg.get("start", 0) <= time.time() <= reg.get("end", 0):
-            open_now = True
+def _parse_chart(sym, r):
+    """One Yahoo chart result (from /v8/chart or /v7/spark) -> our quote dict, plus whether the market is open."""
+    m = r["meta"]
+    price, prev, hi = m.get("regularMarketPrice"), m.get("chartPreviousClose") or m.get("previousClose"), m.get("fiftyTwoWeekHigh")
+    if price is None:
+        return None, False
+    reg = (m.get("currentTradingPeriod") or {}).get("regular") or {}
+    open_now = reg.get("start", 0) <= time.time() <= reg.get("end", 0)
+    intraday = []
+    if sym in FULL_DETAIL:
         closes = ((r.get("indicators") or {}).get("quote") or [{}])[0].get("close") or []
-        intraday = [[t, round(c, 2)] for t, c in zip(r.get("timestamp") or [], closes) if c is not None]
-        quotes[sym] = {"symbol": sym, "node": ALL_TICKERS[sym], "price": price, "prevClose": prev,
-                       "dayChange": round(price / prev - 1, 4) if price and prev else None,
-                       "high52": hi, "fromHigh": round(price / hi - 1, 4) if price and hi else None,
-                       "marketTime": datetime.fromtimestamp(m.get("regularMarketTime", 0), timezone.utc).isoformat(timespec="seconds"),
-                       "intraday": intraday[-80:] if sym in FULL_DETAIL else []}
-        time.sleep(0.25)
+        intraday = [[t, round(c, 2)] for t, c in zip(r.get("timestamp") or [], closes) if c is not None][-80:]
+    return {"symbol": sym, "node": ALL_TICKERS[sym], "price": price, "prevClose": prev,
+            "dayChange": round(price / prev - 1, 4) if price and prev else None,
+            "high52": hi, "fromHigh": round(price / hi - 1, 4) if price and hi else None,
+            "marketTime": datetime.fromtimestamp(m.get("regularMarketTime", 0), timezone.utc).isoformat(timespec="seconds"),
+            "intraday": intraday}, open_now
+
+
+def _spark_batch(syms):
+    """Up to 20 symbols in one request (Yahoo's limit for /v7/finance/spark)."""
+    url = "https://query1.finance.yahoo.com/v7/finance/spark?" + urllib.parse.urlencode(
+        {"symbols": ",".join(syms), "range": "1d", "interval": "5m"})
+    out = {}
+    for item in (json.loads(fetch(url)).get("spark") or {}).get("result") or []:
+        resp = item.get("response") or []
+        if item.get("symbol") in ALL_TICKERS and resp:
+            out[item["symbol"]] = resp[0]
+    return out
+
+
+def _chart_one(sym):
+    data = json.loads(fetch(f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?range=1d&interval=5m"))
+    res = (data.get("chart") or {}).get("result")
+    return {sym: res[0]} if res else {}
+
+
+def poll_quotes(hub):
+    """All 130 symbols in ~7 batched requests run in parallel (about a second), with a per-symbol fallback.
+    Polls every 30 seconds while the market is open (Yahoo quotes are delayed about 15 minutes anyway)."""
+    syms = list(ALL_TICKERS)
+    raw = {}
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for fut in [pool.submit(_spark_batch, syms[i:i + 20]) for i in range(0, len(syms), 20)]:
+            try:
+                raw.update(fut.result())
+            except Exception:
+                pass  # that batch falls back to single-symbol requests below
+        missing = [s for s in syms if s not in raw]
+        for fut in [pool.submit(_chart_one, s) for s in missing]:
+            try:
+                raw.update(fut.result())
+            except Exception:
+                pass  # one bad symbol shouldn't drop the rest
+    quotes, open_now = {}, False
+    for sym, r in raw.items():
+        try:
+            q, is_open = _parse_chart(sym, r)
+        except (KeyError, TypeError, ValueError, ZeroDivisionError):
+            continue
+        if q:
+            quotes[sym] = q
+            open_now = open_now or is_open
     if not quotes:
         raise RuntimeError("no quotes returned")
     hub.update("quotes", quotes)
-    return 120 if open_now else 900
+    return 30 if open_now else 900
 
 
 def poll_ercot(hub):
