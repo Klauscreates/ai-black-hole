@@ -98,6 +98,11 @@ h1 { font: 700 20px/1.1 var(--f-display); letter-spacing: .02em; color: var(--ho
 .io div b { font: 500 11.5px var(--f-mono); color: var(--ink); white-space: nowrap; text-align: right; }
 
 /* Shared data rows */
+.ndx-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(54px, 1fr)); gap: 3px; }
+.ndx-t { all: unset; box-sizing: border-box; cursor: pointer; padding: 4px 3px; border-radius: 4px; text-align: center; font: 600 10px var(--f-mono); color: var(--ink);
+  background: color-mix(in srgb, var(--tc, var(--line)) var(--tw, 0%), var(--panel)); border: 1px solid var(--line); }
+.ndx-t small { display: block; font-weight: 400; font-size: 9.5px; color: var(--ink); opacity: .8; }
+.ndx-t:hover, .ndx-t:focus-visible { border-color: var(--ink-3); outline: none; }
 .lvs { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .lv { display: grid; grid-template-columns: minmax(0, 1fr) 64px auto; column-gap: 10px; align-items: center; }
 .lv b { display: block; font-size: 12.5px; font-weight: 600; }
@@ -301,6 +306,13 @@ h1 { font: 700 20px/1.1 var(--f-display); letter-spacing: .02em; color: var(--ho
         <p class="note" id="feedNote"></p>
       </section>
 
+      <section class="live" id="ndxSec">
+        <div class="sec-head" style="margin:0"><p class="sec-title">Nasdaq-100 today</p><span class="sec-aside" id="ndxAsOf"></span></div>
+        <ul class="lvs" id="ndxEtf"></ul>
+        <div class="ndx-grid" id="ndxGrid" role="list"></div>
+        <p class="note" id="ndxNote">Quotes for all 101 stocks arrive with the live feed.</p>
+      </section>
+
       <section class="live" id="fedSec">
         <div class="sec-head" style="margin:0"><p class="sec-title">Federal Reserve</p><span class="sec-aside" id="fedAsOf"></span></div>
         <div id="fedBody"><p class="note">Fed rates, inflation, jobs and the balance sheet arrive with the daily snapshot.</p></div>
@@ -405,6 +417,8 @@ const css = (() => { const cs = getComputedStyle(document.documentElement); cons
 
 // ── Sources ────────────────────────────────────────────────────────────
 const SRC = {
+  ndx: { name: 'Nasdaq-100 Index members, Nasdaq (list of Nov 6, 2026)', url: 'https://www.nasdaq.com/market-activity/quotes/nasdaq-ndx-index' },
+  qqqEtf: { name: 'ProShares UltraPro QQQ (TQQQ) and UltraPro Short QQQ (SQQQ)', url: 'https://www.proshares.com/our-etfs/leveraged-and-inverse/tqqq' },
   nv8k: { name: 'Nvidia Q2 FY2027 results (SEC 8-K)', url: 'https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm' },
   nv10q: { name: 'Nvidia 10-Q, quarter to Jul 26, 2026 (SEC)', url: 'https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm' },
   nvoai: { name: 'Investing.com: the Nvidia–OpenAI $100B deal is dead', url: 'https://www.investing.com/analysis/nvidia-and-openais-100-billion-deal-is-dead-what-replaced-it-matters-more-200680620' },
@@ -547,6 +561,9 @@ const NODES = [
   { id: 'trade', ring: 'world', short: 'Global trade', role: 'China · Mexico · Vietnam · Canada · tariffs · shipping', color: '#d4a373', tickers: [], base: 0.45, soc: ['chinaImports', 'customs'],
     baseWhy: 'Tariffs were rebuilt after the Supreme Court’s IEEPA ruling; imports shifted from China toward Mexico and Vietnam',
     facts: [['~17.4%', 'of US goods imports from Mexico, the largest source (Jan–Aug 2026)', 'imports'], ['~7.6%', 'from China, now behind Mexico, Canada and Taiwan', 'imports'], ['Feb 20, 2026', 'Supreme Court struck down the IEEPA tariffs; replacements followed', 'ieepa']] },
+  { id: 'ndx', ring: 'world', short: 'Nasdaq 100', role: 'QQQ · TQQQ · SQQQ · the 100 biggest Nasdaq stocks', color: '#2dd4bf', tickers: ['QQQ'], base: 0.25,
+    baseWhy: 'The market’s scoreboard for the AI trade: chipmakers, Big Tech, cloud and software make up most of the index',
+    facts: [['101', 'stocks from 100 companies (Alphabet has two share classes), each shown on its sector’s planet', 'ndx'], ['3x', 'TQQQ aims for three times the index’s daily move and SQQQ for minus three times, reset every day', 'qqqEtf']] },
 ];
 const byId = Object.fromEntries(NODES.map(n => [n.id, n]));
 const NODE_IDS = NODES.map(n => n.id);
@@ -554,11 +571,11 @@ const NODE_IDS = NODES.map(n => n.id);
 const LAYOUT = {
   ai: { r: 10.5, off: 0.2, ids: ['nvidia', 'chips', 'tesla', 'spacex', 'cloud', 'bigtech', 'labs'] },
   society: { r: 21, off: 0.5, ids: ['citizens', 'healthco', 'education', 'banks', 'payments', 'retail', 'fashion', 'consumer', 'autos', 'industrials', 'power'] },
-  world: { r: 30, off: 2.2, ids: ['trade'] },
+  world: { r: 30, off: 2.2, ids: ['trade', 'ndx'] },
 };
 Object.values(LAYOUT).forEach(L => L.ids.forEach((id, i) => { const a = L.off + (i / L.ids.length) * Math.PI * 2; byId[id].pos = [L.r * Math.cos(a), 0, L.r * Math.sin(a)]; }));
 const SYS_W = { fed: 0.08, nvidia: 0.08, labs: 0.1, bigtech: 0.08, cloud: 0.1, spacex: 0.04, tesla: 0.04, chips: 0.05,
-  citizens: 0.08, banks: 0.05, consumer: 0.03, retail: 0.04, autos: 0.03, fashion: 0.02, education: 0.02, power: 0.04, healthco: 0.03, industrials: 0.03, payments: 0.02, trade: 0.04 };
+  citizens: 0.08, banks: 0.05, consumer: 0.03, retail: 0.04, autos: 0.03, fashion: 0.02, education: 0.02, power: 0.04, healthco: 0.03, industrials: 0.03, payments: 0.02, trade: 0.04, ndx: 0 };
 const ringOf = id => byId[id].ring || 'ai';
 
 // Live series lookups used by the moons that are not companies
@@ -700,6 +717,93 @@ const MOONS = [
     text: 'Import taxes. The Supreme Court struck down the IEEPA tariffs on Feb 20, 2026; Section 232 and 301 duties stayed, and replacement tariffs followed.', facts: [['IEEPA ruling and replacement tariffs', 'ieepa'], ['Timeline of 2025 tariff actions', 'crs'], ['Customs duties collected (annual rate)', 'fred']] },
   { id: 'shipping', parent: 'trade', name: 'Shipping & freight', color: '#38bdf8', val: () => HH('freight') ? `Freight index ${HH('freight').value.toFixed(1)} (${yoyLine(HH('freight'))})` : '', p: () => clamp(0.3 + (yoyOf(HH('freight')) || 0) * 3, 0.05, 1),
     how: 'Pressure: rises when freight volumes swing.', text: 'Container ships, trucks and rail moving goods into and across the US.', facts: [['Freight transportation services index', 'fred']] },
+  // Nasdaq-100 members not covered above, and the QQQ funds
+  { id: 'n_mu', parent: 'nvidia', name: 'Micron', ticker: 'MU', color: '#e6d800', ndx: true, facts: [['Nasdaq-100 member: AI memory (HBM)', 'ndx']] },
+  { id: 'n_sndk', parent: 'nvidia', name: 'Sandisk', ticker: 'SNDK', color: '#d1f600', ndx: true, facts: [['Nasdaq-100 member: flash storage', 'ndx']] },
+  { id: 'n_wdc', parent: 'nvidia', name: 'Western Digital', ticker: 'WDC', color: '#92e600', ndx: true, facts: [['Nasdaq-100 member: hard drives for data centers', 'ndx']] },
+  { id: 'n_stx', parent: 'nvidia', name: 'Seagate', ticker: 'STX', color: '#69f600', ndx: true, facts: [['Nasdaq-100 member: hard drives for data centers', 'ndx']] },
+  { id: 'n_alab', parent: 'nvidia', name: 'Astera Labs', ticker: 'ALAB', color: '#32e600', ndx: true, facts: [['Nasdaq-100 member: AI server connectivity chips', 'ndx']] },
+  { id: 'n_lite', parent: 'nvidia', name: 'Lumentum', ticker: 'LITE', color: '#f6e800', ndx: true, facts: [['Nasdaq-100 member: optical links for AI clusters', 'ndx']] },
+  { id: 'n_arm', parent: 'nvidia', name: 'Arm', ticker: 'ARM', color: '#c3e600', ndx: true, facts: [['Nasdaq-100 member: chip designs licensed to Nvidia and others', 'ndx']] },
+  { id: 'n_mrvl', parent: 'nvidia', name: 'Marvell', ticker: 'MRVL', color: '#9df600', ndx: true, facts: [['Nasdaq-100 member: custom AI chips and networking', 'ndx']] },
+  { id: 'n_amat', parent: 'chips', name: 'Applied Materials', ticker: 'AMAT', color: '#17cf6d', ndx: true, facts: [['Nasdaq-100 member: chip-making equipment', 'ndx']] },
+  { id: 'n_lrcx', parent: 'chips', name: 'Lam Research', ticker: 'LRCX', color: '#22e7a8', ndx: true, facts: [['Nasdaq-100 member: chip-making equipment', 'ndx']] },
+  { id: 'n_klac', parent: 'chips', name: 'KLA', ticker: 'KLAC', color: '#17cfbb', ndx: true, facts: [['Nasdaq-100 member: chip inspection equipment', 'ndx']] },
+  { id: 'n_ter', parent: 'chips', name: 'Teradyne', ticker: 'TER', color: '#22d3e7', ndx: true, facts: [['Nasdaq-100 member: chip testing equipment', 'ndx']] },
+  { id: 'n_qcom', parent: 'chips', name: 'Qualcomm', ticker: 'QCOM', color: '#1796cf', ndx: true, facts: [['Nasdaq-100 member: phone and PC chips', 'ndx']] },
+  { id: 'n_txn', parent: 'chips', name: 'Texas Instruments', ticker: 'TXN', color: '#22e77f', ndx: true, facts: [['Nasdaq-100 member: analog and industrial chips', 'ndx']] },
+  { id: 'n_adi', parent: 'chips', name: 'Analog Devices', ticker: 'ADI', color: '#17cf94', ndx: true, facts: [['Nasdaq-100 member: analog and industrial chips', 'ndx']] },
+  { id: 'n_mchp', parent: 'chips', name: 'Microchip', ticker: 'MCHP', color: '#22e7d1', ndx: true, facts: [['Nasdaq-100 member: microcontrollers', 'ndx']] },
+  { id: 'n_nxpi', parent: 'chips', name: 'NXP', ticker: 'NXPI', color: '#17bdcf', ndx: true, facts: [['Nasdaq-100 member: car and industrial chips', 'ndx']] },
+  { id: 'n_mpwr', parent: 'chips', name: 'Monolithic Power', ticker: 'MPWR', color: '#22aae7', ndx: true, facts: [['Nasdaq-100 member: power chips for AI servers', 'ndx']] },
+  { id: 'n_snps', parent: 'chips', name: 'Synopsys', ticker: 'SNPS', color: '#17cf6d', ndx: true, facts: [['Nasdaq-100 member: chip design software', 'ndx']] },
+  { id: 'n_cdns', parent: 'chips', name: 'Cadence', ticker: 'CDNS', color: '#22e7a8', ndx: true, facts: [['Nasdaq-100 member: chip design software', 'ndx']] },
+  { id: 'n_pltr', parent: 'labs', name: 'Palantir', ticker: 'PLTR', color: '#27ccf5', ndx: true, facts: [['Nasdaq-100 member: AI data platforms', 'ndx']] },
+  { id: 'n_app', parent: 'labs', name: 'AppLovin', ticker: 'APP', color: '#76c3f9', ndx: true, facts: [['Nasdaq-100 member: AI-driven ad software', 'ndx']] },
+  { id: 'n_adbe', parent: 'labs', name: 'Adobe', ticker: 'ADBE', color: '#2776f5', ndx: true, facts: [['Nasdaq-100 member: creative software', 'ndx']] },
+  { id: 'n_intu', parent: 'labs', name: 'Intuit', ticker: 'INTU', color: '#768cf9', ndx: true, facts: [['Nasdaq-100 member: TurboTax, QuickBooks', 'ndx']] },
+  { id: 'n_adsk', parent: 'labs', name: 'Autodesk', ticker: 'ADSK', color: '#3027f5', ndx: true, facts: [['Nasdaq-100 member: design software', 'ndx']] },
+  { id: 'n_wday', parent: 'labs', name: 'Workday', ticker: 'WDAY', color: '#76def9', ndx: true, facts: [['Nasdaq-100 member: HR and finance software', 'ndx']] },
+  { id: 'n_tri', parent: 'labs', name: 'Thomson Reuters', ticker: 'TRI', color: '#27a1f5', ndx: true, facts: [['Nasdaq-100 member: legal and news information', 'ndx']] },
+  { id: 'n_nbis', parent: 'cloud', name: 'Nebius', ticker: 'NBIS', color: '#de5008', ndx: true, facts: [['Nasdaq-100 member: AI cloud (neocloud)', 'ndx']] },
+  { id: 'n_csco', parent: 'cloud', name: 'Cisco', ticker: 'CSCO', color: '#f8a137', ndx: true, facts: [['Nasdaq-100 member: data-center networking', 'ndx']] },
+  { id: 'n_ddog', parent: 'cloud', name: 'Datadog', ticker: 'DDOG', color: '#deaa08', ndx: true, facts: [['Nasdaq-100 member: cloud monitoring', 'ndx']] },
+  { id: 'n_crwd', parent: 'cloud', name: 'CrowdStrike', ticker: 'CRWD', color: '#f8f237', ndx: true, facts: [['Nasdaq-100 member: cybersecurity', 'ndx']] },
+  { id: 'n_panw', parent: 'cloud', name: 'Palo Alto Networks', ticker: 'PANW', color: '#b8de08', ndx: true, facts: [['Nasdaq-100 member: cybersecurity', 'ndx']] },
+  { id: 'n_ftnt', parent: 'cloud', name: 'Fortinet', ticker: 'FTNT', color: '#f87837', ndx: true, facts: [['Nasdaq-100 member: cybersecurity', 'ndx']] },
+  { id: 'n_rop', parent: 'cloud', name: 'Roper', ticker: 'ROP', color: '#de7d08', ndx: true, facts: [['Nasdaq-100 member: vertical software', 'ndx']] },
+  { id: 'n_goog', parent: 'bigtech', name: 'Alphabet (Class C)', ticker: 'GOOG', color: '#5242f6', ndx: true, facts: [['Nasdaq-100 member: second Alphabet share class', 'ndx']] },
+  { id: 'n_rklb', parent: 'spacex', name: 'Rocket Lab', ticker: 'RKLB', color: '#bed6da', ndx: true, facts: [['Nasdaq-100 member: launch and satellites', 'ndx']] },
+  { id: 'n_nflx', parent: 'consumer', name: 'Netflix', ticker: 'NFLX', color: '#f895f4', ndx: true, facts: [['Nasdaq-100 member: streaming', 'ndx']] },
+  { id: 'n_cmcsa', parent: 'consumer', name: 'Comcast', ticker: 'CMCSA', color: '#f9a9e5', ndx: true, facts: [['Nasdaq-100 member: cable, broadband, NBC', 'ndx']] },
+  { id: 'n_tmus', parent: 'consumer', name: 'T-Mobile', ticker: 'TMUS', color: '#f895cb', ndx: true, facts: [['Nasdaq-100 member: wireless carrier', 'ndx']] },
+  { id: 'n_ttwo', parent: 'consumer', name: 'Take-Two', ticker: 'TTWO', color: '#f9a9c4', ndx: true, facts: [['Nasdaq-100 member: video games', 'ndx']] },
+  { id: 'n_bkng', parent: 'consumer', name: 'Booking', ticker: 'BKNG', color: '#f895a1', ndx: true, facts: [['Nasdaq-100 member: online travel', 'ndx']] },
+  { id: 'n_abnb', parent: 'consumer', name: 'Airbnb', ticker: 'ABNB', color: '#f9a9f6', ndx: true, facts: [['Nasdaq-100 member: home rentals', 'ndx']] },
+  { id: 'n_mar', parent: 'consumer', name: 'Marriott', ticker: 'MAR', color: '#f895df', ndx: true, facts: [['Nasdaq-100 member: hotels', 'ndx']] },
+  { id: 'n_sbux', parent: 'consumer', name: 'Starbucks', ticker: 'SBUX', color: '#f9a9d5', ndx: true, facts: [['Nasdaq-100 member: coffee shops', 'ndx']] },
+  { id: 'n_cost', parent: 'retail', name: 'Costco', ticker: 'COST', color: '#fb2e28', ndx: true, facts: [['Nasdaq-100 member: warehouse clubs', 'ndx']] },
+  { id: 'n_meli', parent: 'retail', name: 'MercadoLibre', ticker: 'MELI', color: '#fc9878', ndx: true, facts: [['Nasdaq-100 member: Latin American e-commerce', 'ndx']] },
+  { id: 'n_rost', parent: 'retail', name: 'Ross Stores', ticker: 'ROST', color: '#fb8728', ndx: true, facts: [['Nasdaq-100 member: discount clothing', 'ndx']] },
+  { id: 'n_dash', parent: 'retail', name: 'DoorDash', ticker: 'DASH', color: '#fccf78', ndx: true, facts: [['Nasdaq-100 member: delivery', 'ndx']] },
+  { id: 'n_pep', parent: 'retail', name: 'PepsiCo', ticker: 'PEP', color: '#fbdf28', ndx: true, facts: [['Nasdaq-100 member: snacks and drinks', 'ndx']] },
+  { id: 'n_mdlz', parent: 'retail', name: 'Mondelez', ticker: 'MDLZ', color: '#fc7c78', ndx: true, facts: [['Nasdaq-100 member: snacks', 'ndx']] },
+  { id: 'n_kdp', parent: 'retail', name: 'Keurig Dr Pepper', ticker: 'KDP', color: '#fb5b28', ndx: true, facts: [['Nasdaq-100 member: drinks', 'ndx']] },
+  { id: 'n_mnst', parent: 'retail', name: 'Monster', ticker: 'MNST', color: '#fcb478', ndx: true, facts: [['Nasdaq-100 member: energy drinks', 'ndx']] },
+  { id: 'n_ccep', parent: 'retail', name: 'Coca-Cola Europacific', ticker: 'CCEP', color: '#fbb328', ndx: true, facts: [['Nasdaq-100 member: Coke bottler', 'ndx']] },
+  { id: 'n_orly', parent: 'autos', name: 'O\'Reilly', ticker: 'ORLY', color: '#6eb4f7', ndx: true, facts: [['Nasdaq-100 member: auto parts', 'ndx']] },
+  { id: 'n_cprt', parent: 'autos', name: 'Copart', ticker: 'CPRT', color: '#a8c1fa', ndx: true, facts: [['Nasdaq-100 member: car auctions', 'ndx']] },
+  { id: 'n_pcar', parent: 'autos', name: 'PACCAR', ticker: 'PCAR', color: '#6e7af7', ndx: true, facts: [['Nasdaq-100 member: trucks', 'ndx']] },
+  { id: 'n_amgn', parent: 'healthco', name: 'Amgen', ticker: 'AMGN', color: '#24f7e0', ndx: true, facts: [['Nasdaq-100 member: biotech', 'ndx']] },
+  { id: 'n_gild', parent: 'healthco', name: 'Gilead', ticker: 'GILD', color: '#73edfa', ndx: true, facts: [['Nasdaq-100 member: biotech', 'ndx']] },
+  { id: 'n_vrtx', parent: 'healthco', name: 'Vertex', ticker: 'VRTX', color: '#24b6f7', ndx: true, facts: [['Nasdaq-100 member: biotech', 'ndx']] },
+  { id: 'n_regn', parent: 'healthco', name: 'Regeneron', ticker: 'REGN', color: '#73b4fa', ndx: true, facts: [['Nasdaq-100 member: biotech', 'ndx']] },
+  { id: 'n_alny', parent: 'healthco', name: 'Alnylam', ticker: 'ALNY', color: '#245ef7', ndx: true, facts: [['Nasdaq-100 member: biotech', 'ndx']] },
+  { id: 'n_mrna', parent: 'healthco', name: 'Moderna', ticker: 'MRNA', color: '#73faeb', ndx: true, facts: [['Nasdaq-100 member: vaccines', 'ndx']] },
+  { id: 'n_isrg', parent: 'healthco', name: 'Intuitive Surgical', ticker: 'ISRG', color: '#24e3f7', ndx: true, facts: [['Nasdaq-100 member: surgical robots', 'ndx']] },
+  { id: 'n_dxcm', parent: 'healthco', name: 'DexCom', ticker: 'DXCM', color: '#73d1fa', ndx: true, facts: [['Nasdaq-100 member: glucose monitors', 'ndx']] },
+  { id: 'n_idxx', parent: 'healthco', name: 'IDEXX', ticker: 'IDXX', color: '#248af7', ndx: true, facts: [['Nasdaq-100 member: veterinary diagnostics', 'ndx']] },
+  { id: 'n_gehc', parent: 'healthco', name: 'GE HealthCare', ticker: 'GEHC', color: '#7398fa', ndx: true, facts: [['Nasdaq-100 member: medical imaging', 'ndx']] },
+  { id: 'n_hon', parent: 'industrials', name: 'Honeywell', ticker: 'HON', color: '#9e9393', ndx: true, facts: [['Nasdaq-100 member: industrial automation', 'ndx']] },
+  { id: 'n_hona', parent: 'industrials', name: 'Honeywell Aerospace', ticker: 'HONA', color: '#c5c0be', ndx: true, facts: [['Nasdaq-100 member: aircraft systems', 'ndx']] },
+  { id: 'n_lin', parent: 'industrials', name: 'Linde', ticker: 'LIN', color: '#9e9893', ndx: true, facts: [['Nasdaq-100 member: industrial gases', 'ndx']] },
+  { id: 'n_ctas', parent: 'industrials', name: 'Cintas', ticker: 'CTAS', color: '#c5c2be', ndx: true, facts: [['Nasdaq-100 member: uniforms and facility services', 'ndx']] },
+  { id: 'n_fast', parent: 'industrials', name: 'Fastenal', ticker: 'FAST', color: '#9e9c93', ndx: true, facts: [['Nasdaq-100 member: industrial supplies', 'ndx']] },
+  { id: 'n_odfl', parent: 'industrials', name: 'Old Dominion', ticker: 'ODFL', color: '#c5bebe', ndx: true, facts: [['Nasdaq-100 member: trucking', 'ndx']] },
+  { id: 'n_csx', parent: 'industrials', name: 'CSX', ticker: 'CSX', color: '#9e9593', ndx: true, facts: [['Nasdaq-100 member: freight rail', 'ndx']] },
+  { id: 'n_axon', parent: 'industrials', name: 'Axon', ticker: 'AXON', color: '#c5c1be', ndx: true, facts: [['Nasdaq-100 member: Tasers and body cameras', 'ndx']] },
+  { id: 'n_fer', parent: 'industrials', name: 'Ferrovial', ticker: 'FER', color: '#9e9a93', ndx: true, facts: [['Nasdaq-100 member: toll roads and airports', 'ndx']] },
+  { id: 'n_aep', parent: 'power', name: 'American Electric Power', ticker: 'AEP', color: '#d80d27', ndx: true, facts: [['Nasdaq-100 member: utility', 'ndx']] },
+  { id: 'n_xel', parent: 'power', name: 'Xcel Energy', ticker: 'XEL', color: '#f12c1a', ndx: true, facts: [['Nasdaq-100 member: utility', 'ndx']] },
+  { id: 'n_exc', parent: 'power', name: 'Exelon', ticker: 'EXC', color: '#d8480d', ndx: true, facts: [['Nasdaq-100 member: utility', 'ndx']] },
+  { id: 'n_fang', parent: 'power', name: 'Diamondback', ticker: 'FANG', color: '#f1861a', ndx: true, facts: [['Nasdaq-100 member: oil and gas', 'ndx']] },
+  { id: 'n_bkr', parent: 'power', name: 'Baker Hughes', ticker: 'BKR', color: '#d89e0d', ndx: true, facts: [['Nasdaq-100 member: oilfield and gas turbines', 'ndx']] },
+  { id: 'n_adp', parent: 'payments', name: 'ADP', ticker: 'ADP', color: '#d5d311', ndx: true, facts: [['Nasdaq-100 member: payroll', 'ndx']] },
+  { id: 'n_payx', parent: 'payments', name: 'Paychex', ticker: 'PAYX', color: '#b3dc12', ndx: true, facts: [['Nasdaq-100 member: payroll', 'ndx']] },
+  { id: 'n_mstr', parent: 'payments', name: 'Strategy', ticker: 'MSTR', color: '#84d511', ndx: true, facts: [['Nasdaq-100 member: bitcoin treasury', 'ndx']] },
+  { id: 'n_qqq', parent: 'ndx', name: 'QQQ', ticker: 'QQQ', color: '#5eead4', etf: true, text: 'Invesco QQQ, the fund that tracks the Nasdaq-100.', facts: [['Tracks the Nasdaq-100', 'ndx']] },
+  { id: 'n_tqqq', parent: 'ndx', name: 'TQQQ', ticker: 'TQQQ', color: '#86efac', etf: true, text: 'Leveraged fund: aims for three times the Nasdaq-100’s move each day. Big gains in rallies, big losses in sell-offs.', facts: [['3x the daily move, reset every day', 'qqqEtf']] },
+  { id: 'n_sqqq', parent: 'ndx', name: 'SQQQ', ticker: 'SQQQ', color: '#fca5a5', etf: true, p: () => P.ndx || 0.3, text: 'Inverse fund: aims for minus three times the Nasdaq-100’s move each day, so it rises when the index falls. Its pressure mirrors the index.', facts: [['−3x the daily move, reset every day', 'qqqEtf']] },
 ];
 const moonById = Object.fromEntries(MOONS.map(m => [m.id, m]));
 
@@ -994,6 +1098,9 @@ Object.assign(INSIGHT.nodes, {
   payments: { rel: 'The pipes money flows through. Visa, Mastercard and PayPal take a small fee on most card and online purchases, so they rise and fall with household spending.',
     pros: ['A fee on nearly every purchase', 'E-commerce keeps growing', 'Little credit risk of their own'], cons: ['Depend on consumer spending', 'Regulators target card fees', 'Competition from new payment apps'],
     weak: 'Household spending. If shoppers pull back, payment volumes fall straight away.' },
+  ndx: { rel: 'The 100 largest non-financial companies on the Nasdaq, tracked by QQQ. Its biggest weights are the AI loop itself, so it rises and falls with the AI trade.',
+    pros: ['Owns the AI winners in one fund', 'Broad: chips, software, retail, health and more', 'Cheap and easy to trade'], cons: ['Heavily concentrated in a few giant tech stocks', 'Sensitive to interest rates', 'TQQQ and SQQQ lose value in choppy markets because they reset daily'],
+    weak: 'Concentration. A sell-off in Nvidia, Microsoft, Apple and the other AI giants drags the whole index.' },
   trade: { rel: 'Where goods come from and what it costs to bring them in. Tariffs, shipping and imports from China, Mexico, Vietnam and Canada set prices on shelves across the US.',
     pros: ['Supply has diversified away from China', 'Mexico and Canada mostly duty-free under USMCA', 'Shipping capacity is ample'], cons: ['Tariffs keep changing', 'Duties pass through to prices', 'The end of duty-free parcels raised costs for small sellers'],
     weak: 'Policy shocks. A single tariff change reprices goods across retail, autos and fashion at once.' },
@@ -1553,7 +1660,7 @@ function renderFeed() {
   if (!feed) return;
   const st = feed.status || {};
   const stamp = k => st[k] ? (st[k].ok ? `updated ${clockTime(st[k].updated)}` : `failed${st[k].updated ? `, last good ${clockTime(st[k].updated)}` : ''}`) : 'waiting';
-  const quotes = feed.quotes && typeof feed.quotes === 'object' ? Object.values(feed.quotes) : [];
+  const quotes = feed.quotes && typeof feed.quotes === 'object' ? Object.values(feed.quotes).filter(q => q && !NDX_EXTRA.has(q.symbol)) : [];
   $('#feedStocks').innerHTML = quotes.length ? quotes.map(q => { const ch = num(q.dayChange), fh = num(q.fromHigh);
     return `<li class="lv"><div><b>${esc(q.symbol)}</b><small>${esc(NODE_SHORT[q.node] || '')}${fh !== null ? ` · ${pct(fh)} vs 1-yr high` : ''}</small></div><canvas data-intra="${esc(q.symbol)}" width="128" height="44" aria-hidden="true"></canvas>
       <div class="lv-v"><b>${num(q.price) !== null ? '$' + q.price.toFixed(2) : '–'}</b><small class="${ch !== null && ch < -0.005 ? 'bad' : ch !== null && ch > 0.005 ? 'good' : ''}">${ch !== null ? signPct(ch, 2) + ' today' : ''}</small></div></li>`; }).join('') : `<p class="note">Quotes ${esc(stamp('quotes'))}.</p>`;
@@ -1567,9 +1674,30 @@ function renderFeed() {
   $('#feedGrid').querySelectorAll('canvas[data-gridh]').forEach(cv => { const k = cv.dataset.gridh; drawSeries(cv, k === 'ercotD' ? er.demandHist : k === 'ercotP' ? er.priceHist : k === 'caisoD' ? ca.demandHist : (eh[k.slice(4)] || {}).hist); });
   $('#feedNote').textContent = `Stocks ${stamp('quotes')} · ERCOT ${stamp('ercot')} · CAISO ${stamp('caiso')} · EIA hourly ${stamp('eiaHourly')} · daily snapshot ${stamp('snapshot')}. Quotes come from an unofficial Yahoo Finance feed and run about 15 minutes behind.`;
 }
+// Nasdaq-100: every member as a heat tile, sorted by today's move
+const NDX = ["ASML", "TTWO", "AMZN", "MSTR", "NVDA", "BKNG", "ISRG", "MRVL", "ADI", "AEP", "AMD", "ADP", "CDNS", "CSX", "HON", "MAR", "MU", "XEL", "EXC", "PEP", "ROP", "TER", "TXN", "WDC", "WMT", "AXON", "MDLZ", "NFLX", "STX", "ALNY", "GOOGL", "MPWR", "DXCM", "TMUS", "MELI", "KDP", "NBIS", "AVGO", "FTNT", "TSLA", "NXPI", "FANG", "META", "PANW", "WDAY", "GOOG", "PYPL", "SHOP", "LITE", "CCEP", "BKR", "PDD", "MRNA", "CRWD", "DDOG", "RKLB", "PLTR", "ABNB", "DASH", "APP", "CEG", "GEHC", "LIN", "ARM", "TRI", "FER", "ALAB", "SNDK", "CRWV", "SPCX", "HONA", "AAPL", "AMAT", "AMGN", "CMCSA", "INTC", "KLAC", "PCAR", "CTAS", "PAYX", "LRCX", "ADSK", "ROST", "MNST", "MSFT", "ADBE", "FAST", "CSCO", "REGN", "IDXX", "VRTX", "ODFL", "QCOM", "GILD", "SNPS", "SBUX", "INTU", "MCHP", "ORLY", "COST", "CPRT"];
+const NDX_EXTRA = new Set(MOONS.filter(m => m.ndx || m.etf).map(m => m.ticker));
+const ownerOf = sym => { const m = MOONS.find(x => x.ticker === sym && !x.etf) || MOONS.find(x => x.ticker === sym); return m ? { kind: 'moon', id: m.id, node: m.parent } : (() => { const n = NODES.find(x => x.tickers.includes(sym)); return n ? { kind: 'node', id: n.id, node: n.id } : null; })(); };
+function renderNdx() {
+  const q = quotesMap(), have = NDX.filter(s => q[s] && num(q[s].price) !== null);
+  $('#ndxEtf').innerHTML = ['QQQ', 'TQQQ', 'SQQQ'].map(s => { const x = q[s]; if (!x || num(x.price) === null) return ''; const ch = num(x.dayChange);
+    return `<li class="lv"><div><b>${s}</b><small>${esc(moonById['n_' + s.toLowerCase()].text.split('.')[0])}</small></div><canvas data-ndxi="${s}" width="128" height="44" aria-hidden="true"></canvas><div class="lv-v"><b>$${x.price.toFixed(2)}</b><small class="${ch !== null && ch < -0.005 ? 'bad' : ch !== null && ch > 0.005 ? 'good' : ''}">${ch !== null ? signPct(ch, 2) + ' today' : ''}</small></div></li>`; }).join('');
+  $('#ndxEtf').querySelectorAll('canvas[data-ndxi]').forEach(cv => { const x = feed && feed.quotes && feed.quotes[cv.dataset.ndxi]; drawSeries(cv, x && x.intraday); });
+  if (!have.length) { $('#ndxGrid').innerHTML = ''; return; }
+  const chOf = s => num(q[s].dayChange);
+  const sorted = have.slice().sort((a, b) => (chOf(b) ?? -9) - (chOf(a) ?? -9));
+  $('#ndxGrid').innerHTML = sorted.map(s => { const ch = chOf(s), w = ch === null ? 0 : Math.min(70, Math.round(Math.abs(ch) * 1400));
+    return `<button class="ndx-t" role="listitem" data-sym="${s}" style="--tc: var(${ch !== null && ch < 0 ? '--crit' : '--ok'}); --tw: ${w}%" title="${esc(s)} ${ch !== null ? signPct(ch, 2) : ''}">${s}<small>${ch !== null ? signPct(ch, 1) : '–'}</small></button>`; }).join('');
+  const ch = have.map(chOf).filter(v => v !== null), up = ch.filter(v => v > 0).length, down = ch.filter(v => v < 0).length;
+  const best = sorted[0], worst = sorted[sorted.length - 1];
+  $('#ndxAsOf').textContent = `${have.length} of ${NDX.length} quoted`;
+  $('#ndxNote').textContent = ch.length ? `${up} up, ${down} down today. Best ${best} ${signPct(chOf(best), 1)}, worst ${worst} ${signPct(chOf(worst), 1)}. Each stock is a moon on its sector’s planet; tap a tile to find it.` : 'Daily changes arrive with the live feed.';
+}
+$('#ndxGrid').addEventListener('click', e => { const b = e.target.closest('.ndx-t'); if (!b) return; const o = ownerOf(b.dataset.sym); if (!o) return;
+  const r = b.getBoundingClientRect(); select(o.node); if (o.kind === 'moon') { pinCard(false); showCard({ kind: 'moon', id: o.id }, r.right, r.top); pinCard(true); } });
 // Ticker tape
 let tapeSig = '';
-const TAPE_TICKERS = [...new Set([...NODES.flatMap(n => n.tickers), ...MOONS.filter(m => m.ticker).map(m => m.ticker)])];
+const TAPE_TICKERS = [...new Set([...NODES.flatMap(n => n.tickers), ...MOONS.filter(m => m.ticker && !m.ndx).map(m => m.ticker)])];
 function renderTape() {
   const q = quotesMap(), items = [];
   [['fedfunds', 'Fed funds'], ['corePce', 'Core PCE'], ['mortgage', '30-yr mortgage'], ['unemployment', 'Unemployment']].forEach(([k, l]) => { const v = FD(k) && socFmt(k); if (v) items.push(`<span class="tape-item"><b>${l}</b>${esc(v.split(', ')[0])}</span>`); });
@@ -1664,7 +1792,7 @@ function refreshAll() {
   moonTags.forEach(t => { const m = moonById[t.id], x = m.ticker && q[m.ticker], cp = CP[t.id];
     t.sub.textContent = `${Math.round(cp * 100)}${x && num(x.dayChange) !== null ? ' · ' + signPct(x.dayChange, 1) : ''}`; t.sub.style.color = heatCss(cp); });
   MOONS.forEach(m => { if (m.share) { const sh = m.share(); if (num(sh) !== null) moonObj[m.id].mesh.scale.setScalar((0.16 + 0.05 * Math.sqrt(Math.max(0.5, sh))) / 0.24); } });
-  updateDetail(); refreshCard(); renderTape();
+  updateDetail(); refreshCard(); renderTape(); renderNdx();
 }
 function setSnapshot(s) {
   if (!s || typeof s !== 'object' || typeof s.date !== 'string') return;

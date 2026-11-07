@@ -36,6 +36,10 @@ TICKERS = {"NVDA": "nvidia", "ORCL": "cloud", "CRWV": "cloud", "MSFT": "bigtech"
            "XOM": "power", "CVX": "power", "NEE": "power", "CEG": "power", "GEV": "power",
            "UNH": "healthco", "LLY": "healthco", "JNJ": "healthco", "BA": "industrials", "CAT": "industrials", "LMT": "industrials",
            "V": "payments", "MA": "payments", "PYPL": "payments"}
+# The rest of the Nasdaq-100 and the QQQ funds: quoted, but no intraday history or move alerts (keeps the feed small)
+NDX_EXTRA = {"MU": "nvidia", "SNDK": "nvidia", "WDC": "nvidia", "STX": "nvidia", "ALAB": "nvidia", "LITE": "nvidia", "ARM": "nvidia", "MRVL": "nvidia", "AMAT": "chips", "LRCX": "chips", "KLAC": "chips", "TER": "chips", "QCOM": "chips", "TXN": "chips", "ADI": "chips", "MCHP": "chips", "NXPI": "chips", "MPWR": "chips", "SNPS": "chips", "CDNS": "chips", "PLTR": "labs", "APP": "labs", "ADBE": "labs", "INTU": "labs", "ADSK": "labs", "WDAY": "labs", "TRI": "labs", "NBIS": "cloud", "CSCO": "cloud", "DDOG": "cloud", "CRWD": "cloud", "PANW": "cloud", "FTNT": "cloud", "ROP": "cloud", "GOOG": "bigtech", "RKLB": "spacex", "NFLX": "consumer", "CMCSA": "consumer", "TMUS": "consumer", "TTWO": "consumer", "BKNG": "consumer", "ABNB": "consumer", "MAR": "consumer", "SBUX": "consumer", "COST": "retail", "MELI": "retail", "ROST": "retail", "DASH": "retail", "PEP": "retail", "MDLZ": "retail", "KDP": "retail", "MNST": "retail", "CCEP": "retail", "ORLY": "autos", "CPRT": "autos", "PCAR": "autos", "AMGN": "healthco", "GILD": "healthco", "VRTX": "healthco", "REGN": "healthco", "ALNY": "healthco", "MRNA": "healthco", "ISRG": "healthco", "DXCM": "healthco", "IDXX": "healthco", "GEHC": "healthco", "HON": "industrials", "HONA": "industrials", "LIN": "industrials", "CTAS": "industrials", "FAST": "industrials", "ODFL": "industrials", "CSX": "industrials", "AXON": "industrials", "FER": "industrials", "AEP": "power", "XEL": "power", "EXC": "power", "FANG": "power", "BKR": "power", "ADP": "payments", "PAYX": "payments", "MSTR": "payments", "QQQ": "ndx", "TQQQ": "ndx", "SQQQ": "ndx"}
+ALL_TICKERS = {**TICKERS, **NDX_EXTRA}
+FULL_DETAIL = set(TICKERS) | {"QQQ", "TQQQ", "SQQQ"}
 UA = {"User-Agent": "Mozilla/5.0 (ai-black-hole-local)"}
 EIA_HOURLY = ("https://api.eia.gov/v2/electricity/rto/region-data/data/?api_key={key}&frequency=hourly&data[0]=value"
               "&facets[respondent][]=PJM&facets[respondent][]=ERCO&facets[respondent][]=SRP&facets[respondent][]=US48&facets[type][]=D"
@@ -84,7 +88,7 @@ class Hub:
         day = datetime.now(timezone.utc).date().isoformat()
         for sym, q in (self.state["quotes"] or {}).items():
             ch = q.get("dayChange")
-            if ch is not None and abs(ch) >= 0.03:
+            if sym in TICKERS and ch is not None and abs(ch) >= 0.03:
                 self._event(f"{sym}-{day}-{'up' if ch > 0 else 'down'}",
                             f"{sym} is {'up' if ch > 0 else 'down'} {abs(ch):.1%} today at ${q['price']:.2f}", TICKERS[sym])
         er = self.state["ercot"] or {}
@@ -99,7 +103,7 @@ class Hub:
         quotes = self.state["quotes"] or {}
         if snap is not None and quotes:
             snap["stocks"] = {"date": now_iso()[:10], "source": "Yahoo Finance (unofficial, delayed)",
-                              "quotes": [{"symbol": s, "price": q["price"], "high52": q.get("high52"), "fromHigh": q.get("fromHigh")}
+                              "quotes": [{"symbol": s, "price": q["price"], "high52": q.get("high52"), "fromHigh": q.get("fromHigh"), "dayChange": q.get("dayChange")}
                                          for s, q in quotes.items()]}
         return {"snapshot": snap,
                 "live": {"quotes": quotes, "ercot": self.state["ercot"], "caiso": self.state["caiso"],
@@ -109,7 +113,7 @@ class Hub:
 
 def poll_quotes(hub):
     quotes, open_now = {}, False
-    for sym in TICKERS:
+    for sym in ALL_TICKERS:
         try:
             data = json.loads(fetch(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=1d&interval=5m"))
         except Exception:
@@ -124,16 +128,16 @@ def poll_quotes(hub):
             open_now = True
         closes = ((r.get("indicators") or {}).get("quote") or [{}])[0].get("close") or []
         intraday = [[t, round(c, 2)] for t, c in zip(r.get("timestamp") or [], closes) if c is not None]
-        quotes[sym] = {"symbol": sym, "node": TICKERS[sym], "price": price, "prevClose": prev,
+        quotes[sym] = {"symbol": sym, "node": ALL_TICKERS[sym], "price": price, "prevClose": prev,
                        "dayChange": round(price / prev - 1, 4) if price and prev else None,
                        "high52": hi, "fromHigh": round(price / hi - 1, 4) if price and hi else None,
                        "marketTime": datetime.fromtimestamp(m.get("regularMarketTime", 0), timezone.utc).isoformat(timespec="seconds"),
-                       "intraday": intraday[-80:]}
-        time.sleep(0.4)
+                       "intraday": intraday[-80:] if sym in FULL_DETAIL else []}
+        time.sleep(0.25)
     if not quotes:
         raise RuntimeError("no quotes returned")
     hub.update("quotes", quotes)
-    return 60 if open_now else 900
+    return 120 if open_now else 900
 
 
 def poll_ercot(hub):

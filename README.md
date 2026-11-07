@@ -38,11 +38,14 @@ where.
 | On the map | Meaning |
 |---|---|
 | Gold star above the center | The Federal Reserve. Its moons are the fed funds rate, core inflation, jobs, mortgage rates and the balance sheet. |
-| Planets | 20 players: the AI loop on the inner orbit, the wider economy on the middle orbit, global trade outside. |
-| Moons | 75 companies and concepts locked to their player: stocks, households by wealth, what they spend on, trading partners, tariffs. |
+| Planets | 21 players: the AI loop on the inner orbit, the wider economy on the middle orbit, global trade and the Nasdaq 100 outside. |
+| Moons | 160+ companies and concepts locked to their player: every Nasdaq-100 stock, QQQ/TQQQ/SQQQ, households by wealth, what they spend on, trading partners, tariffs. |
 | Thick lines | Flows between players. Solid = cash paid, wireframe = contracted, gold = Fed policy. |
 | Thin lines | Ties between companies and concepts. Amber = money, teal = goods. |
 | Ring around a node | Its pressure score, 0–100. |
+
+The **Nasdaq-100 today** panel shows all 101 index stocks as a heatmap sorted by the day's move;
+tap a tile to jump to that company's moon.
 
 Hover anything for a card with its numbers, sources, pros, cons, weak point and news. Click a
 player to focus it and see why its score is what it is.
