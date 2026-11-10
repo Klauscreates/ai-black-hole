@@ -1,45 +1,41 @@
 {
- "date": "2026-11-09",
- "asOf": "2026-11-09T19:23:16+00:00",
+ "date": "2026-11-10",
+ "asOf": "2026-11-10T18:16:57+00:00",
  "series": {
   "bbb": {
    "id": "BAMLC0A4CBBB",
    "label": "ICE BofA BBB US corporate bond spread (OAS), %",
-   "value": 1.16,
-   "date": "2026-11-06",
+   "value": 1.13,
+   "date": "2026-11-09",
    "avg1y": 1.007,
    "max1y": 1.17,
    "min1y": 0.92,
-   "chg30": 0.14,
+   "chg30": 0.11,
    "hist": [],
    "url": "https://fred.stlouisfed.org/series/BAMLC0A4CBBB"
   },
   "hy": {
    "id": "BAMLH0A0HYM2",
    "label": "ICE BofA US high-yield bond spread (OAS), %",
-   "value": 3.42,
-   "date": "2026-11-06",
+   "value": 3.34,
+   "date": "2026-11-09",
    "avg1y": 2.896,
    "max1y": 3.48,
    "min1y": 2.6,
-   "chg30": 0.33,
+   "chg30": 0.23,
    "hist": [],
    "url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
   },
   "t10": {
    "id": "DGS10",
    "label": "10-year US Treasury yield, %",
-   "value": 4.84,
-   "date": "2026-11-05",
-   "avg1y": 4.475,
+   "value": 4.86,
+   "date": "2026-11-06",
+   "avg1y": 4.478,
    "max1y": 5.31,
    "min1y": 3.97,
-   "chg30": -0.43,
+   "chg30": -0.42,
    "hist": [
-    [
-     "2026-05-15",
-     4.59
-    ],
     [
      "2026-05-18",
      4.61
@@ -515,6 +511,10 @@
     [
      "2026-11-05",
      4.84
+    ],
+    [
+     "2026-11-06",
+     4.86
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/DGS10"
@@ -523,103 +523,224 @@
  "stocks": null,
  "events": [
   {
-   "date": "2026-11-09",
-   "kind": "stress",
-   "status": "closed",
-   "who": "CoreWeave, neoclouds",
-   "node": "cloud",
-   "amountB": null,
-   "title": "CoreWeave is fighting a 'doom cycle' narrative as its debt costs and neocloud credit risk overshadow revenue growth.",
+   "date": "2026-11-10",
+   "kind": "raise",
+   "status": "reported",
+   "who": "Anthropic",
+   "node": "labs",
+   "amountB": 64.35,
+   "title": "Anthropic set an IPO price range of $70 to $78 a share, which could raise up to about $64B at a valuation near $1.4 trillion, with trading expected around Nov 19.",
    "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/09/coreweave-debt-credit-risk-neoclouds.html"
+   "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
   },
   {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
+   "kind": "raise",
+   "status": "reported",
+   "who": "Anthropic, TSMC, Nvidia, Google, Microsoft, AMD, Broadcom, Micron",
+   "node": "labs",
+   "amountB": 26.0,
+   "title": "TSMC joined Nvidia, Google, Microsoft, AMD, Broadcom and Micron in a $26B private placement of Anthropic stock that only completes if the IPO closes.",
+   "source": "Crypto Briefing",
+   "url": "https://cryptobriefing.com/tsmc-approves-investment-in-anthropic"
+  },
+  {
+   "date": "2026-11-10",
    "kind": "stress",
    "status": "closed",
-   "who": "Nvidia",
-   "node": "nvidia",
-   "amountB": null,
-   "title": "Nvidia shares fell about 5% after the company opened an internal probe into CEO Jensen Huang's relationship with an alleged Chinese spy.",
-   "source": "CNN",
-   "url": "https://www.cnn.com/2026/11/09/investing/nvidia-stock-huang-investigation"
+   "who": "CoreWeave",
+   "node": "cloud",
+   "amountB": 35.6,
+   "title": "CoreWeave reports Q3 results with investors focused on its roughly $36B of debt, bond yields near 15.5% and how much more financing its backlog needs.",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/coreweave-earnings-preview-debt-capex.html"
   },
   {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "kind": "context",
    "status": "closed",
-   "who": "AMD, Broadcom, Intel",
-   "node": "chips",
+   "who": "Federal Reserve, BLS",
+   "node": "fed",
    "amountB": null,
-   "title": "AMD jumped about 12% on an Oppenheimer upgrade and Broadcom gained 8% while Nvidia slid, lifting the chip index.",
-   "source": "Yahoo Finance",
-   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html"
+   "title": "October consumer prices rose 0.4% on the month and core prices 0.3%, both above forecasts, lifting the odds of a Fed rate hike on Dec 9.",
+   "source": "CBS News",
+   "url": "https://www.cbsnews.com/news/october-cpi-report-elevated-inflation/"
   },
   {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
+   "kind": "stress",
+   "status": "closed",
+   "who": "Nasdaq, Nvidia",
+   "node": "bigtech",
+   "amountB": null,
+   "title": "The Nasdaq fell after the hot October inflation report, ending the rebound that began the week, with Nvidia again among the weakest large stocks.",
+   "source": "TheStreet",
+   "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-10-2026"
+  },
+  {
+   "date": "2026-11-10",
    "kind": "grid",
    "status": "closed",
-   "who": "SpaceX (SpaceXAI)",
-   "node": "spacex",
+   "who": "US Senate, data center operators",
+   "node": "cloud",
    "amountB": null,
-   "title": "Mississippi regulators said SpaceXAI started building its Southaven data center without the required water discharge permits.",
-   "source": "Insurance Journal",
-   "url": "https://www.insurancejournal.com/news/southeast/2026/11/09/892130.htm"
+   "title": "The Senate voted 73-25 to advance a permitting bill that would make data centers pay for their share of existing grid costs and for new lines and plants built for them.",
+   "source": "Tech Times",
+   "url": "https://techtimes.com/articles/330362/20261110/senate-votes-73-25-advance-bill-making-data-centers-pay-old-new-grid-costs.htm"
   },
   {
+   "date": "2026-11-10",
+   "kind": "capex",
+   "status": "reported",
+   "who": "SpaceX",
+   "node": "spacex",
+   "amountB": 24.0,
+   "title": "SpaceX shares rose about 6% on Nov 9 as it advanced plans for a $24B data center and gas-fired power plant at Starbase in Texas.",
+   "source": "Stocktwits",
+   "url": "https://stocktwits.com/news-articles/markets/equity/spcx-stock-rises-as-space-x-advances-24-b-texas-data-center-and-gas-plant-plans/cNGrFNUR97B"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-09",
+   "kind": "stress",
+   "node": "cloud",
+   "source": "CNBC",
+   "status": "closed",
+   "title": "CoreWeave is fighting a 'doom cycle' narrative as its debt costs and neocloud credit risk overshadow revenue growth.",
+   "url": "https://www.cnbc.com/2026/11/09/coreweave-debt-credit-risk-neoclouds.html",
+   "who": "CoreWeave, neoclouds"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-09",
+   "kind": "stress",
+   "node": "nvidia",
+   "source": "CNN",
+   "status": "closed",
+   "title": "Nvidia shares fell about 5% after the company opened an internal probe into CEO Jensen Huang's relationship with an alleged Chinese spy.",
+   "url": "https://www.cnn.com/2026/11/09/investing/nvidia-stock-huang-investigation",
+   "who": "Nvidia"
+  },
+  {
+   "amountB": null,
    "date": "2026-11-09",
    "kind": "context",
+   "node": "chips",
+   "source": "Yahoo Finance",
    "status": "closed",
-   "who": "Tesla",
-   "node": "tesla",
-   "amountB": null,
-   "title": "Musk said Tesla will end Cybertruck production and refund some deposits, shifting the factory capacity to Cybercab.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/11/09/musk-says-tesla-will-refund-some-cybertruck-deposits-defends-decision-to-end-production"
+   "title": "AMD jumped about 12% on an Oppenheimer upgrade and Broadcom gained 8% while Nvidia slid, lifting the chip index.",
+   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html",
+   "who": "AMD, Broadcom, Intel"
   },
   {
+   "amountB": null,
+   "date": "2026-11-09",
+   "kind": "grid",
+   "node": "spacex",
+   "source": "Insurance Journal",
+   "status": "closed",
+   "title": "Mississippi regulators said SpaceXAI started building its Southaven data center without the required water discharge permits.",
+   "url": "https://www.insurancejournal.com/news/southeast/2026/11/09/892130.htm",
+   "who": "SpaceX (SpaceXAI)"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-09",
+   "kind": "context",
+   "node": "tesla",
+   "source": "TechCrunch",
+   "status": "closed",
+   "title": "Musk said Tesla will end Cybertruck production and refund some deposits, shifting the factory capacity to Cybercab.",
+   "url": "https://techcrunch.com/2026/11/09/musk-says-tesla-will-refund-some-cybertruck-deposits-defends-decision-to-end-production",
+   "who": "Tesla"
+  },
+  {
+   "amountB": 40,
    "date": "2026-11-09",
    "kind": "credit",
-   "status": "closed",
-   "who": "Microsoft, Meta",
    "node": "bigtech",
-   "amountB": 40,
-   "title": "Microsoft sold $25B and Meta $15B of notes in early November as AI capex outran free cash flow at the largest tech firms.",
    "source": "Technology.org",
-   "url": "https://www.technology.org/2026/11/09/big-tech-ai-capex-free-cash-flow-debt-q3-2026/"
+   "status": "closed",
+   "title": "Microsoft sold $25B and Meta $15B of notes in early November as AI capex outran free cash flow at the largest tech firms.",
+   "url": "https://www.technology.org/2026/11/09/big-tech-ai-capex-free-cash-flow-debt-q3-2026/",
+   "who": "Microsoft, Meta"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-09",
+   "kind": "grid",
+   "node": "cloud",
+   "source": "U.S. News & World Report",
+   "status": "reported",
+   "title": "Congress takes up a permitting bill with data center provisions, its first test on the issue after the midterm elections.",
+   "url": "https://usnews.com/news/politics/articles/2026-11-09/us-congress-gets-first-post-blue-wave-crack-at-data-centers-with-permitting-bill",
+   "who": "US Congress"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-09",
+   "kind": "context",
+   "node": "healthco",
+   "source": "Tradingpedia",
+   "status": "closed",
+   "title": "Jefferies raised its Eli Lilly price target to a Street-high $1,700, citing large overseas demand for its obesity drugs.",
+   "url": "https://www.tradingpedia.com/2026/11/09/eli-lilly-advances-after-jefferies-sets-street-high-target/",
+   "who": "Eli Lilly"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "stress",
+   "status": "reported",
+   "who": "Commercial banks, private credit lenders",
+   "node": "banks",
+   "amountB": 13.4,
+   "title": "Banks and private credit funds are quietly stalling new AI data-center loans, with about $13.4B of data-center debt coming due in 2027.",
+   "source": "BusinessDay",
+   "url": "https://businessday.ng/technology/article/wall-street-quietly-freezes-data-center-loans-ahead-of-13-4bn-ai-debt-wall/"
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "stress",
+   "status": "closed",
+   "who": "Boeing",
+   "node": "industrials",
+   "amountB": null,
+   "title": "Boeing plans to cut about 5% of its commercial aircraft workforce and slow its production ramp-up.",
+   "source": "GuruFocus",
+   "url": "https://gurufocus.com/news/9185729/boeing-ba-plans-5-commercial-aircraft-workforce-cut-amid-production-reassessment"
   },
   {
    "date": "2026-11-09",
    "kind": "grid",
-   "status": "reported",
-   "who": "US Congress",
-   "node": "cloud",
+   "status": "closed",
+   "who": "PJM",
+   "node": "citizens",
    "amountB": null,
-   "title": "Congress takes up a permitting bill with data center provisions, its first test on the issue after the midterm elections.",
-   "source": "U.S. News & World Report",
-   "url": "https://usnews.com/news/politics/articles/2026-11-09/us-congress-gets-first-post-blue-wave-crack-at-data-centers-with-permitting-bill"
+   "title": "PJM's latest capacity auction cleared at a record $325 per megawatt-day yet fell short of its reliability target, with data centers blamed for nearly half of recent capacity costs.",
+   "source": "Stacker via LocalNews8",
+   "url": "https://localnews8.com/stacker-business-economy/2026/11/09/how-data-center-demand-is-reshaping-electricity-costs-across-the-us/"
   },
   {
    "date": "2026-11-09",
    "kind": "context",
    "status": "closed",
-   "who": "Eli Lilly",
-   "node": "healthco",
+   "who": "ASML",
+   "node": "chips",
    "amountB": null,
-   "title": "Jefferies raised its Eli Lilly price target to a Street-high $1,700, citing large overseas demand for its obesity drugs.",
-   "source": "Tradingpedia",
-   "url": "https://www.tradingpedia.com/2026/11/09/eli-lilly-advances-after-jefferies-sets-street-high-target/"
+   "title": "ASML shares rose about 6% in a broad chip rally that excluded Nvidia.",
+   "source": "The Motley Fool",
+   "url": "https://fool.com/investing/2026/11/09/why-asml-bounced-back-today"
   },
   {
+   "amountB": null,
    "date": "2026-11-08",
    "kind": "grid",
-   "status": "closed",
-   "who": "Stratos data center (Utah)",
    "node": "cloud",
-   "amountB": null,
-   "title": "A large Utah data center project faces rancher resistance over its use of historic water rights in a dry region.",
    "source": "Deseret News",
-   "url": "https://www.deseret.com/magazine/2026/11/08/kevin-oleary-meets-resistance-on-data-center/"
+   "status": "closed",
+   "title": "A large Utah data center project faces rancher resistance over its use of historic water rights in a dry region.",
+   "url": "https://www.deseret.com/magazine/2026/11/08/kevin-oleary-meets-resistance-on-data-center/",
+   "who": "Stratos data center (Utah)"
   },
   {
    "amountB": null,
@@ -655,323 +776,220 @@
    "who": "Nasdaq, AI stocks"
   },
   {
+   "amountB": 11,
    "date": "2026-11-06",
    "kind": "raise",
-   "status": "reported",
-   "who": "OpenAI",
    "node": "labs",
-   "amountB": 11,
-   "title": "OpenAI reportedly closed about $11B as the first part of a scaled-back round valuing it at $1.25 trillion, below its earlier $1.4 trillion goal.",
    "source": "Bloomberg",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"
-  },
-  {
-   "date": "2026-11-06",
-   "kind": "context",
-   "status": "closed",
-   "who": "OpenAI",
-   "node": "labs",
-   "amountB": null,
-   "title": "OpenAI's CFO said the company will keep building AI data centers despite midterm results that favored restrictions.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html"
-  },
-  {
-   "date": "2026-11-06",
-   "kind": "stress",
-   "status": "closed",
-   "who": "CoreWeave",
-   "node": "cloud",
-   "amountB": null,
-   "title": "Yields on some CoreWeave bonds rose above 16% and its five-year default swaps passed 1,200 basis points as AI credit stress spread.",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html"
-  },
-  {
-   "date": "2026-11-06",
-   "kind": "grid",
-   "status": "closed",
-   "who": "Local governments",
-   "node": "cloud",
-   "amountB": null,
-   "title": "Voters sided with limiting data center development in 40 of 41 local ballot measures on Nov 3, including bans and moratoriums.",
-   "source": "Ballotpedia News",
-   "url": "https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-05",
-   "kind": "stress",
-   "node": "nvidia",
-   "source": "Seeking Alpha",
-   "status": "closed",
-   "title": "Nvidia closed down about 9% at $181.64 in an AI chip rout, erasing its gains for 2026.",
-   "url": "https://seekingalpha.com/news/4667280-nvidia-drops-9-now-down-for-2026",
-   "who": "Nvidia"
-  },
-  {
-   "amountB": 1000,
-   "date": "2026-11-05",
-   "kind": "stress",
-   "node": "bigtech",
-   "source": "CNBC",
-   "status": "closed",
-   "title": "The Magnificent Seven lost over $1 trillion in market value as the Nasdaq fell about 5.5% on fears of data-center limits after the midterms.",
-   "url": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html",
-   "who": "Microsoft, Alphabet, Amazon, Meta, Nvidia"
-  },
-  {
-   "amountB": 30,
-   "date": "2026-11-05",
-   "kind": "context",
-   "node": "trade",
-   "source": "Anadolu Agency",
    "status": "reported",
-   "title": "China's Commerce Ministry said it would buy more US farm goods once both sides enact the agreed tariff cuts on about $30 billion of goods each.",
-   "url": "https://aa.com.tr/en/economy/china-signals-willingness-to-expand-us-farm-imports-if-reciprocal-tariff-cuts-implemented/4112880",
-   "who": "China, United States"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-05",
-   "kind": "stress",
-   "node": "chips",
-   "source": "Quartz",
-   "status": "closed",
-   "title": "Chip stocks led the Nasdaq into a correction, with AMD down about 17% and Broadcom about 10% on fears the midterm results slow the AI buildout.",
-   "url": "https://qz.com/nasdaq-correction-ai-chip-stocks-midterms-selloff-110526",
-   "who": "AMD, Broadcom, Nvidia"
-  },
-  {
-   "amountB": 420,
-   "date": "2026-11-05",
-   "kind": "stress",
-   "node": "spacex",
-   "source": "CNBC",
-   "status": "closed",
-   "title": "Tesla and SpaceX lost over $420 billion of combined market value in two days after the midterms, with analysts flagging possible delays to SpaceX's Texas compute.",
-   "url": "https://cnbc.com/2026/11/05/tesla-spacex-stocks-fall-after-2026-midterms.html",
-   "who": "Tesla, SpaceX"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-05",
-   "kind": "context",
-   "node": "labs",
-   "source": "TechCrunch",
-   "status": "closed",
-   "title": "OpenAI president Greg Brockman said the company could be ready for an IPO in 2027, citing growing enterprise revenue.",
-   "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
+   "title": "OpenAI reportedly closed about $11B as the first part of a scaled-back round valuing it at $1.25 trillion, below its earlier $1.4 trillion goal.",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value",
    "who": "OpenAI"
   },
   {
    "amountB": null,
-   "date": "2026-11-04",
-   "kind": "stress",
-   "node": "cloud",
-   "source": "Bloomberg",
+   "date": "2026-11-06",
+   "kind": "context",
+   "node": "labs",
+   "source": "CNBC",
    "status": "closed",
-   "title": "CoreWeave bonds fell to new lows, some yielding above 15%, after election results raised fears of slower Texas data-center builds.",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-04/coreweave-bonds-hit-new-lows-as-texas-data-centers-in-crosshairs",
-   "who": "CoreWeave"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-04",
-   "kind": "stress",
-   "node": "cloud",
-   "source": "FX Leaders",
-   "status": "closed",
-   "title": "CoreWeave shares dropped about 10 percent to a fresh 52-week low below $50 on debt and political risk to data-center expansion.",
-   "url": "https://www.fxleaders.com/news/2026/11/04/crwv-stock-plunges-below-50-as-ai-infrastructure-faces-political-and-debt-risks-for-coreweave/",
-   "who": "CoreWeave"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-04",
-   "kind": "grid",
-   "node": "cloud",
-   "source": "KFOX14",
-   "status": "reported",
-   "title": "Texas governor-elect Gina Hinojosa has pledged a moratorium on new data-center approvals until new water and grid laws pass in 2027.",
-   "url": "https://kfoxtv.com/news/local/gina-hinojosa-won-the-governors-race-what-happens-to-texas-data-centers-now-11-04-2026",
-   "who": "Texas data centers"
+   "title": "OpenAI's CFO said the company will keep building AI data centers despite midterm results that favored restrictions.",
+   "url": "https://www.cnbc.com/2026/11/06/open-ai-data-centers-election.html",
+   "who": "OpenAI"
   }
  ],
  "analysis": {
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "nodes": {
    "nvidia": {
-    "tone": 18,
-    "news": "Nvidia fell about 5% on Nov 9 after opening an internal probe into CEO Jensen Huang's ties to an alleged Chinese spy, on top of a 9% drop on Nov 5; earnings are due Nov 17.",
+    "tone": 22,
+    "news": "Nvidia fell again on Nov 10 as the Nasdaq dropped after hot October inflation, following a 5% slide on Nov 9 over the board probe into CEO Jensen Huang and a 9% drop on Nov 5; rivals AMD, Broadcom and ASML rallied without it.",
     "pros": [
-     "Q3 Big Tech capex hit a record ~$202B",
-     "Earnings on Nov 17 can reset the story"
+     "Joins the $26B Anthropic placement tied to the IPO",
+     "Hyperscaler Q3 capex near $202B still flows mostly to its chips"
     ],
     "cons": [
-     "CEO probe raises leadership risk",
-     "Rivals AMD and Broadcom rallied as Nvidia slid"
+     "CEO probe and lawsuit raise leadership risk",
+     "Investors rotated to AMD, Broadcom and ASML"
     ],
-    "weak": "A board probe of the CEO lands just as investors question how long the capex boom lasts."
+    "weak": "Leadership uncertainty arrives just as lenders pull back from funding its biggest debt-financed customers."
    },
    "labs": {
-    "tone": 30,
-    "news": "OpenAI reportedly closed about $11B of a scaled-back round at a $1.25T valuation (Nov 6), and Anthropic starts marketing its Nasdaq IPO with bids reported near $1.1-1.3T, below October hopes."
+    "tone": 36,
+    "news": "Anthropic set an IPO range of $70-78 a share (Nov 10), up to about $64B raised at a valuation near $1.4T with trading expected Nov 19, plus a $26B chipmaker and Big Tech placement that depends on the IPO; OpenAI reportedly closed $11B at $1.25T (Nov 6).",
+    "pros": [
+     "IPO range implies up to $1.4T, above last week's fears of $1T",
+     "Nvidia, Google, Microsoft, TSMC and others commit $26B alongside"
+    ],
+    "cons": [
+     "Anthropic lists about $900B of compute and lease commitments",
+     "A December Fed hike raises the discount rate on a loss-making listing"
+    ],
+    "weak": "Both labs need public or private markets to stay open while the Fed is about to tighten."
    },
    "bigtech": {
-    "tone": 32,
-    "news": "Microsoft ($25B, Nov 4) and Meta ($15B, Nov 5) sold bonds as Q3 capex of about $202B outran cash flow; the shares bounced 2-5% on Nov 9 while Jefferies warned capex may have peaked."
+    "tone": 30,
+    "news": "The Nasdaq fell on Nov 10 after October CPI came in hot, ending the Nov 9 rebound; Microsoft ($25B) and Meta ($15B) sold bonds in early November as Q3 capex near $202B outran cash flow, and BBB spreads are 1.13%, up 0.11 points in 30 days."
    },
    "cloud": {
     "tone": 10,
-    "news": "CoreWeave bond yields topped 16% and its default swaps passed 1,200 bp (Nov 6), and voters backed limits in 40 of 41 local data-center ballot measures; HY spreads are 3.42%, up 0.33 points in 30 days.",
+    "news": "CoreWeave reports Q3 on Nov 10 with about $36B of debt, 2031 notes near 15.5% and default swaps above 1,150 bp, while the Senate advanced (73-25) a bill making data centers pay grid costs; HY spreads are 3.34%, up 0.23 points in 30 days, PJM demand is 3.9% above last year and Dallas and Taylor, TX remain 100% in drought.",
     "pros": [
-     "Backlogs at Microsoft and Oracle remain large",
-     "Nvidia backstops some CoreWeave capacity"
+     "Bond yields eased from the 16.7% peak of Nov 5",
+     "CoreWeave says the election has not changed customer commitments"
     ],
     "cons": [
-     "Junk-level borrowing costs above 15%",
-     "Local bans and moratoriums after the Nov 3 vote"
+     "Banks and private credit are stalling new data-center loans",
+     "Senate bill would shift grid costs onto data centers"
     ],
-    "weak": "Neoclouds must refinance at distressed yields while new sites face voter pushback."
+    "weak": "The backlog needs fresh financing just as lenders step back and yields sit in distressed territory."
    },
    "citizens": {
-    "tone": 38,
-    "news": "Household electricity prices are up 4.3% y/y (Sept) and energy CPI 20%, the saving rate fell to 3.8% and sentiment is 48.1; PJM demand runs 4.1% above last year while the Dallas and Taylor, TX hubs are 100% in drought."
+    "tone": 35,
+    "news": "October CPI rose 0.4% on the month (Nov 10); electricity CPI is up 5.4% y/y and energy CPI 21%, the saving rate is 3.8% and sentiment 48.1. PJM demand runs 3.9% and ERCOT 3.8% above last year (SRP in Phoenix is down 15%), PJM's capacity price hit a record $325/MW-day, and the Dallas and Taylor, TX hubs are 100% in drought."
    },
    "spacex": {
-    "tone": 28,
-    "news": "Mississippi said SpaceXAI started its Southaven data center without water permits (Nov 9), adding to Colossus turbine scrutiny; SpaceX shares fell with AI stocks after the Nov 3 midterms."
+    "tone": 34,
+    "news": "SpaceX shares rose about 6% on Nov 9 on plans for a $24B data center and gas plant at Starbase, days after Mississippi regulators said its Southaven site was built without a water permit; ERCOT demand is up 3.8% y/y and gas is cheap at $2.63, but Texas hubs are fully in drought."
    },
    "tesla": {
     "tone": 36,
-    "news": "Musk said Tesla will end Cybertruck production and refund some deposits to shift capacity to Cybercab (Nov 9); Tesla fell with AI names after the midterms."
+    "news": "Musk said on Nov 9 that Tesla will end Cybertruck production and refund some deposits; the stock is still recovering from the post-midterm drop of Nov 4-5, and a December Fed hike would raise car-loan costs."
    },
    "consumer": {
-    "tone": 46,
-    "news": "No major Apple news this week; imports from China are up 34% y/y and consumer sentiment is weak at 48.1."
+    "tone": 45,
+    "news": "No major Apple news this week; imports from China are up 34% y/y and consumer sentiment is weak at 48.1 ahead of the holidays."
    },
    "retail": {
-    "tone": 50,
-    "news": "Retail sales were $745B in September, up 6.3% y/y, and e-commerce reached 17.1% of sales; no major retailer news this week."
+    "tone": 46,
+    "news": "Retail sales were up 6.3% y/y in September, but hot October CPI (Nov 10), a 3.8% saving rate and sentiment of 48.1 cloud the holiday season; e-commerce is 17.1% of sales."
    },
    "autos": {
-    "tone": 46,
-    "news": "Light vehicle sales held at a 16.0M annual pace in October, flat y/y, while borrowing costs stay high (30-year mortgage 7.18%)."
+    "tone": 44,
+    "news": "Light vehicle sales held at a 16.0M annual pace in October, flat y/y, with Ford's October sales slightly lower; a likely Fed hike on Dec 9 would push auto-loan rates up further."
    },
    "fashion": {
     "tone": 46,
-    "news": "Apparel prices are up 3.4% y/y (Sept) and imports from Vietnam jumped 61%; no major fashion-brand news this week."
+    "news": "Apparel prices are up 3.5% y/y (Oct) and imports from Vietnam are up 61%; no major fashion-brand news this week."
    },
    "education": {
     "tone": 44,
-    "news": "No notable news this week. Student loan balances near $1.78T keep pressure on young households."
+    "news": "No notable news this week. Student loan balances near $1.78T keep pressure on young households as rates look set to rise."
    },
    "banks": {
-    "tone": 34,
-    "news": "Banks are pulling back on new AI loans while GPU-backed debt trades at discounts; card delinquency is 2.85%, slightly better than a year ago, and HY spreads widened 0.33 points in 30 days."
+    "tone": 30,
+    "news": "Banks and private credit funds are reported (Nov 9) to be stalling new AI data-center loans ahead of about $13.4B of data-center debt due in 2027; HY spreads are 3.34%, up 0.23 points in 30 days, and card delinquency is 2.85%."
    },
    "fed": {
-    "tone": 34,
-    "news": "The Fed held at 3.75-4.00% on Oct 28 with two dissents for a hike; strong October jobs (unemployment 4.1%, Nov 6) and core PCE at 3.1% keep a December hike in play, with October CPI due Nov 10."
+    "tone": 28,
+    "news": "October CPI rose 0.4% and core 0.3% (Nov 10), both above forecasts, and markets now price a hike on Dec 9 as near certain, with Governor Waller floating a half point; fed funds is 3.88% in a 3.75-4.00% range, core PCE 3.1% vs the 2% goal, unemployment 4.1% and the 30-year mortgage 7.18%.",
+    "pros": [
+     "Unemployment is low at 4.1%",
+     "10-year yield is down 0.42 points over 30 days"
+    ],
+    "cons": [
+     "Core PCE at 3.1% and CPI re-accelerating",
+     "A hike lands on a credit market already stressed by AI debt"
+    ],
+    "weak": "The Fed is set to tighten into the weakest AI credit conditions of the year."
    },
    "chips": {
-    "tone": 44,
-    "news": "AMD jumped about 12% and Broadcom 8% on Nov 9 as investors rotated away from Nvidia, rebounding from the Nov 5 chip sell-off."
+    "tone": 50,
+    "news": "ASML rose about 6% and AMD about 12% on Nov 9 in a chip rally that left out Nvidia, and TSMC joined a $26B Anthropic stock placement (Nov 10); chip stocks slipped with the Nasdaq after the Nov 10 CPI report."
    },
    "power": {
-    "tone": 44,
-    "news": "Henry Hub gas is cheap at $2.63, but PJM capacity costs and a 4.3% rise in household power prices keep data-center power deals politically sensitive after the midterms."
+    "tone": 52,
+    "news": "Power stocks such as Constellation and GE Vernova rebounded on Nov 9, PJM capacity cleared at a record $325/MW-day, and the Senate advanced a bill making data centers pay for new lines and plants; Henry Hub gas is $2.63."
    },
    "healthco": {
     "tone": 56,
-    "news": "Jefferies set a Street-high $1,700 target on Eli Lilly (Nov 9); medical care CPI is up a modest 1.5% y/y."
+    "news": "Jefferies set a Street-high $1,700 target on Eli Lilly (Nov 9) after new obesity-pill trial data; medical care CPI is up a modest 1.9% y/y."
    },
    "industrials": {
-    "tone": 38,
-    "news": "No notable company news this week; slowing data-center builds and local bans cloud generator and turbine demand."
+    "tone": 34,
+    "news": "Boeing said on Nov 9 it will cut about 5% of its commercial aircraft workforce and slow its production ramp; slower data-center lending also clouds generator demand."
    },
    "payments": {
-    "tone": 50,
-    "news": "No notable news this week. Consumer credit grew 3.0% y/y and card delinquency eased to 2.85%."
+    "tone": 48,
+    "news": "No notable news this week. Consumer credit is up 3.0% y/y and card delinquency is 2.85%."
    },
    "trade": {
     "tone": 46,
-    "news": "Imports from Mexico (+40%), Vietnam (+61%) and China (+34%) all rose y/y in September while customs duties fell 18%, suggesting tariff relief or rerouting."
+    "news": "The US-China truce was extended to Jan 10, 2027 and China signaled more US farm purchases (Nov 5); imports from China are up 34%, Mexico 40% and Vietnam 61% y/y, while customs duties are down 18%."
    }
   },
   "flows": {
    "bigtech>nvidia": {
-    "tone": 32,
-    "news": "Big Tech capex hit a record ~$202B in Q3, but Jefferies (Nov 9) says it may have peaked, and Nvidia shares are hit by the CEO probe."
+    "tone": 44,
+    "news": "Q3 hyperscaler capex near $202B keeps chip orders flowing, but the Nasdaq fell again on Nov 10 and Jefferies has warned capex may have peaked."
    },
    "cloud>nvidia": {
-    "tone": 12,
-    "news": "Neocloud chip buying is funded by debt now yielding over 16% at CoreWeave (Nov 6); lenders are pulling back from GPU-backed loans."
+    "tone": 14,
+    "news": "Neocloud chip purchases depend on debt that now costs CoreWeave about 15.5%, and lenders are reported (Nov 9) to be stalling new data-center loans."
    },
    "nvidia>labs": {
-    "tone": 28,
-    "news": "Nvidia's role in lab rounds faces scrutiny as OpenAI scaled its round to about $11B closed so far (Nov 6) and Nvidia's own stock slides."
+    "tone": 55,
+    "news": "Nvidia is part of the $26B Anthropic stock placement announced with the IPO terms (Nov 10); it only completes if the IPO closes."
    },
    "nvidia>cloud": {
-    "tone": 14,
-    "news": "Nvidia's backstop of unused CoreWeave capacity matters more as CoreWeave's default swaps top 1,200 bp (Nov 6)."
+    "tone": 30,
+    "news": "Nvidia's backstop for unused CoreWeave capacity matters more as CoreWeave reports Q3 (Nov 10) with bonds near 15.5% and default swaps above 1,150 bp."
    },
    "bigtech>labs": {
-    "tone": 32,
-    "news": "Big Tech funding of labs continues, but OpenAI's lower valuation (Nov 6) and Anthropic's softer IPO bids signal cooler demand."
+    "tone": 56,
+    "news": "Google and Microsoft joined the $26B Anthropic placement (Nov 10), and OpenAI reportedly closed $11B at $1.25T (Nov 6)."
    },
    "labs>bigtech": {
-    "tone": 36,
-    "news": "Lab payments under Azure and AWS contracts are underpinned by Microsoft's $677B backlog, though Microsoft spent less than planned as partner sites ran late."
+    "tone": 48,
+    "news": "Anthropic's filing lists about $900B of compute and lease commitments, a large revenue pipeline for cloud providers that depends on the IPO and future funding."
    },
    "labs>cloud": {
-    "tone": 14,
-    "news": "Lab contracts with Oracle and CoreWeave are the main support for neocloud debt, which now trades at distressed yields (Nov 9)."
+    "tone": 28,
+    "news": "OpenAI's CFO said building continues despite the midterms (Nov 6), but Oracle sits at BBB- and CoreWeave's debt trades at distressed yields."
    },
    "bigtech>cloud": {
-    "tone": 22,
-    "news": "Microsoft's rented neocloud capacity is a key revenue source for CoreWeave as its credit stress deepens (Nov 9)."
+    "tone": 34,
+    "news": "No new Microsoft neocloud leases reported; CoreWeave says existing customer commitments are unchanged after the election."
    },
    "cloud>citizens": {
-    "tone": 30,
-    "news": "Household power prices are up 4.3% y/y with PJM demand 4.1% higher; voters backed data-center limits in 40 of 41 local measures (Nov 3), and the Dallas and Taylor, TX hubs are 100% in drought."
+    "tone": 22,
+    "news": "The Senate advanced (73-25, Nov 9-10) a bill making data centers pay grid costs after PJM capacity hit a record $325/MW-day; electricity CPI is up 5.4% y/y, PJM demand 3.9% above last year, and Dallas and Taylor, TX are 100% in drought."
    },
    "spacex>nvidia": {
-    "tone": 32,
-    "news": "xAI GPU buying for Colossus continues, but lenders are pulling back from chip-backed leases like SpaceX's."
+    "tone": 52,
+    "news": "SpaceX is advancing a $24B Starbase data center and gas plant (Nov 9-10) on top of Colossus, implying continued large GPU orders."
    },
    "spacex>citizens": {
-    "tone": 24,
-    "news": "Mississippi said SpaceXAI began its Southaven build without water permits (Nov 9), adding to the dispute over Colossus gas turbines."
+    "tone": 26,
+    "news": "Mississippi regulators said (Nov 9) the Southaven data center was started without a water discharge permit, and a new gas plant is planned at Starbase; ERCOT demand is up 3.8% y/y with Texas hubs fully in drought."
    },
    "tesla>spacex": {
-    "tone": 34,
-    "news": "Tesla's former xAI stake, now SpaceX shares, lost value as SpaceX and Tesla fell after the midterms (Nov 5)."
+    "tone": 42,
+    "news": "Tesla and SpaceX lost over $420B of combined value after the midterms (Nov 5); SpaceX shares regained about 6% on Nov 9."
    },
    "tesla>nvidia": {
-    "tone": 40,
-    "news": "No notable news this week on Tesla AI compute; Tesla is redirecting Cybertruck capacity to Cybercab (Nov 9)."
+    "tone": 46,
+    "news": "No notable news this week; Tesla is shifting Cybertruck factory capacity to other products (Nov 9)."
    },
    "citizens>tesla": {
-    "tone": 44,
-    "news": "No notable news on Megapack orders; grid demand growth in ERCOT (+4.2%) and PJM (+4.1%) keeps storage useful, while cheap gas ($2.63) limits urgency."
+    "tone": 50,
+    "news": "No new utility battery orders reported; grid demand is up 2.6% y/y nationally and 3.9% in PJM, supporting storage demand, while SRP in Phoenix is down 15%."
    },
    "citizens>retail": {
-    "tone": 50,
-    "news": "Retail sales were up 6.3% y/y in September, but the saving rate fell to 3.8% and sentiment is weak."
+    "tone": 46,
+    "news": "Retail sales rose 6.3% y/y in September, but the saving rate is 3.8% and October CPI rose 0.4% (Nov 10), squeezing real spending."
    },
    "citizens>autos": {
-    "tone": 46,
-    "news": "Car sales held near a 16.0M pace in October while loan costs remain high."
+    "tone": 44,
+    "news": "Vehicle sales held at a 16.0M pace in October; used car prices are down 3.3% y/y and a December Fed hike would lift loan rates."
    },
    "citizens>fashion": {
     "tone": 46,
-    "news": "Apparel prices are up 3.4% y/y as households trade down."
+    "news": "Apparel prices are up 3.5% y/y (Oct) with sentiment at 48.1; no notable news this week."
    },
    "citizens>education": {
     "tone": 44,
-    "news": "No notable news this week."
+    "news": "No notable news this week. Student loans stand near $1.78T."
    },
    "citizens>consumer": {
     "tone": 46,
@@ -979,30 +997,30 @@
    },
    "retail>bigtech": {
     "tone": 50,
-    "news": "No notable news this week; e-commerce reached 17.1% of retail sales."
+    "news": "No notable news this week; e-commerce is 17.1% of retail sales, supporting cloud and ad spending."
    },
    "bigtech>consumer": {
     "tone": 50,
     "news": "No notable news this week."
    },
    "autos>nvidia": {
-    "tone": 42,
+    "tone": 48,
     "news": "No notable news this week."
    },
    "banks>cloud": {
-    "tone": 18,
-    "news": "Banks are pulling back from new data-center loans, and nearly half of 2026 data-center bonds are junk-rated."
+    "tone": 12,
+    "news": "Banks and private credit funds are reported (Nov 9) to be stalling new data-center loans, with $13.4B of such debt due in 2027 and HY spreads up 0.23 points in 30 days to 3.34%."
    },
    "banks>labs": {
-    "tone": 34,
-    "news": "Blackstone reportedly is marketing a loan tied to Anthropic's Google chip purchases ahead of its IPO."
+    "tone": 36,
+    "news": "Lenders are reviewing AI exposure broadly (Nov 9); Anthropic's chip financing through a Broadcom vehicle faces a tougher credit market until the IPO closes."
    },
    "banks>citizens": {
-    "tone": 44,
-    "news": "Consumer credit grew 3.0% y/y and card delinquency eased to 2.85%, but a possible December Fed hike would raise borrowing costs."
+    "tone": 42,
+    "news": "Card delinquency is 2.85% and consumer credit is up 3.0% y/y; a Dec 9 Fed hike would raise card and loan rates."
    },
    "education>labs": {
-    "tone": 48,
+    "tone": 50,
     "news": "No notable news this week."
    },
    "fashion>retail": {
@@ -1010,113 +1028,109 @@
     "news": "No notable news this week."
    },
    "fed>banks": {
-    "tone": 36,
-    "news": "The Fed held at 3.75-4.00% on Oct 28 with two members wanting a hike; markets price a December increase after strong October jobs (Nov 6)."
+    "tone": 30,
+    "news": "Markets price a Dec 9 hike as near certain after hot October CPI (Nov 10); fed funds is 3.88% and funding costs are set to rise."
    },
    "fed>citizens": {
-    "tone": 34,
-    "news": "Mortgage rates at 7.18% and a possible December hike keep household borrowing costs high."
+    "tone": 28,
+    "news": "The 30-year mortgage rate is 7.18%, about a point higher than a year ago, and a December hike would lift card and car rates further."
    },
    "fed>cloud": {
-    "tone": 20,
-    "news": "A higher-for-longer Fed with the 10-year at 4.84% raises refinancing costs for debt-funded data centers."
+    "tone": 14,
+    "news": "A rate hike would add to borrowing costs for data-center debt that already yields above 15% at CoreWeave."
    },
    "fed>labs": {
     "tone": 34,
-    "news": "Higher rates helped trim OpenAI's valuation and Anthropic's IPO bids."
+    "news": "Anthropic is pricing its IPO (Nov 19 target) into a market expecting a Fed hike on Dec 9."
    },
    "fed>bigtech": {
-    "tone": 36,
-    "news": "The 10-year yield fell 0.43 points over 30 days to 4.84%, a small relief for tech valuations despite hike talk."
+    "tone": 32,
+    "news": "The Nasdaq fell on Nov 10 as the CPI report raised hike odds; higher rates cut the value of long-dated AI payoffs."
    },
    "fed>autos": {
-    "tone": 40,
-    "news": "High loan rates and a possible December hike weigh on car financing."
+    "tone": 38,
+    "news": "A December hike would raise auto-loan rates with sales flat at a 16.0M pace."
    },
    "citizens>fed": {
-    "tone": 34,
-    "news": "October payrolls rose 165,000 and unemployment fell to 4.1% (Nov 6), with core PCE at 3.1%, above the 2% goal."
+    "tone": 30,
+    "news": "October payrolls rose 165,000 with unemployment at 4.1% (Nov 6) and CPI rose 0.4% (Nov 10), both pushing the Fed toward a hike."
    },
    "trade>fed": {
-    "tone": 40,
-    "news": "Customs duties fell 18% y/y while imports surged, easing tariff-driven inflation, though September CPI rose to 3.7%."
+    "tone": 42,
+    "news": "Imports are surging (China +34%, Vietnam +61% y/y) while goods prices keep CPI firm; the US-China truce runs to Jan 10, 2027."
    },
    "chips>nvidia": {
-    "tone": 40,
-    "news": "TSMC is reportedly weighing advanced memory chip production that Nvidia wants (Nov 6); chip stocks rallied on Nov 9."
+    "tone": 52,
+    "news": "TSMC joined the Anthropic placement (Nov 10) and chip peers rallied on Nov 9, signs that AI chip production demand remains strong despite Nvidia's share slide."
    },
    "labs>chips": {
     "tone": 56,
-    "news": "AMD and Broadcom, whose lab chip deals offer an alternative to Nvidia, rallied 12% and 8% on Nov 9."
+    "news": "AMD, Broadcom, Micron and TSMC are buying into Anthropic through the $26B placement (Nov 10), tying chip suppliers closer to a major customer."
    },
    "bigtech>chips": {
-    "tone": 52,
-    "news": "Custom chip makers like Broadcom gained as investors rotated from Nvidia (Nov 9)."
+    "tone": 54,
+    "news": "AMD rose about 12% on Nov 9 after an Oppenheimer upgrade, and Broadcom gained about 8%, as custom and alternative AI chips drew buyers."
    },
    "bigtech>power": {
-    "tone": 42,
-    "news": "Power deals continue, but post-midterm politics and PJM capacity costs make new data-center power contracts harder."
+    "tone": 52,
+    "news": "Power stocks rebounded on Nov 9; the Senate bill would make data centers fund the new generation and lines built for them."
    },
    "power>cloud": {
-    "tone": 34,
-    "news": "Oracle cited power and permitting delays at a New Mexico site; local bans after Nov 3 complicate new power hookups."
+    "tone": 40,
+    "news": "PJM's record $325/MW-day auction still fell short of its reliability target, limiting power for new data centers."
    },
    "power>citizens": {
-    "tone": 36,
-    "news": "Household electricity prices are up 4.3% y/y and energy CPI 20%, though Henry Hub gas fell to $2.63."
+    "tone": 30,
+    "news": "Electricity CPI is up 5.4% y/y and energy CPI 21%; data centers are blamed for nearly half of recent PJM capacity costs."
    },
    "citizens>healthco": {
-    "tone": 52,
-    "news": "Medical care prices are up 1.5% y/y; no major insurer news this week."
+    "tone": 54,
+    "news": "Medical care CPI is up 1.9% y/y; Jefferies raised its Eli Lilly target to $1,700 on Nov 9."
    },
    "cloud>industrials": {
-    "tone": 38,
-    "news": "Slower data-center starts and new local limits may cool generator orders."
+    "tone": 36,
+    "news": "Stalled data-center lending (Nov 9) and local bans threaten generator and equipment orders."
    },
    "trade>industrials": {
-    "tone": 46,
-    "news": "No notable news this week on steel and aluminum tariffs."
+    "tone": 40,
+    "news": "Boeing is cutting 5% of commercial staff and slowing production (Nov 9); metal tariffs continue to raise costs for manufacturers."
    },
    "citizens>payments": {
     "tone": 50,
-    "news": "Card spending is steady with retail sales up 6.3% y/y."
+    "news": "No notable news this week; retail sales are up 6.3% y/y in nominal terms."
    },
    "payments>banks": {
-    "tone": 50,
+    "tone": 48,
     "news": "No notable news this week."
    },
    "trade>retail": {
-    "tone": 50,
-    "news": "Imports from China rose 34% y/y in September as duties fell."
+    "tone": 48,
+    "news": "Imports from China are up 34% y/y under the truce extended to Jan 10, 2027, keeping shelves stocked for the holidays."
    },
    "trade>fashion": {
     "tone": 48,
-    "news": "Imports from Vietnam rose 61% y/y, keeping apparel supply ample."
+    "news": "Imports from Vietnam are up 61% y/y while apparel prices are up 3.5%."
    },
    "trade>autos": {
-    "tone": 46,
-    "news": "Imports from Mexico rose 40% y/y and from Canada 10%."
+    "tone": 44,
+    "news": "Imports from Mexico are up 40% and Canada 10% y/y; carmakers still carry sizable tariff costs."
    },
    "trade>consumer": {
     "tone": 48,
-    "news": "Electronics-heavy imports from China and Vietnam rose sharply y/y in September."
+    "news": "No notable news this week; imports from China and Vietnam are running well above last year."
    }
   }
  },
  "energy": {
-  "asOf": "2026-11-09",
+  "asOf": "2026-11-10",
   "grid": {
    "ERCO": {
     "name": "ERCOT (Texas)",
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "unit": "GW (daily average)",
-    "avg28": 53.83,
-    "yoy": 0.042,
+    "avg28": 53.31,
+    "yoy": 0.0375,
     "hist": [
-     [
-      "2026-08-11",
-      72.48
-     ],
      [
       "2026-08-12",
       74.68
@@ -1472,20 +1486,20 @@
      [
       "2026-11-08",
       47.99
+     ],
+     [
+      "2026-11-09",
+      48.77
      ]
     ]
    },
    "PJM": {
     "name": "PJM (Mid-Atlantic, incl. Northern Virginia)",
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "unit": "GW (daily average)",
-    "avg28": 86.72,
-    "yoy": 0.0414,
+    "avg28": 86.7,
+    "yoy": 0.0386,
     "hist": [
-     [
-      "2026-08-11",
-      112.82
-     ],
      [
       "2026-08-12",
       110.83
@@ -1841,20 +1855,20 @@
      [
       "2026-11-08",
       83.71
+     ],
+     [
+      "2026-11-09",
+      88.84
      ]
     ]
    },
    "SRP": {
     "name": "SRP (Phoenix area, Arizona)",
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "unit": "GW (daily average)",
-    "avg28": 3.08,
-    "yoy": -0.1544,
+    "avg28": 3.09,
+    "yoy": -0.15,
     "hist": [
-     [
-      "2026-08-11",
-      5.73
-     ],
      [
       "2026-08-12",
       4.99
@@ -2210,20 +2224,20 @@
      [
       "2026-11-08",
       3.66
+     ],
+     [
+      "2026-11-09",
+      3.35
      ]
     ]
    },
    "US48": {
     "name": "Lower 48 states",
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "unit": "GW (daily average)",
-    "avg28": 448.88,
-    "yoy": 0.0299,
+    "avg28": 447.4,
+    "yoy": 0.0261,
     "hist": [
-     [
-      "2026-08-11",
-      623.13
-     ],
      [
       "2026-08-12",
       609.94
@@ -2510,11 +2524,11 @@
      ],
      [
       "2026-10-22",
-      448.42
+      448.4
      ],
      [
       "2026-10-23",
-      442.79
+      442.77
      ],
      [
       "2026-10-24",
@@ -2542,7 +2556,7 @@
      ],
      [
       "2026-10-30",
-      447.21
+      447.22
      ],
      [
       "2026-10-31",
@@ -2550,35 +2564,39 @@
      ],
      [
       "2026-11-01",
-      437.46
+      437.45
      ],
      [
       "2026-11-02",
-      450.49
+      451.64
      ],
      [
       "2026-11-03",
-      453.6
+      453.62
      ],
      [
       "2026-11-04",
-      448.92
+      448.95
      ],
      [
       "2026-11-05",
-      453.74
+      453.73
      ],
      [
       "2026-11-06",
-      448.84
+      448.86
      ],
      [
       "2026-11-07",
-      425.44
+      425.52
      ],
      [
       "2026-11-08",
-      420.34
+      420.32
+     ],
+     [
+      "2026-11-09",
+      444.51
      ]
     ]
    }
@@ -3080,14 +3098,10 @@
    "elecCpi": {
     "id": "CUSR0000SEHF01",
     "label": "CPI: electricity (index)",
-    "value": 306.199,
-    "date": "2026-09-01",
-    "yoy": 0.0437,
+    "value": 309.088,
+    "date": "2026-10-01",
+    "yoy": 0.0535,
     "hist": [
-     [
-      "2023-09-01",
-      269.078
-     ],
      [
       "2023-10-01",
       269.512
@@ -3227,6 +3241,10 @@
      [
       "2026-09-01",
       306.199
+     ],
+     [
+      "2026-10-01",
+      309.088
      ]
     ],
     "url": "https://fred.stlouisfed.org/series/CUSR0000SEHF01"
@@ -3234,14 +3252,10 @@
    "kwh": {
     "id": "APU000072610",
     "label": "Average US residential electricity price, $/kWh",
-    "value": 0.196,
-    "date": "2026-09-01",
-    "yoy": 0.0426,
+    "value": 0.19,
+    "date": "2026-10-01",
+    "yoy": 0.0106,
     "hist": [
-     [
-      "2023-09-01",
-      0.171
-     ],
      [
       "2023-10-01",
       0.169
@@ -3381,6 +3395,10 @@
      [
       "2026-09-01",
       0.196
+     ],
+     [
+      "2026-10-01",
+      0.19
      ]
     ],
     "url": "https://fred.stlouisfed.org/series/APU000072610"
@@ -4428,15 +4446,11 @@
   "apparel": {
    "id": "CPIAPPSL",
    "label": "CPI: apparel",
-   "value": 136.875,
-   "date": "2026-09-01",
-   "yoy": 0.0337,
-   "chg1y": 4.464,
+   "value": 136.985,
+   "date": "2026-10-01",
+   "yoy": 0.0345,
+   "chg1y": 4.574,
    "hist": [
-    [
-     "2023-09-01",
-     130.338
-    ],
     [
      "2023-10-01",
      131.274
@@ -4576,6 +4590,10 @@
     [
      "2026-09-01",
      136.875
+    ],
+    [
+     "2026-10-01",
+     136.985
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/CPIAPPSL"
@@ -5826,15 +5844,11 @@
   "cpiShelter": {
    "id": "CUSR0000SAH1",
    "label": "CPI: shelter",
-   "value": 431.908,
-   "date": "2026-09-01",
-   "yoy": 0.0322,
-   "chg1y": 13.486,
+   "value": 433.224,
+   "date": "2026-10-01",
+   "yoy": 0.0354,
+   "chg1y": 14.802,
    "hist": [
-    [
-     "2023-09-01",
-     385.285
-    ],
     [
      "2023-10-01",
      386.771
@@ -5974,6 +5988,10 @@
     [
      "2026-09-01",
      431.908
+    ],
+    [
+     "2026-10-01",
+     433.224
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/CUSR0000SAH1"
@@ -5981,15 +5999,11 @@
   "cpiFood": {
    "id": "CPIUFDSL",
    "label": "CPI: food",
-   "value": 350.477,
-   "date": "2026-09-01",
-   "yoy": 0.0245,
-   "chg1y": 8.391,
+   "value": 352.134,
+   "date": "2026-10-01",
+   "yoy": 0.0294,
+   "chg1y": 10.048,
    "hist": [
-    [
-     "2023-09-01",
-     324.379
-    ],
     [
      "2023-10-01",
      325.442
@@ -6129,6 +6143,10 @@
     [
      "2026-09-01",
      350.477
+    ],
+    [
+     "2026-10-01",
+     352.134
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/CPIUFDSL"
@@ -6136,15 +6154,11 @@
   "cpiEnergy": {
    "id": "CPIENGSL",
    "label": "CPI: energy",
-   "value": 337.834,
-   "date": "2026-09-01",
-   "yoy": 0.2035,
-   "chg1y": 57.134,
+   "value": 340.197,
+   "date": "2026-10-01",
+   "yoy": 0.212,
+   "chg1y": 59.497,
    "hist": [
-    [
-     "2023-09-01",
-     292.623
-    ],
     [
      "2023-10-01",
      286.765
@@ -6284,6 +6298,10 @@
     [
      "2026-09-01",
      337.834
+    ],
+    [
+     "2026-10-01",
+     340.197
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/CPIENGSL"
@@ -6291,15 +6309,11 @@
   "cpiMedical": {
    "id": "CPIMEDSL",
    "label": "CPI: medical care",
-   "value": 593.666,
-   "date": "2026-09-01",
-   "yoy": 0.015,
-   "chg1y": 8.794,
+   "value": 595.675,
+   "date": "2026-10-01",
+   "yoy": 0.0185,
+   "chg1y": 10.803,
    "hist": [
-    [
-     "2023-09-01",
-     548.398
-    ],
     [
      "2023-10-01",
      549.793
@@ -6439,6 +6453,10 @@
     [
      "2026-09-01",
      593.666
+    ],
+    [
+     "2026-10-01",
+     595.675
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/CPIMEDSL"
@@ -6446,15 +6464,11 @@
   "cpiUsedCars": {
    "id": "CUSR0000SETA02",
    "label": "CPI: used cars and trucks",
-   "value": 182.176,
-   "date": "2026-09-01",
-   "yoy": -0.0146,
-   "chg1y": -2.693,
+   "value": 179.946,
+   "date": "2026-10-01",
+   "yoy": -0.0331,
+   "chg1y": -6.165,
    "hist": [
-    [
-     "2023-10-01",
-     186.879
-    ],
     [
      "2023-11-01",
      189.444
@@ -6594,6 +6608,10 @@
     [
      "2026-09-01",
      182.176
+    ],
+    [
+     "2026-10-01",
+     179.946
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/CUSR0000SETA02"
@@ -7380,152 +7398,152 @@
    "id": "DFF",
    "label": "Effective federal funds rate, %",
    "value": 3.88,
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "yoy": 0.0026,
    "chg1y": 0.01,
    "hist": [
     [
-     "2026-03-05",
+     "2026-03-06",
      3.64
     ],
     [
-     "2026-03-12",
+     "2026-03-13",
      3.64
     ],
     [
-     "2026-03-19",
+     "2026-03-20",
      3.64
     ],
     [
-     "2026-03-26",
+     "2026-03-27",
      3.64
     ],
     [
-     "2026-04-02",
+     "2026-04-03",
      3.64
     ],
     [
-     "2026-04-09",
+     "2026-04-10",
      3.64
     ],
     [
-     "2026-04-16",
+     "2026-04-17",
      3.64
     ],
     [
-     "2026-04-23",
+     "2026-04-24",
      3.64
     ],
     [
-     "2026-04-30",
+     "2026-05-01",
      3.64
     ],
     [
-     "2026-05-07",
+     "2026-05-08",
      3.63
     ],
     [
-     "2026-05-14",
+     "2026-05-15",
      3.63
     ],
     [
-     "2026-05-21",
+     "2026-05-22",
      3.62
     ],
     [
-     "2026-05-28",
+     "2026-05-29",
      3.62
     ],
     [
-     "2026-06-04",
+     "2026-06-05",
      3.62
     ],
     [
-     "2026-06-11",
+     "2026-06-12",
      3.62
     ],
     [
-     "2026-06-18",
+     "2026-06-19",
      3.63
     ],
     [
-     "2026-06-25",
+     "2026-06-26",
      3.63
     ],
     [
-     "2026-07-02",
+     "2026-07-03",
      3.63
     ],
     [
-     "2026-07-09",
+     "2026-07-10",
      3.62
     ],
     [
-     "2026-07-16",
+     "2026-07-17",
      3.63
     ],
     [
-     "2026-07-23",
+     "2026-07-24",
      3.63
     ],
     [
-     "2026-07-30",
+     "2026-07-31",
      3.63
     ],
     [
-     "2026-08-06",
+     "2026-08-07",
      3.63
     ],
     [
-     "2026-08-13",
+     "2026-08-14",
      3.63
     ],
     [
-     "2026-08-20",
+     "2026-08-21",
      3.63
     ],
     [
-     "2026-08-27",
+     "2026-08-28",
      3.63
     ],
     [
-     "2026-09-03",
+     "2026-09-04",
      3.63
     ],
     [
-     "2026-09-10",
+     "2026-09-11",
      3.63
     ],
     [
-     "2026-09-17",
+     "2026-09-18",
      3.88
     ],
     [
-     "2026-09-24",
+     "2026-09-25",
      3.88
     ],
     [
-     "2026-10-01",
+     "2026-10-02",
      3.88
     ],
     [
-     "2026-10-08",
+     "2026-10-09",
      3.88
     ],
     [
-     "2026-10-15",
+     "2026-10-16",
      3.88
     ],
     [
-     "2026-10-22",
+     "2026-10-23",
      3.88
     ],
     [
-     "2026-10-29",
+     "2026-10-30",
      3.88
     ],
     [
-     "2026-11-05",
+     "2026-11-06",
      3.88
     ]
    ],
@@ -7535,152 +7553,152 @@
    "id": "DFEDTARU",
    "label": "Federal funds target range, upper limit, %",
    "value": 4.0,
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "yoy": 0.0,
    "chg1y": 0.0,
    "hist": [
     [
-     "2026-03-09",
+     "2026-03-10",
      3.75
     ],
     [
-     "2026-03-16",
+     "2026-03-17",
      3.75
     ],
     [
-     "2026-03-23",
+     "2026-03-24",
      3.75
     ],
     [
-     "2026-03-30",
+     "2026-03-31",
      3.75
     ],
     [
-     "2026-04-06",
+     "2026-04-07",
      3.75
     ],
     [
-     "2026-04-13",
+     "2026-04-14",
      3.75
     ],
     [
-     "2026-04-20",
+     "2026-04-21",
      3.75
     ],
     [
-     "2026-04-27",
+     "2026-04-28",
      3.75
     ],
     [
-     "2026-05-04",
+     "2026-05-05",
      3.75
     ],
     [
-     "2026-05-11",
+     "2026-05-12",
      3.75
     ],
     [
-     "2026-05-18",
+     "2026-05-19",
      3.75
     ],
     [
-     "2026-05-25",
+     "2026-05-26",
      3.75
     ],
     [
-     "2026-06-01",
+     "2026-06-02",
      3.75
     ],
     [
-     "2026-06-08",
+     "2026-06-09",
      3.75
     ],
     [
-     "2026-06-15",
+     "2026-06-16",
      3.75
     ],
     [
-     "2026-06-22",
+     "2026-06-23",
      3.75
     ],
     [
-     "2026-06-29",
+     "2026-06-30",
      3.75
     ],
     [
-     "2026-07-06",
+     "2026-07-07",
      3.75
     ],
     [
-     "2026-07-13",
+     "2026-07-14",
      3.75
     ],
     [
-     "2026-07-20",
+     "2026-07-21",
      3.75
     ],
     [
-     "2026-07-27",
+     "2026-07-28",
      3.75
     ],
     [
-     "2026-08-03",
+     "2026-08-04",
      3.75
     ],
     [
-     "2026-08-10",
+     "2026-08-11",
      3.75
     ],
     [
-     "2026-08-17",
+     "2026-08-18",
      3.75
     ],
     [
-     "2026-08-24",
+     "2026-08-25",
      3.75
     ],
     [
-     "2026-08-31",
+     "2026-09-01",
      3.75
     ],
     [
-     "2026-09-07",
+     "2026-09-08",
      3.75
     ],
     [
-     "2026-09-14",
+     "2026-09-15",
      3.75
     ],
     [
-     "2026-09-21",
+     "2026-09-22",
      4.0
     ],
     [
-     "2026-09-28",
+     "2026-09-29",
      4.0
     ],
     [
-     "2026-10-05",
+     "2026-10-06",
      4.0
     ],
     [
-     "2026-10-12",
+     "2026-10-13",
      4.0
     ],
     [
-     "2026-10-19",
+     "2026-10-20",
      4.0
     ],
     [
-     "2026-10-26",
+     "2026-10-27",
      4.0
     ],
     [
-     "2026-11-02",
+     "2026-11-03",
      4.0
     ],
     [
-     "2026-11-09",
+     "2026-11-10",
      4.0
     ]
    ],
@@ -7690,152 +7708,152 @@
    "id": "DFEDTARL",
    "label": "Federal funds target range, lower limit, %",
    "value": 3.75,
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "yoy": 0.0,
    "chg1y": 0.0,
    "hist": [
     [
-     "2026-03-09",
+     "2026-03-10",
      3.5
     ],
     [
-     "2026-03-16",
+     "2026-03-17",
      3.5
     ],
     [
-     "2026-03-23",
+     "2026-03-24",
      3.5
     ],
     [
-     "2026-03-30",
+     "2026-03-31",
      3.5
     ],
     [
-     "2026-04-06",
+     "2026-04-07",
      3.5
     ],
     [
-     "2026-04-13",
+     "2026-04-14",
      3.5
     ],
     [
-     "2026-04-20",
+     "2026-04-21",
      3.5
     ],
     [
-     "2026-04-27",
+     "2026-04-28",
      3.5
     ],
     [
-     "2026-05-04",
+     "2026-05-05",
      3.5
     ],
     [
-     "2026-05-11",
+     "2026-05-12",
      3.5
     ],
     [
-     "2026-05-18",
+     "2026-05-19",
      3.5
     ],
     [
-     "2026-05-25",
+     "2026-05-26",
      3.5
     ],
     [
-     "2026-06-01",
+     "2026-06-02",
      3.5
     ],
     [
-     "2026-06-08",
+     "2026-06-09",
      3.5
     ],
     [
-     "2026-06-15",
+     "2026-06-16",
      3.5
     ],
     [
-     "2026-06-22",
+     "2026-06-23",
      3.5
     ],
     [
-     "2026-06-29",
+     "2026-06-30",
      3.5
     ],
     [
-     "2026-07-06",
+     "2026-07-07",
      3.5
     ],
     [
-     "2026-07-13",
+     "2026-07-14",
      3.5
     ],
     [
-     "2026-07-20",
+     "2026-07-21",
      3.5
     ],
     [
-     "2026-07-27",
+     "2026-07-28",
      3.5
     ],
     [
-     "2026-08-03",
+     "2026-08-04",
      3.5
     ],
     [
-     "2026-08-10",
+     "2026-08-11",
      3.5
     ],
     [
-     "2026-08-17",
+     "2026-08-18",
      3.5
     ],
     [
-     "2026-08-24",
+     "2026-08-25",
      3.5
     ],
     [
-     "2026-08-31",
+     "2026-09-01",
      3.5
     ],
     [
-     "2026-09-07",
+     "2026-09-08",
      3.5
     ],
     [
-     "2026-09-14",
+     "2026-09-15",
      3.5
     ],
     [
-     "2026-09-21",
+     "2026-09-22",
      3.75
     ],
     [
-     "2026-09-28",
+     "2026-09-29",
      3.75
     ],
     [
-     "2026-10-05",
+     "2026-10-06",
      3.75
     ],
     [
-     "2026-10-12",
+     "2026-10-13",
      3.75
     ],
     [
-     "2026-10-19",
+     "2026-10-20",
      3.75
     ],
     [
-     "2026-10-26",
+     "2026-10-27",
      3.75
     ],
     [
-     "2026-11-02",
+     "2026-11-03",
      3.75
     ],
     [
-     "2026-11-09",
+     "2026-11-10",
      3.75
     ]
    ],
