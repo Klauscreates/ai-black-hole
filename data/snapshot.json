@@ -1,6 +1,6 @@
 {
- "date": "2026-11-25",
- "asOf": "2026-11-25T16:08:53+00:00",
+ "date": "2026-11-26",
+ "asOf": "2026-11-26T16:07:30+00:00",
  "series": {
   "bbb": {
    "id": "BAMLC0A4CBBB",
@@ -29,17 +29,13 @@
   "t10": {
    "id": "DGS10",
    "label": "10-year US Treasury yield, %",
-   "value": 4.92,
-   "date": "2026-11-23",
-   "avg1y": 4.515,
+   "value": 4.91,
+   "date": "2026-11-24",
+   "avg1y": 4.518,
    "max1y": 5.31,
    "min1y": 3.97,
-   "chg30": -0.08,
+   "chg30": -0.09,
    "hist": [
-    [
-     "2026-06-02",
-     4.46
-    ],
     [
      "2026-06-03",
      4.49
@@ -515,6 +511,10 @@
     [
      "2026-11-23",
      4.92
+    ],
+    [
+     "2026-11-24",
+     4.91
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/DGS10"
@@ -523,37 +523,125 @@
  "stocks": null,
  "events": [
   {
+   "amountB": null,
    "date": "2026-11-25",
    "kind": "context",
-   "status": "closed",
-   "who": "Federal Reserve",
    "node": "fed",
-   "amountB": null,
-   "title": "October PCE inflation rose to 3.8% from 3.6% and core PCE came in at 3.3%, above forecasts, cementing expectations of a Fed rate hike at the Dec 8-9 meeting.",
    "source": "Quartz",
-   "url": "https://qz.com/pce-price-index-october-inflation-rise-112526"
+   "status": "closed",
+   "title": "October PCE inflation rose to 3.8% from 3.6% and core PCE came in at 3.3%, above forecasts, cementing expectations of a Fed rate hike at the Dec 8-9 meeting.",
+   "url": "https://qz.com/pce-price-index-october-inflation-rise-112526",
+   "who": "Federal Reserve"
   },
   {
+   "amountB": null,
    "date": "2026-11-25",
    "kind": "context",
-   "status": "closed",
-   "who": "USTR, China, Vietnam, EU, Japan, India",
    "node": "trade",
-   "amountB": null,
-   "title": "The US proposed Section 301 tariffs on 14 trading partners, up to 40% on China and 35% on Vietnam, sparing Mexico for now; stocks fell sharply and comments are due Jan 5.",
    "source": "NTD",
-   "url": "https://www.ntd.com/us-imposes-new-tariffs-on-china-13-other-trading-partners_1187386.html"
+   "status": "closed",
+   "title": "The US proposed Section 301 tariffs on 14 trading partners, up to 40% on China and 35% on Vietnam, sparing Mexico for now; stocks fell sharply and comments are due Jan 5.",
+   "url": "https://www.ntd.com/us-imposes-new-tariffs-on-china-13-other-trading-partners_1187386.html",
+   "who": "USTR, China, Vietnam, EU, Japan, India"
+  },
+  {
+   "amountB": 0.8,
+   "date": "2026-11-25",
+   "kind": "stress",
+   "node": "banks",
+   "source": "Crypto Briefing",
+   "status": "reported",
+   "title": "ING and Societe Generale are trying to sell up to $800M of AI data-center loans and HSBC reportedly sold about $300M at a discount, with New Mexico project loans in the mid-80s cents.",
+   "url": "https://cryptobriefing.com/banks-sell-ai-data-center-loans/",
+   "who": "ING, Societe Generale, HSBC, Oracle"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-25",
+   "kind": "stress",
+   "node": "spacex",
+   "source": "Coinpaper",
+   "status": "closed",
+   "title": "SpaceX shares fell toward $115, about 49% below their record high and below the $135 IPO price, on fears a $3.5T all-stock Tesla merger would dilute holders by roughly half.",
+   "url": "https://coinpaper.com/39415/space-x-stock-crashes-nearly-50-from-record-high-amid-3-5-t-tesla-merger-talks",
+   "who": "SpaceX, Tesla"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-25",
+   "kind": "stress",
+   "node": "labs",
+   "source": "Forbes",
+   "status": "closed",
+   "title": "Anthropic stock is down about 33% as investors weigh roughly $900B of AI spending commitments and an expected junk-range debt rating.",
+   "url": "https://www.forbes.com/sites/petercohan/2026/11/25/anthropic-stock-is-down-33-as-ai-spending-risks-mount/",
+   "who": "Anthropic"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-25",
+   "kind": "context",
+   "node": "autos",
+   "source": "CBT News",
+   "status": "closed",
+   "title": "Cox Automotive forecast November new-vehicle sales of 1.20M, down 7.3% from a year ago on fewer selling days, with the annual pace steady at 15.8M and loan rates rising.",
+   "url": "https://www.cbtnews.com/cox-automotive-15-8-million-saar",
+   "who": "Cox Automotive, GM, Ford, Toyota"
   },
   {
    "date": "2026-11-25",
    "kind": "stress",
    "status": "reported",
-   "who": "ING, Societe Generale, HSBC, Oracle",
-   "node": "banks",
-   "amountB": 0.8,
-   "title": "ING and Societe Generale are trying to sell up to $800M of AI data-center loans and HSBC reportedly sold about $300M at a discount, with New Mexico project loans in the mid-80s cents.",
-   "source": "Crypto Briefing",
-   "url": "https://cryptobriefing.com/banks-sell-ai-data-center-loans/"
+   "who": "Anthropic",
+   "node": "labs",
+   "amountB": null,
+   "title": "Bond investors expect Anthropic's planned debt to be rated BB, below investment grade, as it weighs borrowing on top of about $900B in commitments.",
+   "source": "Seeking Alpha",
+   "url": "https://seekingalpha.com/news/4676561-anthropic-faces-junk-debt-doubts-as-ai-borrowing-surges"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "stress",
+   "status": "closed",
+   "who": "CoreWeave",
+   "node": "cloud",
+   "amountB": null,
+   "title": "CoreWeave's 2031 bonds sold off, pushing their yield to about 17.9%, while its shares fell about 10% during the tech sell-off.",
+   "source": "Investing.com",
+   "url": "https://www.investing.com/news/stock-market-news/coreweave-bonds-plunge-as-2031-yield-surges-to-1791-shares-drop-10-5051151"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "stress",
+   "status": "closed",
+   "who": "Nvidia, Amazon, Alphabet, Microsoft",
+   "node": "nvidia",
+   "amountB": null,
+   "title": "Nvidia led a tech sell-off as the rally from Jensen Huang's return faded, with Amazon and Alphabet down about 2% and Meta up 3%.",
+   "source": "CNBC",
+   "url": "https://cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "stress",
+   "status": "closed",
+   "who": "Semiconductor sector",
+   "node": "chips",
+   "amountB": null,
+   "title": "The chip index fell as much as 8% in the morning and the Nasdaq 100 briefly entered a bear market before both recovered to close down under 1%.",
+   "source": "TECHi",
+   "url": "https://www.techi.com/chip-stocks-recover-early-slide-nasdaq-close-november-25/"
+  },
+  {
+   "date": "2026-11-25",
+   "kind": "context",
+   "status": "closed",
+   "who": "US Labor Department, BEA",
+   "node": "fed",
+   "amountB": null,
+   "title": "Jobless claims fell to about 189,000 and third-quarter GDP growth was revised up to 4.3%, keeping a December Fed hike in view.",
+   "source": "Finimize",
+   "url": "https://finimize.com/content/jobless-claims-fell-again-keeping-the-fed-on-alert"
   },
   {
    "date": "2026-11-25",
@@ -562,31 +650,9 @@
    "who": "SpaceX, Tesla",
    "node": "spacex",
    "amountB": null,
-   "title": "SpaceX shares fell toward $115, about 49% below their record high and below the $135 IPO price, on fears a $3.5T all-stock Tesla merger would dilute holders by roughly half.",
-   "source": "Coinpaper",
-   "url": "https://coinpaper.com/39415/space-x-stock-crashes-nearly-50-from-record-high-amid-3-5-t-tesla-merger-talks"
-  },
-  {
-   "date": "2026-11-25",
-   "kind": "stress",
-   "status": "closed",
-   "who": "Anthropic",
-   "node": "labs",
-   "amountB": null,
-   "title": "Anthropic stock is down about 33% as investors weigh roughly $900B of AI spending commitments and an expected junk-range debt rating.",
-   "source": "Forbes",
-   "url": "https://www.forbes.com/sites/petercohan/2026/11/25/anthropic-stock-is-down-33-as-ai-spending-risks-mount/"
-  },
-  {
-   "date": "2026-11-25",
-   "kind": "context",
-   "status": "closed",
-   "who": "Cox Automotive, GM, Ford, Toyota",
-   "node": "autos",
-   "amountB": null,
-   "title": "Cox Automotive forecast November new-vehicle sales of 1.20M, down 7.3% from a year ago on fewer selling days, with the annual pace steady at 15.8M and loan rates rising.",
-   "source": "CBT News",
-   "url": "https://www.cbtnews.com/cox-automotive-15-8-million-saar"
+   "title": "SpaceX fell about 8% and Tesla nearly 6% as investors worried an all-stock merger would dilute SpaceX holders.",
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/article/tesla-and-spacex-stocks-sink-as-merger-concerns-mount-154159372.html"
   },
   {
    "amountB": null,
@@ -677,26 +743,37 @@
    "who": "China, EU, Mexico, Vietnam and 12 other economies"
   },
   {
+   "amountB": null,
    "date": "2026-11-24",
    "kind": "stress",
-   "status": "closed",
-   "who": "CoreWeave, IREN, Nebius",
    "node": "cloud",
-   "amountB": null,
-   "title": "Neocloud stocks gave back Monday's rally, with CoreWeave down about 14% to $41.69, IREN down 15% and Nebius down 13%, while Nvidia fell about 8%.",
    "source": "24/7 Wall St. (via Yahoo Finance)",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/iren-sinks-15-coreweave-tumbles-170243344.html"
+   "status": "closed",
+   "title": "Neocloud stocks gave back Monday's rally, with CoreWeave down about 14% to $41.69, IREN down 15% and Nebius down 13%, while Nvidia fell about 8%.",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/iren-sinks-15-coreweave-tumbles-170243344.html",
+   "who": "CoreWeave, IREN, Nebius"
+  },
+  {
+   "amountB": null,
+   "date": "2026-11-24",
+   "kind": "grid",
+   "node": "power",
+   "source": "Utility Dive",
+   "status": "closed",
+   "title": "Vistra's CEO said the midterms clarified data-center policy and forecast load growth of 4-6% a year in ERCOT and 2-3% in PJM through 2030; its shares are down 14% since Nov 3.",
+   "url": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626/",
+   "who": "Vistra"
   },
   {
    "date": "2026-11-24",
-   "kind": "grid",
+   "kind": "stress",
    "status": "closed",
-   "who": "Vistra",
-   "node": "power",
+   "who": "AMD",
+   "node": "chips",
    "amountB": null,
-   "title": "Vistra's CEO said the midterms clarified data-center policy and forecast load growth of 4-6% a year in ERCOT and 2-3% in PJM through 2030; its shares are down 14% since Nov 3.",
-   "source": "Utility Dive",
-   "url": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626/"
+   "title": "AMD fell nearly 9% after a filing to resell 337 million shares and a new short report added to the chip sell-off.",
+   "source": "BigGo Finance",
+   "url": "https://finance.biggo.com/news/5d684be3-6575-4437-8d61-3aa9d28410a7"
   },
   {
    "amountB": null,
@@ -719,1883 +796,315 @@
    "title": "US stocks rebounded sharply Monday with the Nasdaq up about 7% midmorning, recovering much of last week's correction after Huang's return.",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-nvidia-reinstates-jensen-huang-141511975.html",
    "who": "Nvidia, Microsoft, Alphabet, Amazon, Meta"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-23",
-   "kind": "stress",
-   "node": "cloud",
-   "source": "Trefis",
-   "status": "closed",
-   "title": "CoreWeave fell 12% on Nov 20 to $39.51, its lowest close in a year, as the S&P 500 dropped 3.7% and Oracle logged a seventh straight loss.",
-   "url": "https://www.trefis.com/stock/crwv/articles/627785/what-is-behind-the-move-in-coreweave-stock-2/2026-11-23",
-   "who": "CoreWeave, Oracle"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-23",
-   "kind": "context",
-   "node": "nvidia",
-   "source": "CNBC",
-   "status": "closed",
-   "title": "Nvidia shares closed about 31% higher after the board brought Jensen Huang back; CNBC reported a personal assurance from President Trump sealed the decision, and the board's probe continues.",
-   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
-   "who": "Nvidia"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-23",
-   "kind": "stress",
-   "node": "healthco",
-   "source": "Investing.com",
-   "status": "closed",
-   "title": "UnitedHealth and other health insurers fell after a proposed Medicare rule that would restructure Medicare Advantage star ratings and could cut bonus payments.",
-   "url": "https://www.investing.com/news/stock-market-news/why-is-unitedhealth-stock-sliding-today-93CH-5045559",
-   "who": "UnitedHealth, CVS, Humana, Elevance"
-  },
-  {
-   "amountB": 0.725,
-   "date": "2026-11-23",
-   "kind": "context",
-   "node": "healthco",
-   "source": "MarketBeat",
-   "status": "closed",
-   "title": "Eli Lilly agreed to buy LoQus23 Therapeutics for up to $725M, and its shares rose about 1.4% to near $1,366.",
-   "url": "https://www.marketbeat.com/instant-alerts/price-eli-lilly-and-company-nyse-lly-stock-jumps-14-whats-next-2026-11-23/",
-   "who": "Eli Lilly"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-23",
-   "kind": "context",
-   "node": "bigtech",
-   "source": "Outlook India",
-   "status": "reported",
-   "title": "President Trump threatened a heavy tax on US companies that build AI data centers overseas, a risk for Big Tech's planned investments in India.",
-   "url": "https://outlookindia.com/international/donald-trump-tremendous-tax-ai-data-centres-overseas-india-160-billion-investment-google-amazon-microsoft",
-   "who": "Google, Amazon, Microsoft"
-  },
-  {
-   "date": "2026-11-23",
-   "kind": "capex",
-   "status": "closed",
-   "who": "Amazon, Alphabet, Microsoft, Meta, Oracle",
-   "node": "bigtech",
-   "amountB": null,
-   "title": "Analysts did not raise capex forecasts for the big AI spenders after the latest earnings season, a break from the pattern of ever-rising estimates.",
-   "source": "Axios",
-   "url": "https://www.axios.com/2026/11/23/ai-spending-slowdown"
-  },
-  {
-   "amountB": null,
-   "date": "2026-11-22",
-   "kind": "context",
-   "node": "tesla",
-   "source": "The Motley Fool",
-   "status": "reported",
-   "title": "Tesla and SpaceX have each set up special board committees to explore a possible merger as Musk's AI spending grows.",
-   "url": "https://fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger",
-   "who": "Tesla, SpaceX"
   }
  ],
  "analysis": {
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-26",
   "nodes": {
    "nvidia": {
-    "tone": 44,
-    "news": "Nvidia fell about 8% on Nov 24, giving back part of the 31% jump on Nov 23 when the board brought Jensen Huang back as CEO. Axios (Nov 23) noted analysts stopped raising hyperscaler capex forecasts, a caution for chip demand."
+    "tone": 36,
+    "news": "Nvidia led a Nov 25 tech sell-off as the rally from Jensen Huang's Nov 23 reinstatement faded, and the chip index fell as much as 8% intraday before closing down 0.7%. Analysts did not lift Big Tech capex forecasts after earnings (Nov 23)."
    },
    "labs": {
-    "tone": 40,
-    "news": "Forbes (Nov 25) reported Anthropic stock down about 33% and it trades below the $83 IPO price, as investors weigh roughly $900B of spending commitments and an expected double-B debt rating. No new OpenAI funding news this week."
+    "tone": 32,
+    "news": "Anthropic closed at $82.79 on Nov 25, below its $83 IPO price, and bond investors expect its planned debt to be rated BB, below investment grade, against about $900B of spending commitments (Nov 25). No new OpenAI financing this week."
    },
    "bigtech": {
-    "tone": 40,
-    "news": "Analysts did not lift capex forecasts for Amazon, Alphabet, Microsoft, Meta and Oracle after earnings (Axios, Nov 23), and stocks fell again on Nov 25 after new tariff proposals and a hot PCE print. The 10-year yield is 4.92% and a December Fed hike is priced in."
+    "tone": 38,
+    "news": "Amazon and Alphabet fell about 2% and Microsoft over 1% on Nov 25 while Meta rose 3%; 2026 Big Tech capex is tracked near $730B. The 10-year Treasury is 4.91% and a December Fed hike is nearly priced in."
    },
    "cloud": {
-    "tone": 20,
-    "news": "CoreWeave dropped about 14% to $41.69 on Nov 24 with IREN down 15% and Nebius 13%, and banks are selling data-center loans at discounts (Nov 25). The high-yield spread is 3.72%, up 0.34 points in 30 days; PJM demand is up 1.4% and ERCOT 1.8% y/y, and Dallas, Loudoun and Prince William counties are 100% in drought."
+    "tone": 16,
+    "news": "CoreWeave's 2031 bonds sold off to a yield near 17.9% and its shares fell about 10% on Nov 25, after a 14% drop on Nov 24; high-yield spreads are 3.72%, up 0.34 pt in 30 days. Data-center hubs face drought: Loudoun, Prince William and Dallas counties are 100% in drought.",
+    "cons": [
+     "CoreWeave 2031 bonds yield about 17.9%",
+     "Banks selling data-center loans",
+     "Record CDS spreads at Oracle and CoreWeave"
+    ],
+    "weak": "Bond markets now price a real chance that debt-funded neoclouds cannot refinance."
    },
    "citizens": {
     "tone": 34,
-    "news": "Headline PCE inflation rose to 3.8% in October (Nov 25), household energy CPI is up 21% y/y and electricity prices 5.4%, while the saving rate is 4.1% and the 30-year mortgage 7.28%. Lower-48 grid demand is up 1.6% y/y (SRP in Phoenix is down 12%), and Northern Virginia data-center counties moved to 100% drought in four weeks."
+    "news": "Core PCE inflation was 3.3% in October (Nov 25 report), energy CPI is up 21% y/y and household electricity prices 5.4%, with the saving rate at 4.1% and the 30-year mortgage at 7.21%. Grid demand in the lower 48 was up about 1.6% y/y in the latest EIA data (SRP Phoenix down 12%); Loudoun County, VA, is 100% in drought."
    },
    "spacex": {
-    "tone": 32,
-    "news": "SpaceX shares fell toward $115 on Nov 25, about 49% below the record high and under the $135 IPO price, on fears an all-stock $3.5T Tesla merger would dilute holders by about half. Gas is cheap at $3.10 for Colossus turbines, and ERCOT demand is up 1.8% y/y."
+    "tone": 26,
+    "news": "SpaceX fell about 8% on Nov 25 to near $116, below its $135 IPO price, on fears that an all-stock Tesla merger would dilute holders; a share unlock is due Dec 8. Colossus in Memphis keeps it tied to gas prices, with Henry Hub up $0.52 in 30 days to $3.30."
    },
    "tesla": {
-    "tone": 44,
-    "news": "Tesla traded near $385 on Nov 25 as special committees negotiate a possible $3.5T all-stock merger with SpaceX ahead of the Dec 3 annual meeting. Rising auto loan rates and a likely Fed hike weigh on car demand."
+    "tone": 40,
+    "news": "Tesla fell nearly 6% on Nov 25 as merger doubts grew, and an EU review of its driver-assist software slipped to Dec 15. Special committees on the SpaceX deal are not yet close to terms (Nov 24-25)."
    },
    "consumer": {
     "tone": 42,
-    "news": "Proposed Section 301 tariffs (Nov 25) of up to 40% on China and 35% on Vietnam would hit electronics supply chains; imports from Vietnam are up 61% and from China 34% y/y. No Apple-specific news this week."
+    "news": "Consumer sentiment is 48, down 10% y/y, though the Conference Board index jumped to 103.3 in November (Nov 24). Adobe expects US online Black Friday sales of $12.9B, up 9%."
    },
    "retail": {
     "tone": 56,
-    "news": "Retail sales were up 6.8% y/y in October and e-commerce is 17.9% of sales; forecasts ahead of Black Friday call for holiday sales up 4.2%, or 2.2% after inflation (Nov 20). New tariff proposals on Nov 25 and 3.8% PCE inflation are the risks."
+    "news": "Retail sales were up 6.8% y/y in October and e-commerce reached 17.9% of sales; Bain expects Black Friday-through-Cyber Monday sales to grow about 8.75%. New Section 301 tariff proposals (Nov 25) threaten import costs."
    },
    "autos": {
     "tone": 32,
-    "news": "Cox Automotive (Nov 25) sees November sales of 1.20M, down 7.3% y/y, with the annual pace at 15.8M versus 16.1M in October; it flagged rising loan rates and market volatility. A 50% tariff threat on Canadian vehicles from Jan 1 still hangs over the sector."
+    "news": "Cox expects November new-vehicle sales down 7.3% y/y (Nov 25) and the annual sales rate is 16.1M; with the mortgage rate at 7.21%, auto credit stays expensive, and used-car prices are down 3.3% y/y."
    },
    "fashion": {
     "tone": 38,
-    "news": "The Nov 25 tariff proposal targets Vietnam at up to 35% and China at up to 40%, the main apparel and footwear sources for Nike and Shein. Apparel prices are already up 3.5% y/y."
+    "news": "Apparel prices are up 3.5% y/y and imports from Vietnam rose 61% y/y in September; proposed Section 301 tariffs of up to 20% on Chinese goods (Nov 25) add cost pressure for Shein and brands."
    },
    "education": {
     "tone": 44,
-    "news": "No notable news this week. Student loans outstanding are about $1.78T, and a December Fed hike would raise borrowing costs."
+    "news": "Student loans stand near $1.78T in the latest data, up 2.8% y/y. No notable new university or student-loan news this week."
    },
    "banks": {
     "tone": 28,
-    "news": "ING and Societe Generale are trying to sell up to $800M of AI data-center loans and HSBC reportedly sold about $300M at a discount, with New Mexico project loans in the mid-80s cents (Nov 25). BBB spreads are at a one-year high of 1.22% and high-yield at 3.72%."
+    "news": "European banks are trying to sell up to $800M of AI data-center loans (Nov 25) and CoreWeave's bond rout signals losses on AI credit; BBB spreads widened 0.09 pt to 1.22% in 30 days."
    },
    "fed": {
-    "tone": 18,
-    "news": "The target range is 3.75-4.00% with fed funds at 3.88%; October core PCE (Nov 25) ran 3.3% y/y against the 2% goal and markets fully price a hike at the Dec 8-9 meeting. Unemployment is 4.1% and the 30-year mortgage is 7.28%; some officials have floated a half-point move."
+    "tone": 20,
+    "news": "The fed funds rate is 3.88% inside a 3.75-4.00% target, but core PCE is 3.3%, well above 2%, jobless claims fell to about 189,000 and Q3 GDP was revised to 4.3% (Nov 25), so markets price a December 9 hike; unemployment is 4.1% and the mortgage rate 7.21%."
    },
    "chips": {
-    "tone": 36,
-    "news": "Chip stocks fell on Nov 24 a day after their Nvidia-led surge, following last week's 11% Broadcom drop on reported Google order cuts and a short-seller hit to AMD. Flat capex forecasts (Axios, Nov 23) and new tariff proposals on Asia add pressure."
+    "tone": 30,
+    "news": "AMD fell nearly 9% on Nov 24 on a 337M-share resale filing and a short report, and the chip index swung 8% intraday on Nov 25 before closing down 0.7%; TSMC ended at $342, down 2%."
    },
    "power": {
     "tone": 46,
-    "news": "The Vistra CEO (Nov 24) forecast load growth of 4-6% a year in ERCOT and 2-3% in PJM through 2030, though Vistra shares are down 14% since Nov 3 and ERCOT prices have eased. Gas is $3.10 and grid demand is up 1.6% y/y nationally."
+    "news": "Vistra forecast continued data-center load growth (Nov 24) and lower-48 grid demand is about 1.6% higher y/y; Henry Hub gas rose $0.52 in 30 days to $3.30."
    },
    "healthco": {
-    "tone": 46,
-    "news": "Insurers fell on Nov 23 after a proposed Medicare Advantage rule, while Eli Lilly held up on a small acquisition. Medical care CPI is up a modest 1.9% y/y."
+    "tone": 44,
+    "news": "Insurers fell on a proposed Medicare rule (Nov 23) while Eli Lilly agreed to buy LoQus23 for up to $725M; medical-care CPI is up 1.9% y/y."
    },
    "industrials": {
-    "tone": 38,
-    "news": "No company-specific news this week. The Nov 25 Section 301 proposal on 14 trading partners raises input-cost and retaliation risk for Boeing and Caterpillar."
+    "tone": 42,
+    "news": "No notable Boeing, Caterpillar or Lockheed news this week; new tariff proposals and AI capex doubts weigh on generator and equipment demand."
    },
    "payments": {
     "tone": 50,
-    "news": "No notable news this week. Retail sales are up 6.8% y/y and card delinquency is 2.85%, supporting volumes into Black Friday."
+    "news": "Visa rose about 1.8% on Nov 25; card delinquency was 2.85% in the latest data, down from a year ago. A third-party breach disclosed Nov 19 did not touch card data."
    },
    "trade": {
-    "tone": 24,
-    "news": "The US proposed Section 301 tariffs on 14 partners on Nov 25, up to 40% on China, 35% on Vietnam and 15-35% on the EU, Japan and India, sparing Mexico for now; stocks fell sharply and comments run to Jan 5. Imports from Vietnam are up 61%, Mexico 40% and China 34% y/y."
+    "tone": 22,
+    "news": "USTR proposed Section 301 tariffs of 15-40% on 14 economies, including up to 20% on most Chinese goods (Nov 25); Canada and Mexico stay at 10% under the July action. Customs duties are down 17.5% y/y while imports from China rose 34% y/y in September."
    }
   },
   "flows": {
    "bigtech>nvidia": {
-    "tone": 44,
-    "news": "Analysts did not raise hyperscaler capex forecasts after earnings (Axios, Nov 23), and Nvidia fell about 8% on Nov 24."
+    "tone": 38,
+    "news": "Big Tech's ~$730B 2026 capex keeps Nvidia orders flowing, but analysts stopped raising forecasts (Nov 23) and Nvidia led the Nov 25 sell-off."
    },
    "cloud>nvidia": {
-    "tone": 24,
-    "news": "Neoclouds that buy chips with debt sold off on Nov 24 (CoreWeave -14%, IREN -15%) and high-yield spreads are up 0.34 points in 30 days to 3.72%."
+    "tone": 18,
+    "news": "Debt-funded neocloud GPU buying looks strained as CoreWeave's 2031 bond yield hit about 17.9% on Nov 25."
    },
    "nvidia>labs": {
-    "tone": 48,
-    "news": "Anthropic trades below its IPO price (Nov 24-25), marking down Nvidia lab stakes; no new round this week."
+    "tone": 36,
+    "news": "Nvidia's lab stakes face markdowns as Anthropic traded below its IPO price on Nov 25."
    },
    "nvidia>cloud": {
-    "tone": 28,
-    "news": "The 14% CoreWeave fall to $41.69 on Nov 24 raises the odds the Nvidia capacity backstop gets used."
+    "tone": 22,
+    "news": "Nvidia's CoreWeave capacity backstop matters more as CoreWeave shares fell 14% on Nov 24 and 10% on Nov 25."
    },
    "bigtech>labs": {
-    "tone": 50,
-    "news": "Anthropic stock is down about 33% (Forbes, Nov 25), cutting the value of the Amazon and Google stakes; no new funding news."
+    "tone": 36,
+    "news": "Big Tech's lab stakes are under pressure with Anthropic below its $83 IPO price (Nov 25)."
    },
    "labs>bigtech": {
-    "tone": 54,
-    "news": "Roughly $900B of Anthropic spending commitments are in focus (Nov 25) as its shares fall; the contracts themselves are unchanged."
+    "tone": 38,
+    "news": "Lab payments to Azure and AWS depend on financing; Anthropic's expected BB debt rating (Nov 25) raises its borrowing cost."
    },
    "labs>cloud": {
-    "tone": 44,
-    "news": "Oracle said on Nov 20 its roughly $300B OpenAI contract is fully funded, but neocloud shares fell again on Nov 24."
+    "tone": 20,
+    "news": "Lab contracts with Oracle and CoreWeave back neocloud debt, and both companies' credit spreads hit records this week."
    },
    "bigtech>cloud": {
-    "tone": 32,
-    "news": "Flat capex forecasts (Nov 23) and the Nov 24 neocloud sell-off cloud the outlook for rented capacity."
+    "tone": 30,
+    "news": "Microsoft's neocloud rentals support CoreWeave revenue, but bonds yielding near 18% show investors doubt the contracts cover the debt."
    },
    "cloud>citizens": {
-    "tone": 20,
-    "news": "Electricity prices are up 5.4% y/y and household energy CPI 21%; PJM demand is up 1.4% and ERCOT 1.8% y/y, and Loudoun, Prince William and Dallas counties are 100% in drought. Texas moratorium calls (Nov 20) and a North Carolina county pause (Nov 24) show the pushback."
+    "tone": 30,
+    "news": "PJM capacity costs tied to data centers keep pushing bills, with household electricity prices up 5.4% y/y; Loudoun and Prince William counties in Data Center Alley are 100% in drought."
    },
    "spacex>nvidia": {
-    "tone": 48,
-    "news": "SpaceX closed a $32B chip-backed debt sale on Nov 19 at yields above 8%, but its shares fell toward $115 on Nov 25."
+    "tone": 32,
+    "news": "xAI's Colossus GPU buying continues, but SpaceX shares fell about 8% on Nov 25 and its credit-default spreads hit records."
    },
    "spacex>citizens": {
-    "tone": 28,
-    "news": "No new Memphis permit news this week. Gas is $3.10, electricity prices are up 5.4% y/y, and average drought across the 11 data-center counties is 44%."
+    "tone": 36,
+    "news": "Colossus gas turbines in Memphis remain a local pollution and water issue; Henry Hub gas rose $0.52 in 30 days to $3.30."
    },
    "tesla>spacex": {
-    "tone": 50,
-    "news": "Merger committees began talks on a $3.5T all-stock deal; SpaceX fell toward $115 on Nov 25 on dilution fears, shrinking the value of the Tesla stake."
+    "tone": 34,
+    "news": "Tesla's xAI stake, now SpaceX shares, lost value as SpaceX fell toward $116, below its $135 IPO price (Nov 25), amid merger talks."
    },
    "tesla>nvidia": {
-    "tone": 44,
-    "news": "No Tesla compute news this week; merger talks with SpaceX dominate ahead of the Dec 3 meeting."
+    "tone": 42,
+    "news": "Tesla AI compute spending is steady; no new chip-order news this week."
    },
    "citizens>tesla": {
-    "tone": 52,
-    "news": "Vistra expects 4-6% yearly load growth in ERCOT through 2030 (Nov 24), which supports grid battery demand; lower-48 demand is up 1.6% y/y and electricity prices 5.4%, with average data-center county drought at 44%."
+    "tone": 50,
+    "news": "Utilities keep buying grid batteries as demand grows about 1.6% y/y; no new Megapack orders reported this week."
    },
    "citizens>retail": {
     "tone": 58,
-    "news": "Retail sales rose 6.8% y/y in October and holiday sales are forecast up 4.2% (Nov 20), though PCE inflation hit 3.8% (Nov 25)."
+    "news": "Retail sales up 6.8% y/y in October and an expected ~9% rise in online Black Friday sales support store spending."
    },
    "citizens>autos": {
     "tone": 32,
-    "news": "Cox sees November sales down 7.3% y/y at 1.20M with loan rates rising (Nov 25); the October pace was 16.1M."
+    "news": "Cox sees November car sales down 7.3% y/y (Nov 25) as high rates bite."
    },
    "citizens>fashion": {
-    "tone": 42,
-    "news": "Apparel prices are up 3.5% y/y and new tariff proposals on Vietnam and China (Nov 25) point to more increases."
+    "tone": 40,
+    "news": "Apparel prices up 3.5% y/y and weak sentiment (48) hold back clothing spending."
    },
    "citizens>education": {
-    "tone": 44,
-    "news": "No notable news this week. Student loans stand near $1.78T."
+    "tone": 45,
+    "news": "Student loans near $1.78T, up 2.8% y/y; no notable news this week."
    },
    "citizens>consumer": {
     "tone": 44,
-    "news": "No device-sales news this week; tariff proposals on China and Vietnam (Nov 25) threaten electronics prices."
+    "news": "Device spending looks steady into Black Friday, though sentiment is 10% lower than a year ago."
    },
    "retail>bigtech": {
     "tone": 54,
-    "news": "Walmart e-commerce grew 17% (Nov 19) and online share is 17.9%, supporting cloud and ad spending into Black Friday."
+    "news": "Holiday ad and cloud spending by retailers looks firm as online Black Friday sales are forecast up 9%."
    },
    "bigtech>consumer": {
     "tone": 50,
-    "news": "No notable news this week."
+    "news": "No notable news this week on Google's default-search payments to Apple."
    },
    "autos>nvidia": {
-    "tone": 38,
-    "news": "Weak November car sales forecasts (Nov 25) and tariff threats limit carmaker AI chip budgets."
+    "tone": 40,
+    "news": "Carmakers' AI-chip buying faces weaker November car sales (Nov 25)."
    },
    "banks>cloud": {
     "tone": 16,
-    "news": "European banks are offloading up to $800M of AI data-center loans, some at mid-80s cents (Nov 25); high-yield spreads are 3.72%, up 0.34 points in 30 days."
+    "news": "Banks are offloading AI data-center loans (Nov 25) as CoreWeave's bond yields near 18%."
    },
    "banks>labs": {
-    "tone": 44,
-    "news": "Analysts expect Anthropic debt to be rated in the double-B range (Nov 22), and its shares are down about 33% (Nov 25)."
+    "tone": 32,
+    "news": "Lender appetite for Anthropic debt is tested by expected BB ratings (Nov 25)."
    },
    "banks>citizens": {
-    "tone": 38,
-    "news": "Card delinquency is 2.85% and consumer credit is up 3% y/y, but a December Fed hike would lift card and loan rates."
+    "tone": 40,
+    "news": "Consumer credit is up 3.0% y/y and card delinquency 2.85%, but a likely December hike will lift borrowing costs."
    },
    "education>labs": {
-    "tone": 50,
-    "news": "No notable news this week."
+    "tone": 48,
+    "news": "No notable news this week on university AI licenses."
    },
    "fashion>retail": {
     "tone": 44,
-    "news": "Tariff proposals of up to 35% on Vietnam and 40% on China (Nov 25) threaten margins on apparel sold through retailers."
+    "news": "Brands lean on holiday discounting while tariff proposals (Nov 25) threaten margins."
    },
    "fed>banks": {
-    "tone": 20,
-    "news": "Core PCE at 3.3% (Nov 25) locks in a December hike; BBB spreads are at a one-year high of 1.22%."
+    "tone": 26,
+    "news": "A December 9 hike is nearly fully priced after strong GDP and jobless-claims data (Nov 25), raising banks' funding costs."
    },
    "fed>citizens": {
-    "tone": 20,
-    "news": "The 30-year mortgage is 7.28%, up about a point in a year, and a Dec 8-9 hike is fully priced after the Nov 25 PCE report."
+    "tone": 24,
+    "news": "The 30-year mortgage is 7.21%, up about 1 pt y/y, and a December hike would lift card and car rates further."
    },
    "fed>cloud": {
-    "tone": 14,
-    "news": "A priced-in December hike meets a neocloud sell-off (Nov 24) and discounted data-center loan sales (Nov 25); the 10-year yield is 4.92%."
+    "tone": 18,
+    "news": "Higher-for-longer rates and high-yield spreads at 3.72% squeeze debt-heavy neoclouds."
    },
    "fed>labs": {
-    "tone": 42,
-    "news": "Higher rates raise the cost of expected junk-rated Anthropic debt; its shares are below the IPO price."
+    "tone": 30,
+    "news": "Rate-hike expectations raise the cost of the debt Anthropic plans to raise."
    },
    "fed>bigtech": {
-    "tone": 30,
-    "news": "Stocks fell on Nov 25 as hot PCE data and tariff news hit tech valuations; the 10-year yield is 4.92%."
+    "tone": 34,
+    "news": "A 4.91% 10-year yield and hike bets weigh on tech valuations, as seen in the Nov 25 Nasdaq swing."
    },
    "fed>autos": {
-    "tone": 30,
-    "news": "Cox flagged rising auto loan rates as an affordability problem (Nov 25), with another hike expected in December."
+    "tone": 28,
+    "news": "Rising rates keep auto loans expensive as November sales slide."
    },
    "citizens>fed": {
     "tone": 22,
-    "news": "October PCE inflation rose to 3.8% and core to 3.3% (Nov 25) with unemployment at 4.1%, giving the Fed room to hike."
+    "news": "Core PCE at 3.3%, jobless claims near 189,000 and 4.3% Q3 GDP push the Fed toward a hike."
    },
    "trade>fed": {
-    "tone": 26,
-    "news": "New Section 301 tariff proposals on 14 partners (Nov 25) add to inflation pressure with core PCE already at 3.3%."
+    "tone": 24,
+    "news": "New Section 301 tariff proposals (Nov 25) add to inflation pressure as energy CPI runs 21% y/y."
    },
    "chips>nvidia": {
-    "tone": 46,
-    "news": "TSMC rose 14% on Nov 23 but chip stocks fell back on Nov 24; proposed tariffs on Asian partners are a new supply-cost risk."
+    "tone": 34,
+    "news": "TSMC fell 2% to $342 on Nov 25 and Taiwan's market dropped nearly 5% as chip stocks swung."
    },
    "labs>chips": {
-    "tone": 46,
-    "news": "Falling Anthropic shares and scrutiny of its commitments (Nov 25) raise questions about lab custom-chip orders; AMD remains under short-seller pressure."
+    "tone": 32,
+    "news": "Labs' AMD and Broadcom chip deals look shakier as AMD fell nearly 9% on Nov 24 and Broadcom entered a bear market."
    },
    "bigtech>chips": {
-    "tone": 36,
-    "news": "Broadcom fell 11% on Nov 20 on reported Google TPU order cuts, and capex forecasts have stopped rising (Nov 23)."
+    "tone": 38,
+    "news": "Custom-chip programs continue, but Broadcom slid into a bear market (Nov 24-25)."
    },
    "bigtech>power": {
-    "tone": 50,
-    "news": "The Vistra CEO said the midterms clarified data-center policy (Nov 24); no new Big Tech power deals this week."
+    "tone": 48,
+    "news": "Big Tech power deals keep flowing; Vistra sees continued data-center load growth (Nov 24)."
    },
    "power>cloud": {
-    "tone": 42,
-    "news": "Vistra forecasts 4-6% yearly ERCOT load growth (Nov 24), but neocloud financing stress could delay projects."
+    "tone": 44,
+    "news": "Turbine and power supply stays tight for data centers, with lower-48 grid demand up about 1.6% y/y."
    },
    "power>citizens": {
-    "tone": 22,
-    "news": "Household energy CPI is up 21% y/y and electricity 5.4%; the PJM market monitor expects the December capacity auction to clear at the cap again."
+    "tone": 30,
+    "news": "Household energy CPI is up 21% y/y and electricity prices 5.4% y/y; gas rose $0.52 in 30 days."
    },
    "citizens>healthco": {
-    "tone": 46,
-    "news": "Medical care CPI is up 1.9% y/y; insurers fell on Nov 23 on a proposed Medicare Advantage rule."
+    "tone": 44,
+    "news": "Medical-care CPI is up 1.9% y/y; insurers fell on a proposed Medicare rule (Nov 23)."
    },
    "cloud>industrials": {
     "tone": 38,
-    "news": "Neocloud stress (Nov 24) puts generator and equipment orders for new sites at risk."
+    "news": "Generator orders for data centers face neocloud funding stress after CoreWeave's Nov 25 bond sell-off."
    },
    "trade>industrials": {
-    "tone": 34,
-    "news": "Section 301 proposals on 14 partners (Nov 25) raise metal and parts costs and retaliation risk for exporters."
+    "tone": 36,
+    "news": "Proposed Section 301 tariffs on 14 economies (Nov 25) add input-cost risk for industrials."
    },
    "citizens>payments": {
-    "tone": 54,
-    "news": "Retail sales are up 6.8% y/y and 182.7M shoppers are expected over the Thanksgiving weekend (Nov 20)."
+    "tone": 52,
+    "news": "Card spending looks firm into Black Friday, with delinquency at 2.85%."
    },
    "payments>banks": {
-    "tone": 48,
-    "news": "No notable news this week."
+    "tone": 50,
+    "news": "Visa rose about 1.8% on Nov 25; no notable change in network-bank flows."
    },
    "trade>retail": {
-    "tone": 40,
-    "news": "Proposed tariffs of up to 40% on China and 35% on Vietnam (Nov 25) would raise retailer import costs after the holiday season."
+    "tone": 34,
+    "news": "Retailers face up to 20% new tariffs on Chinese goods under the Nov 25 proposal, while imports from China ran 34% above a year ago in September."
    },
    "trade>fashion": {
-    "tone": 34,
-    "news": "Vietnam at up to 35% and China at up to 40% (Nov 25) are the core apparel and footwear sources."
+    "tone": 32,
+    "news": "Imports from Vietnam rose 61% y/y in September as sourcing shifts, and new tariff proposals (Nov 25) raise costs."
    },
    "trade>autos": {
-    "tone": 30,
-    "news": "A 50% tariff threat on Canadian vehicles from Jan 1 stands, and Japan and the EU face 15-35% under the Nov 25 proposal; Mexico was spared."
+    "tone": 36,
+    "news": "Mexico and Canada stay at 10% under the July action with USMCA goods exempt; imports from Mexico rose 40% y/y in September."
    },
    "trade>consumer": {
-    "tone": 38,
-    "news": "Electronics imports from China and Vietnam face proposed tariffs of up to 40% and 35% (Nov 25)."
+    "tone": 36,
+    "news": "Electronics importers face the proposed 20% Section 301 rate on Chinese goods (Nov 25)."
    }
   }
  },
  "energy": {
-  "asOf": "2026-11-25",
-  "grid": {
-   "ERCO": {
-    "name": "ERCOT (Texas)",
-    "date": "2026-11-24",
-    "unit": "GW (daily average)",
-    "avg28": 51.01,
-    "yoy": 0.0176,
-    "hist": [
-     [
-      "2026-08-27",
-      74.21
-     ],
-     [
-      "2026-08-28",
-      72.54
-     ],
-     [
-      "2026-08-29",
-      70.69
-     ],
-     [
-      "2026-08-30",
-      71.82
-     ],
-     [
-      "2026-08-31",
-      73.4
-     ],
-     [
-      "2026-09-01",
-      71.78
-     ],
-     [
-      "2026-09-02",
-      72.77
-     ],
-     [
-      "2026-09-03",
-      71.05
-     ],
-     [
-      "2026-09-04",
-      71.11
-     ],
-     [
-      "2026-09-05",
-      69.93
-     ],
-     [
-      "2026-09-06",
-      68.9
-     ],
-     [
-      "2026-09-07",
-      71.3
-     ],
-     [
-      "2026-09-08",
-      73.58
-     ],
-     [
-      "2026-09-09",
-      73.04
-     ],
-     [
-      "2026-09-10",
-      70.87
-     ],
-     [
-      "2026-09-11",
-      70.76
-     ],
-     [
-      "2026-09-12",
-      71.57
-     ],
-     [
-      "2026-09-13",
-      71.68
-     ],
-     [
-      "2026-09-14",
-      73.47
-     ],
-     [
-      "2026-09-15",
-      73.47
-     ],
-     [
-      "2026-09-16",
-      72.38
-     ],
-     [
-      "2026-09-17",
-      70.86
-     ],
-     [
-      "2026-09-18",
-      69.09
-     ],
-     [
-      "2026-09-19",
-      67.25
-     ],
-     [
-      "2026-09-20",
-      67.24
-     ],
-     [
-      "2026-09-21",
-      69.76
-     ],
-     [
-      "2026-09-22",
-      69.27
-     ],
-     [
-      "2026-09-23",
-      69.49
-     ],
-     [
-      "2026-09-24",
-      68.69
-     ],
-     [
-      "2026-09-25",
-      66.26
-     ],
-     [
-      "2026-09-26",
-      63.82
-     ],
-     [
-      "2026-09-27",
-      65.33
-     ],
-     [
-      "2026-09-28",
-      67.95
-     ],
-     [
-      "2026-09-29",
-      67.71
-     ],
-     [
-      "2026-09-30",
-      68.22
-     ],
-     [
-      "2026-10-01",
-      62.57
-     ],
-     [
-      "2026-10-02",
-      59.14
-     ],
-     [
-      "2026-10-03",
-      56.73
-     ],
-     [
-      "2026-10-04",
-      54.83
-     ],
-     [
-      "2026-10-05",
-      58.06
-     ],
-     [
-      "2026-10-06",
-      58.46
-     ],
-     [
-      "2026-10-07",
-      58.59
-     ],
-     [
-      "2026-10-08",
-      59.68
-     ],
-     [
-      "2026-10-09",
-      58.84
-     ],
-     [
-      "2026-10-10",
-      57.42
-     ],
-     [
-      "2026-10-11",
-      59.4
-     ],
-     [
-      "2026-10-12",
-      63.17
-     ],
-     [
-      "2026-10-13",
-      67.93
-     ],
-     [
-      "2026-10-14",
-      67.1
-     ],
-     [
-      "2026-10-15",
-      62.66
-     ],
-     [
-      "2026-10-16",
-      52.22
-     ],
-     [
-      "2026-10-17",
-      46.28
-     ],
-     [
-      "2026-10-18",
-      46.4
-     ],
-     [
-      "2026-10-19",
-      49.94
-     ],
-     [
-      "2026-10-20",
-      51.46
-     ],
-     [
-      "2026-10-21",
-      52.92
-     ],
-     [
-      "2026-10-22",
-      53.38
-     ],
-     [
-      "2026-10-23",
-      53.34
-     ],
-     [
-      "2026-10-24",
-      52.63
-     ],
-     [
-      "2026-10-25",
-      51.66
-     ],
-     [
-      "2026-10-26",
-      52.2
-     ],
-     [
-      "2026-10-27",
-      52.95
-     ],
-     [
-      "2026-10-28",
-      54.77
-     ],
-     [
-      "2026-10-29",
-      54.03
-     ],
-     [
-      "2026-10-30",
-      52.06
-     ],
-     [
-      "2026-10-31",
-      52.03
-     ],
-     [
-      "2026-11-01",
-      55.31
-     ],
-     [
-      "2026-11-02",
-      56.92
-     ],
-     [
-      "2026-11-03",
-      54.05
-     ],
-     [
-      "2026-11-04",
-      51.0
-     ],
-     [
-      "2026-11-05",
-      52.16
-     ],
-     [
-      "2026-11-06",
-      51.35
-     ],
-     [
-      "2026-11-07",
-      49.22
-     ],
-     [
-      "2026-11-08",
-      47.99
-     ],
-     [
-      "2026-11-09",
-      48.77
-     ],
-     [
-      "2026-11-10",
-      49.39
-     ],
-     [
-      "2026-11-11",
-      49.73
-     ],
-     [
-      "2026-11-12",
-      49.57
-     ],
-     [
-      "2026-11-13",
-      49.25
-     ],
-     [
-      "2026-11-14",
-      47.47
-     ],
-     [
-      "2026-11-15",
-      49.19
-     ],
-     [
-      "2026-11-16",
-      50.17
-     ],
-     [
-      "2026-11-17",
-      50.3
-     ],
-     [
-      "2026-11-18",
-      50.21
-     ],
-     [
-      "2026-11-19",
-      49.9
-     ],
-     [
-      "2026-11-20",
-      50.15
-     ],
-     [
-      "2026-11-21",
-      49.31
-     ],
-     [
-      "2026-11-22",
-      49.54
-     ],
-     [
-      "2026-11-23",
-      50.69
-     ],
-     [
-      "2026-11-24",
-      53.88
-     ]
-    ]
-   },
-   "PJM": {
-    "name": "PJM (Mid-Atlantic, incl. Northern Virginia)",
-    "date": "2026-11-24",
-    "unit": "GW (daily average)",
-    "avg28": 89.26,
-    "yoy": 0.0143,
-    "hist": [
-     [
-      "2026-08-27",
-      110.78
-     ],
-     [
-      "2026-08-28",
-      108.96
-     ],
-     [
-      "2026-08-29",
-      98.27
-     ],
-     [
-      "2026-08-30",
-      102.14
-     ],
-     [
-      "2026-08-31",
-      114.6
-     ],
-     [
-      "2026-09-01",
-      125.07
-     ],
-     [
-      "2026-09-02",
-      123.55
-     ],
-     [
-      "2026-09-03",
-      125.2
-     ],
-     [
-      "2026-09-04",
-      121.42
-     ],
-     [
-      "2026-09-05",
-      106.35
-     ],
-     [
-      "2026-09-06",
-      96.04
-     ],
-     [
-      "2026-09-07",
-      94.64
-     ],
-     [
-      "2026-09-08",
-      104.42
-     ],
-     [
-      "2026-09-09",
-      113.29
-     ],
-     [
-      "2026-09-10",
-      113.81
-     ],
-     [
-      "2026-09-11",
-      107.32
-     ],
-     [
-      "2026-09-12",
-      100.23
-     ],
-     [
-      "2026-09-13",
-      103.08
-     ],
-     [
-      "2026-09-14",
-      98.43
-     ],
-     [
-      "2026-09-15",
-      96.83
-     ],
-     [
-      "2026-09-16",
-      105.28
-     ],
-     [
-      "2026-09-17",
-      109.71
-     ],
-     [
-      "2026-09-18",
-      107.26
-     ],
-     [
-      "2026-09-19",
-      93.88
-     ],
-     [
-      "2026-09-20",
-      95.19
-     ],
-     [
-      "2026-09-21",
-      94.2
-     ],
-     [
-      "2026-09-22",
-      89.21
-     ],
-     [
-      "2026-09-23",
-      86.51
-     ],
-     [
-      "2026-09-24",
-      85.32
-     ],
-     [
-      "2026-09-25",
-      84.35
-     ],
-     [
-      "2026-09-26",
-      80.4
-     ],
-     [
-      "2026-09-27",
-      79.97
-     ],
-     [
-      "2026-09-28",
-      87.26
-     ],
-     [
-      "2026-09-29",
-      89.92
-     ],
-     [
-      "2026-09-30",
-      91.63
-     ],
-     [
-      "2026-10-01",
-      97.0
-     ],
-     [
-      "2026-10-02",
-      95.77
-     ],
-     [
-      "2026-10-03",
-      82.02
-     ],
-     [
-      "2026-10-04",
-      80.6
-     ],
-     [
-      "2026-10-05",
-      85.1
-     ],
-     [
-      "2026-10-06",
-      84.13
-     ],
-     [
-      "2026-10-07",
-      85.72
-     ],
-     [
-      "2026-10-08",
-      86.45
-     ],
-     [
-      "2026-10-09",
-      85.18
-     ],
-     [
-      "2026-10-10",
-      80.72
-     ],
-     [
-      "2026-10-11",
-      82.42
-     ],
-     [
-      "2026-10-12",
-      89.53
-     ],
-     [
-      "2026-10-13",
-      94.02
-     ],
-     [
-      "2026-10-14",
-      96.18
-     ],
-     [
-      "2026-10-15",
-      89.63
-     ],
-     [
-      "2026-10-16",
-      90.03
-     ],
-     [
-      "2026-10-17",
-      80.76
-     ],
-     [
-      "2026-10-18",
-      80.72
-     ],
-     [
-      "2026-10-19",
-      87.42
-     ],
-     [
-      "2026-10-20",
-      86.82
-     ],
-     [
-      "2026-10-21",
-      86.47
-     ],
-     [
-      "2026-10-22",
-      87.32
-     ],
-     [
-      "2026-10-23",
-      85.94
-     ],
-     [
-      "2026-10-24",
-      82.19
-     ],
-     [
-      "2026-10-25",
-      81.64
-     ],
-     [
-      "2026-10-26",
-      87.51
-     ],
-     [
-      "2026-10-27",
-      87.35
-     ],
-     [
-      "2026-10-28",
-      87.59
-     ],
-     [
-      "2026-10-29",
-      87.67
-     ],
-     [
-      "2026-10-30",
-      85.58
-     ],
-     [
-      "2026-10-31",
-      80.88
-     ],
-     [
-      "2026-11-01",
-      84.54
-     ],
-     [
-      "2026-11-02",
-      87.38
-     ],
-     [
-      "2026-11-03",
-      88.46
-     ],
-     [
-      "2026-11-04",
-      87.9
-     ],
-     [
-      "2026-11-05",
-      88.99
-     ],
-     [
-      "2026-11-06",
-      87.98
-     ],
-     [
-      "2026-11-07",
-      84.02
-     ],
-     [
-      "2026-11-08",
-      83.71
-     ],
-     [
-      "2026-11-09",
-      88.84
-     ],
-     [
-      "2026-11-10",
-      89.01
-     ],
-     [
-      "2026-11-11",
-      88.75
-     ],
-     [
-      "2026-11-12",
-      90.89
-     ],
-     [
-      "2026-11-13",
-      94.21
-     ],
-     [
-      "2026-11-14",
-      92.39
-     ],
-     [
-      "2026-11-15",
-      90.12
-     ],
-     [
-      "2026-11-16",
-      95.22
-     ],
-     [
-      "2026-11-17",
-      95.9
-     ],
-     [
-      "2026-11-18",
-      95.17
-     ],
-     [
-      "2026-11-19",
-      94.07
-     ],
-     [
-      "2026-11-20",
-      91.6
-     ],
-     [
-      "2026-11-21",
-      86.56
-     ],
-     [
-      "2026-11-22",
-      84.98
-     ],
-     [
-      "2026-11-23",
-      90.34
-     ],
-     [
-      "2026-11-24",
-      96.5
-     ]
-    ]
-   },
-   "SRP": {
-    "name": "SRP (Phoenix area, Arizona)",
-    "date": "2026-11-24",
-    "unit": "GW (daily average)",
-    "avg28": 3.09,
-    "yoy": -0.1214,
-    "hist": [
-     [
-      "2026-08-27",
-      6.42
-     ],
-     [
-      "2026-08-28",
-      6.58
-     ],
-     [
-      "2026-08-29",
-      5.76
-     ],
-     [
-      "2026-08-30",
-      5.79
-     ],
-     [
-      "2026-08-31",
-      4.49
-     ],
-     [
-      "2026-09-01",
-      5.15
-     ],
-     [
-      "2026-09-02",
-      5.76
-     ],
-     [
-      "2026-09-03",
-      5.38
-     ],
-     [
-      "2026-09-04",
-      5.31
-     ],
-     [
-      "2026-09-05",
-      5.39
-     ],
-     [
-      "2026-09-06",
-      5.26
-     ],
-     [
-      "2026-09-07",
-      5.13
-     ],
-     [
-      "2026-09-08",
-      5.88
-     ],
-     [
-      "2026-09-09",
-      5.88
-     ],
-     [
-      "2026-09-10",
-      5.89
-     ],
-     [
-      "2026-09-11",
-      5.23
-     ],
-     [
-      "2026-09-12",
-      4.98
-     ],
-     [
-      "2026-09-13",
-      5.4
-     ],
-     [
-      "2026-09-14",
-      5.12
-     ],
-     [
-      "2026-09-15",
-      5.04
-     ],
-     [
-      "2026-09-16",
-      4.64
-     ],
-     [
-      "2026-09-17",
-      4.28
-     ],
-     [
-      "2026-09-18",
-      4.25
-     ],
-     [
-      "2026-09-19",
-      4.16
-     ],
-     [
-      "2026-09-20",
-      4.54
-     ],
-     [
-      "2026-09-21",
-      5.02
-     ],
-     [
-      "2026-09-22",
-      4.26
-     ],
-     [
-      "2026-09-23",
-      5.01
-     ],
-     [
-      "2026-09-24",
-      4.39
-     ],
-     [
-      "2026-09-25",
-      4.06
-     ],
-     [
-      "2026-09-26",
-      3.94
-     ],
-     [
-      "2026-09-27",
-      4.61
-     ],
-     [
-      "2026-09-28",
-      3.56
-     ],
-     [
-      "2026-09-29",
-      3.44
-     ],
-     [
-      "2026-09-30",
-      3.02
-     ],
-     [
-      "2026-10-01",
-      3.19
-     ],
-     [
-      "2026-10-02",
-      3.42
-     ],
-     [
-      "2026-10-03",
-      4.66
-     ],
-     [
-      "2026-10-04",
-      4.12
-     ],
-     [
-      "2026-10-05",
-      4.94
-     ],
-     [
-      "2026-10-06",
-      4.24
-     ],
-     [
-      "2026-10-07",
-      4.82
-     ],
-     [
-      "2026-10-08",
-      5.03
-     ],
-     [
-      "2026-10-09",
-      4.99
-     ],
-     [
-      "2026-10-10",
-      3.72
-     ],
-     [
-      "2026-10-11",
-      2.93
-     ],
-     [
-      "2026-10-12",
-      3.08
-     ],
-     [
-      "2026-10-13",
-      2.95
-     ],
-     [
-      "2026-10-14",
-      2.65
-     ],
-     [
-      "2026-10-15",
-      2.71
-     ],
-     [
-      "2026-10-16",
-      2.88
-     ],
-     [
-      "2026-10-17",
-      3.43
-     ],
-     [
-      "2026-10-18",
-      2.77
-     ],
-     [
-      "2026-10-19",
-      3.12
-     ],
-     [
-      "2026-10-20",
-      3.67
-     ],
-     [
-      "2026-10-21",
-      4.07
-     ],
-     [
-      "2026-10-22",
-      3.54
-     ],
-     [
-      "2026-10-23",
-      3.14
-     ],
-     [
-      "2026-10-24",
-      2.14
-     ],
-     [
-      "2026-10-25",
-      3.12
-     ],
-     [
-      "2026-10-26",
-      3.46
-     ],
-     [
-      "2026-10-27",
-      2.84
-     ],
-     [
-      "2026-10-28",
-      2.53
-     ],
-     [
-      "2026-10-29",
-      3.12
-     ],
-     [
-      "2026-10-30",
-      3.32
-     ],
-     [
-      "2026-10-31",
-      2.9
-     ],
-     [
-      "2026-11-01",
-      2.51
-     ],
-     [
-      "2026-11-02",
-      2.03
-     ],
-     [
-      "2026-11-03",
-      2.86
-     ],
-     [
-      "2026-11-04",
-      2.85
-     ],
-     [
-      "2026-11-05",
-      3.21
-     ],
-     [
-      "2026-11-06",
-      3.75
-     ],
-     [
-      "2026-11-07",
-      3.98
-     ],
-     [
-      "2026-11-08",
-      3.66
-     ],
-     [
-      "2026-11-09",
-      3.35
-     ],
-     [
-      "2026-11-10",
-      2.67
-     ],
-     [
-      "2026-11-11",
-      3.05
-     ],
-     [
-      "2026-11-12",
-      3.87
-     ],
-     [
-      "2026-11-13",
-      3.59
-     ],
-     [
-      "2026-11-14",
-      2.23
-     ],
-     [
-      "2026-11-15",
-      2.84
-     ],
-     [
-      "2026-11-16",
-      3.73
-     ],
-     [
-      "2026-11-17",
-      3.45
-     ],
-     [
-      "2026-11-18",
-      2.7
-     ],
-     [
-      "2026-11-19",
-      3.01
-     ],
-     [
-      "2026-11-20",
-      2.33
-     ],
-     [
-      "2026-11-21",
-      1.85
-     ],
-     [
-      "2026-11-22",
-      3.19
-     ],
-     [
-      "2026-11-23",
-      3.64
-     ],
-     [
-      "2026-11-24",
-      4.22
-     ]
-    ]
-   },
-   "US48": {
-    "name": "Lower 48 states",
-    "date": "2026-11-24",
-    "unit": "GW (daily average)",
-    "avg28": 449.76,
-    "yoy": 0.0163,
-    "hist": [
-     [
-      "2026-08-27",
-      592.11
-     ],
-     [
-      "2026-08-28",
-      585.61
-     ],
-     [
-      "2026-08-29",
-      550.32
-     ],
-     [
-      "2026-08-30",
-      557.77
-     ],
-     [
-      "2026-08-31",
-      596.49
-     ],
-     [
-      "2026-09-01",
-      612.05
-     ],
-     [
-      "2026-09-02",
-      615.43
-     ],
-     [
-      "2026-09-03",
-      616.8
-     ],
-     [
-      "2026-09-04",
-      609.76
-     ],
-     [
-      "2026-09-05",
-      569.11
-     ],
-     [
-      "2026-09-06",
-      538.04
-     ],
-     [
-      "2026-09-07",
-      535.87
-     ],
-     [
-      "2026-09-08",
-      574.21
-     ],
-     [
-      "2026-09-09",
-      597.37
-     ],
-     [
-      "2026-09-10",
-      592.8
-     ],
-     [
-      "2026-09-11",
-      572.17
-     ],
-     [
-      "2026-09-12",
-      543.32
-     ],
-     [
-      "2026-09-13",
-      542.89
-     ],
-     [
-      "2026-09-14",
-      551.53
-     ],
-     [
-      "2026-09-15",
-      553.41
-     ],
-     [
-      "2026-09-16",
-      560.59
-     ],
-     [
-      "2026-09-17",
-      566.03
-     ],
-     [
-      "2026-09-18",
-      557.92
-     ],
-     [
-      "2026-09-19",
-      518.46
-     ],
-     [
-      "2026-09-20",
-      512.35
-     ],
-     [
-      "2026-09-21",
-      524.08
-     ],
-     [
-      "2026-09-22",
-      509.4
-     ],
-     [
-      "2026-09-23",
-      498.44
-     ],
-     [
-      "2026-09-24",
-      490.28
-     ],
-     [
-      "2026-09-25",
-      479.58
-     ],
-     [
-      "2026-09-26",
-      456.69
-     ],
-     [
-      "2026-09-27",
-      459.34
-     ],
-     [
-      "2026-09-28",
-      488.99
-     ],
-     [
-      "2026-09-29",
-      493.17
-     ],
-     [
-      "2026-09-30",
-      505.53
-     ],
-     [
-      "2026-10-01",
-      511.38
-     ],
-     [
-      "2026-10-02",
-      506.23
-     ],
-     [
-      "2026-10-03",
-      469.68
-     ],
-     [
-      "2026-10-04",
-      459.66
-     ],
-     [
-      "2026-10-05",
-      484.55
-     ],
-     [
-      "2026-10-06",
-      480.88
-     ],
-     [
-      "2026-10-07",
-      483.89
-     ],
-     [
-      "2026-10-08",
-      487.09
-     ],
-     [
-      "2026-10-09",
-      477.72
-     ],
-     [
-      "2026-10-10",
-      451.14
-     ],
-     [
-      "2026-10-11",
-      454.91
-     ],
-     [
-      "2026-10-12",
-      487.11
-     ],
-     [
-      "2026-10-13",
-      502.36
-     ],
-     [
-      "2026-10-14",
-      499.27
-     ],
-     [
-      "2026-10-15",
-      488.53
-     ],
-     [
-      "2026-10-16",
-      470.44
-     ],
-     [
-      "2026-10-17",
-      420.18
-     ],
-     [
-      "2026-10-18",
-      414.2
-     ],
-     [
-      "2026-10-19",
-      443.6
-     ],
-     [
-      "2026-10-20",
-      447.14
-     ],
-     [
-      "2026-10-21",
-      447.47
-     ],
-     [
-      "2026-10-22",
-      448.4
-     ],
-     [
-      "2026-10-23",
-      442.77
-     ],
-     [
-      "2026-10-24",
-      422.83
-     ],
-     [
-      "2026-10-25",
-      420.37
-     ],
-     [
-      "2026-10-26",
-      446.0
-     ],
-     [
-      "2026-10-27",
-      447.73
-     ],
-     [
-      "2026-10-28",
-      454.14
-     ],
-     [
-      "2026-10-29",
-      454.84
-     ],
-     [
-      "2026-10-30",
-      447.22
-     ],
-     [
-      "2026-10-31",
-      425.15
-     ],
-     [
-      "2026-11-01",
-      437.47
-     ],
-     [
-      "2026-11-02",
-      452.05
-     ],
-     [
-      "2026-11-03",
-      454.51
-     ],
-     [
-      "2026-11-04",
-      449.75
-     ],
-     [
-      "2026-11-05",
-      455.24
-     ],
-     [
-      "2026-11-06",
-      450.13
-     ],
-     [
-      "2026-11-07",
-      427.38
-     ],
-     [
-      "2026-11-08",
-      422.0
-     ],
-     [
-      "2026-11-09",
-      446.03
-     ],
-     [
-      "2026-11-10",
-      446.61
-     ],
-     [
-      "2026-11-11",
-      445.99
-     ],
-     [
-      "2026-11-12",
-      450.41
-     ],
-     [
-      "2026-11-13",
-      459.51
-     ],
-     [
-      "2026-11-14",
-      445.68
-     ],
-     [
-      "2026-11-15",
-      447.5
-     ],
-     [
-      "2026-11-16",
-      469.3
-     ],
-     [
-      "2026-11-17",
-      470.79
-     ],
-     [
-      "2026-11-18",
-      465.32
-     ],
-     [
-      "2026-11-19",
-      461.32
-     ],
-     [
-      "2026-11-20",
-      454.1
-     ],
-     [
-      "2026-11-21",
-      434.51
-     ],
-     [
-      "2026-11-22",
-      431.6
-     ],
-     [
-      "2026-11-23",
-      457.44
-     ],
-     [
-      "2026-11-24",
-      477.3
-     ]
-    ]
-   }
-  },
+  "asOf": "2026-11-26",
+  "grid": null,
   "prices": {
    "gas": {
     "id": "DHHNGSP",
     "label": "Henry Hub natural gas spot price, $/MMBtu",
-    "value": 3.1,
-    "date": "2026-11-17",
-    "avg1y": 3.499,
+    "value": 3.3,
+    "date": "2026-11-24",
+    "avg1y": 3.485,
     "max1y": 30.72,
     "min1y": 2.42,
-    "chg30": -0.12,
+    "chg30": 0.52,
     "hist": [
-     [
-      "2026-05-29",
-      3.34
-     ],
-     [
-      "2026-06-01",
-      3.07
-     ],
-     [
-      "2026-06-02",
-      2.97
-     ],
-     [
-      "2026-06-03",
-      2.97
-     ],
-     [
-      "2026-06-04",
-      3.08
-     ],
      [
       "2026-06-05",
       3.05
@@ -3055,6 +1564,26 @@
      [
       "2026-11-17",
       3.1
+     ],
+     [
+      "2026-11-18",
+      3.24
+     ],
+     [
+      "2026-11-19",
+      3.31
+     ],
+     [
+      "2026-11-20",
+      3.29
+     ],
+     [
+      "2026-11-23",
+      3.28
+     ],
+     [
+      "2026-11-24",
+      3.3
      ]
     ],
     "url": "https://fred.stlouisfed.org/series/DHHNGSP"
@@ -3474,7 +2003,9 @@
    "avgDsci": 116,
    "source": "US Drought Monitor (droughtmonitor.unl.edu)"
   },
-  "errors": []
+  "errors": [
+   "EIA grid demand: The read operation timed out"
+  ]
  },
  "society": {
   "retail": {
@@ -7362,152 +5893,152 @@
    "id": "DFF",
    "label": "Effective federal funds rate, %",
    "value": 3.88,
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "yoy": -0.0026,
    "chg1y": -0.01,
    "hist": [
     [
-     "2026-03-23",
+     "2026-03-24",
      3.64
     ],
     [
-     "2026-03-30",
+     "2026-03-31",
      3.64
     ],
     [
-     "2026-04-06",
+     "2026-04-07",
      3.64
     ],
     [
-     "2026-04-13",
+     "2026-04-14",
      3.64
     ],
     [
-     "2026-04-20",
+     "2026-04-21",
      3.64
     ],
     [
-     "2026-04-27",
+     "2026-04-28",
      3.64
     ],
     [
-     "2026-05-04",
+     "2026-05-05",
      3.64
     ],
     [
-     "2026-05-11",
+     "2026-05-12",
      3.63
     ],
     [
-     "2026-05-18",
-     3.63
-    ],
-    [
-     "2026-05-25",
+     "2026-05-19",
      3.62
     ],
     [
-     "2026-06-01",
+     "2026-05-26",
      3.62
     ],
     [
-     "2026-06-08",
+     "2026-06-02",
      3.62
     ],
     [
-     "2026-06-15",
-     3.63
-    ],
-    [
-     "2026-06-22",
-     3.63
-    ],
-    [
-     "2026-06-29",
-     3.63
-    ],
-    [
-     "2026-07-06",
-     3.63
-    ],
-    [
-     "2026-07-13",
+     "2026-06-09",
      3.62
     ],
     [
-     "2026-07-20",
+     "2026-06-16",
      3.63
     ],
     [
-     "2026-07-27",
+     "2026-06-23",
      3.63
     ],
     [
-     "2026-08-03",
+     "2026-06-30",
      3.63
     ],
     [
-     "2026-08-10",
+     "2026-07-07",
      3.63
     ],
     [
-     "2026-08-17",
+     "2026-07-14",
      3.63
     ],
     [
-     "2026-08-24",
+     "2026-07-21",
      3.63
     ],
     [
-     "2026-08-31",
+     "2026-07-28",
      3.63
     ],
     [
-     "2026-09-07",
+     "2026-08-04",
      3.63
     ],
     [
-     "2026-09-14",
+     "2026-08-11",
      3.63
     ],
     [
-     "2026-09-21",
+     "2026-08-18",
+     3.63
+    ],
+    [
+     "2026-08-25",
+     3.63
+    ],
+    [
+     "2026-09-01",
+     3.63
+    ],
+    [
+     "2026-09-08",
+     3.63
+    ],
+    [
+     "2026-09-15",
+     3.63
+    ],
+    [
+     "2026-09-22",
      3.88
     ],
     [
-     "2026-09-28",
+     "2026-09-29",
      3.88
     ],
     [
-     "2026-10-05",
+     "2026-10-06",
      3.88
     ],
     [
-     "2026-10-12",
+     "2026-10-13",
      3.88
     ],
     [
-     "2026-10-19",
+     "2026-10-20",
      3.88
     ],
     [
-     "2026-10-26",
+     "2026-10-27",
      3.88
     ],
     [
-     "2026-11-02",
+     "2026-11-03",
      3.88
     ],
     [
-     "2026-11-09",
+     "2026-11-10",
      3.88
     ],
     [
-     "2026-11-16",
+     "2026-11-17",
      3.88
     ],
     [
-     "2026-11-23",
+     "2026-11-24",
      3.88
     ]
    ],
@@ -7517,152 +6048,152 @@
    "id": "DFEDTARU",
    "label": "Federal funds target range, upper limit, %",
    "value": 4.0,
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "yoy": 0.0,
    "chg1y": 0.0,
    "hist": [
     [
-     "2026-03-25",
+     "2026-03-26",
      3.75
     ],
     [
-     "2026-04-01",
+     "2026-04-02",
      3.75
     ],
     [
-     "2026-04-08",
+     "2026-04-09",
      3.75
     ],
     [
-     "2026-04-15",
+     "2026-04-16",
      3.75
     ],
     [
-     "2026-04-22",
+     "2026-04-23",
      3.75
     ],
     [
-     "2026-04-29",
+     "2026-04-30",
      3.75
     ],
     [
-     "2026-05-06",
+     "2026-05-07",
      3.75
     ],
     [
-     "2026-05-13",
+     "2026-05-14",
      3.75
     ],
     [
-     "2026-05-20",
+     "2026-05-21",
      3.75
     ],
     [
-     "2026-05-27",
+     "2026-05-28",
      3.75
     ],
     [
-     "2026-06-03",
+     "2026-06-04",
      3.75
     ],
     [
-     "2026-06-10",
+     "2026-06-11",
      3.75
     ],
     [
-     "2026-06-17",
+     "2026-06-18",
      3.75
     ],
     [
-     "2026-06-24",
+     "2026-06-25",
      3.75
     ],
     [
-     "2026-07-01",
+     "2026-07-02",
      3.75
     ],
     [
-     "2026-07-08",
+     "2026-07-09",
      3.75
     ],
     [
-     "2026-07-15",
+     "2026-07-16",
      3.75
     ],
     [
-     "2026-07-22",
+     "2026-07-23",
      3.75
     ],
     [
-     "2026-07-29",
+     "2026-07-30",
      3.75
     ],
     [
-     "2026-08-05",
+     "2026-08-06",
      3.75
     ],
     [
-     "2026-08-12",
+     "2026-08-13",
      3.75
     ],
     [
-     "2026-08-19",
+     "2026-08-20",
      3.75
     ],
     [
-     "2026-08-26",
+     "2026-08-27",
      3.75
     ],
     [
-     "2026-09-02",
+     "2026-09-03",
      3.75
     ],
     [
-     "2026-09-09",
+     "2026-09-10",
      3.75
     ],
     [
-     "2026-09-16",
-     3.75
-    ],
-    [
-     "2026-09-23",
+     "2026-09-17",
      4.0
     ],
     [
-     "2026-09-30",
+     "2026-09-24",
      4.0
     ],
     [
-     "2026-10-07",
+     "2026-10-01",
      4.0
     ],
     [
-     "2026-10-14",
+     "2026-10-08",
      4.0
     ],
     [
-     "2026-10-21",
+     "2026-10-15",
      4.0
     ],
     [
-     "2026-10-28",
+     "2026-10-22",
      4.0
     ],
     [
-     "2026-11-04",
+     "2026-10-29",
      4.0
     ],
     [
-     "2026-11-11",
+     "2026-11-05",
      4.0
     ],
     [
-     "2026-11-18",
+     "2026-11-12",
      4.0
     ],
     [
-     "2026-11-25",
+     "2026-11-19",
+     4.0
+    ],
+    [
+     "2026-11-26",
      4.0
     ]
    ],
@@ -7672,152 +6203,152 @@
    "id": "DFEDTARL",
    "label": "Federal funds target range, lower limit, %",
    "value": 3.75,
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "yoy": 0.0,
    "chg1y": 0.0,
    "hist": [
     [
-     "2026-03-25",
+     "2026-03-26",
      3.5
     ],
     [
-     "2026-04-01",
+     "2026-04-02",
      3.5
     ],
     [
-     "2026-04-08",
+     "2026-04-09",
      3.5
     ],
     [
-     "2026-04-15",
+     "2026-04-16",
      3.5
     ],
     [
-     "2026-04-22",
+     "2026-04-23",
      3.5
     ],
     [
-     "2026-04-29",
+     "2026-04-30",
      3.5
     ],
     [
-     "2026-05-06",
+     "2026-05-07",
      3.5
     ],
     [
-     "2026-05-13",
+     "2026-05-14",
      3.5
     ],
     [
-     "2026-05-20",
+     "2026-05-21",
      3.5
     ],
     [
-     "2026-05-27",
+     "2026-05-28",
      3.5
     ],
     [
-     "2026-06-03",
+     "2026-06-04",
      3.5
     ],
     [
-     "2026-06-10",
+     "2026-06-11",
      3.5
     ],
     [
-     "2026-06-17",
+     "2026-06-18",
      3.5
     ],
     [
-     "2026-06-24",
+     "2026-06-25",
      3.5
     ],
     [
-     "2026-07-01",
+     "2026-07-02",
      3.5
     ],
     [
-     "2026-07-08",
+     "2026-07-09",
      3.5
     ],
     [
-     "2026-07-15",
+     "2026-07-16",
      3.5
     ],
     [
-     "2026-07-22",
+     "2026-07-23",
      3.5
     ],
     [
-     "2026-07-29",
+     "2026-07-30",
      3.5
     ],
     [
-     "2026-08-05",
+     "2026-08-06",
      3.5
     ],
     [
-     "2026-08-12",
+     "2026-08-13",
      3.5
     ],
     [
-     "2026-08-19",
+     "2026-08-20",
      3.5
     ],
     [
-     "2026-08-26",
+     "2026-08-27",
      3.5
     ],
     [
-     "2026-09-02",
+     "2026-09-03",
      3.5
     ],
     [
-     "2026-09-09",
+     "2026-09-10",
      3.5
     ],
     [
-     "2026-09-16",
-     3.5
-    ],
-    [
-     "2026-09-23",
+     "2026-09-17",
      3.75
     ],
     [
-     "2026-09-30",
+     "2026-09-24",
      3.75
     ],
     [
-     "2026-10-07",
+     "2026-10-01",
      3.75
     ],
     [
-     "2026-10-14",
+     "2026-10-08",
      3.75
     ],
     [
-     "2026-10-21",
+     "2026-10-15",
      3.75
     ],
     [
-     "2026-10-28",
+     "2026-10-22",
      3.75
     ],
     [
-     "2026-11-04",
+     "2026-10-29",
      3.75
     ],
     [
-     "2026-11-11",
+     "2026-11-05",
      3.75
     ],
     [
-     "2026-11-18",
+     "2026-11-12",
      3.75
     ],
     [
-     "2026-11-25",
+     "2026-11-19",
+     3.75
+    ],
+    [
+     "2026-11-26",
      3.75
     ]
    ],
@@ -8136,154 +6667,154 @@
   "mortgage": {
    "id": "MORTGAGE30US",
    "label": "30-year fixed mortgage rate, % (weekly)",
-   "value": 7.28,
-   "date": "2026-11-19",
-   "yoy": 0.1629,
-   "chg1y": 1.02,
+   "value": 7.21,
+   "date": "2026-11-25",
+   "yoy": 0.1573,
+   "chg1y": 0.98,
    "hist": [
     [
-     "2025-07-17",
-     6.75
+     "2025-07-24",
+     6.74
     ],
     [
-     "2025-07-31",
-     6.72
+     "2025-08-07",
+     6.63
     ],
     [
-     "2025-08-14",
+     "2025-08-21",
      6.58
     ],
     [
-     "2025-08-28",
-     6.56
+     "2025-09-04",
+     6.5
     ],
     [
-     "2025-09-11",
-     6.35
-    ],
-    [
-     "2025-09-25",
-     6.3
-    ],
-    [
-     "2025-10-09",
-     6.3
-    ],
-    [
-     "2025-10-23",
-     6.19
-    ],
-    [
-     "2025-11-06",
-     6.22
-    ],
-    [
-     "2025-11-20",
+     "2025-09-18",
      6.26
     ],
     [
-     "2025-12-04",
-     6.19
+     "2025-10-02",
+     6.34
     ],
     [
-     "2025-12-18",
-     6.21
+     "2025-10-16",
+     6.27
     ],
     [
-     "2025-12-31",
-     6.15
+     "2025-10-30",
+     6.17
     ],
     [
-     "2026-01-15",
-     6.06
+     "2025-11-13",
+     6.24
     ],
     [
-     "2026-01-29",
-     6.1
-    ],
-    [
-     "2026-02-12",
-     6.09
-    ],
-    [
-     "2026-02-26",
-     5.98
-    ],
-    [
-     "2026-03-12",
-     6.11
-    ],
-    [
-     "2026-03-26",
-     6.38
-    ],
-    [
-     "2026-04-09",
-     6.37
-    ],
-    [
-     "2026-04-23",
+     "2025-11-26",
      6.23
     ],
     [
-     "2026-05-07",
-     6.37
+     "2025-12-11",
+     6.22
     ],
     [
-     "2026-05-21",
-     6.51
+     "2025-12-24",
+     6.18
     ],
     [
-     "2026-06-04",
-     6.48
+     "2026-01-08",
+     6.16
     ],
     [
-     "2026-06-18",
-     6.47
+     "2026-01-22",
+     6.09
     ],
     [
-     "2026-07-02",
-     6.43
+     "2026-02-05",
+     6.11
     ],
     [
-     "2026-07-16",
-     6.55
+     "2026-02-19",
+     6.01
     ],
     [
-     "2026-07-30",
-     6.66
+     "2026-03-05",
+     6.0
     ],
     [
-     "2026-08-13",
-     6.67
+     "2026-03-19",
+     6.22
     ],
     [
-     "2026-08-27",
-     6.66
+     "2026-04-02",
+     6.46
     ],
     [
-     "2026-09-10",
-     6.76
+     "2026-04-16",
+     6.3
     ],
     [
-     "2026-09-24",
-     7.03
+     "2026-04-30",
+     6.3
     ],
     [
-     "2026-10-08",
+     "2026-05-14",
+     6.36
+    ],
+    [
+     "2026-05-28",
+     6.53
+    ],
+    [
+     "2026-06-11",
+     6.52
+    ],
+    [
+     "2026-06-25",
+     6.49
+    ],
+    [
+     "2026-07-09",
+     6.49
+    ],
+    [
+     "2026-07-23",
+     6.58
+    ],
+    [
+     "2026-08-06",
+     6.69
+    ],
+    [
+     "2026-08-20",
+     6.65
+    ],
+    [
+     "2026-09-03",
+     6.71
+    ],
+    [
+     "2026-09-17",
+     6.95
+    ],
+    [
+     "2026-10-01",
+     7.28
+    ],
+    [
+     "2026-10-15",
      7.4
     ],
     [
-     "2026-10-22",
-     7.32
+     "2026-10-29",
+     7.24
     ],
     [
-     "2026-11-05",
-     7.18
+     "2026-11-12",
+     7.11
     ],
     [
-     "2026-11-19",
-     7.28
+     "2026-11-25",
+     7.21
     ]
    ],
    "url": "https://fred.stlouisfed.org/series/MORTGAGE30US"
